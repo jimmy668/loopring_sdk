@@ -31,7 +31,7 @@ import Web3 from 'web3'
 
 import { EIP712TypedData } from 'eth-sig-util'
 
-import { toHex, toBig, } from '../../utils/formatter'
+import { toHex, toBig, zeroPad, } from '../../utils/formatter'
 import { myLog } from '../../utils/log_tools';
 
 export enum GetEcDSASigType {
@@ -642,14 +642,22 @@ export function get_EddsaSig_NFT_Mint(request: NFTMintRequestV3, eddsaKey: strin
 }
 
 export function calculateNftData(request: NFTMintRequestV3): string  {
-  // const bit128Mask = Array(128).fill(1).toString();
-  // // val bit128Mask = BigInteger.ONE.shiftLeft(hibits).subtract(BigInteger.ONE)
-  // const inputs = [
-  //     toBig(bit128Mask).toString(),
-  //     request.nftType,
-  //     request.tokenAddress,
-  //    // toBig(request.nftId).and
-  // ]
+  const bit128Mask = Array(128).fill(1).join('');
+  let bn: BN = new BN(request.nftId,'hex')
+  let hibits = 128
+  const inputs = [
+      request.minterAddress,
+      request.nftType,
+      request.tokenAddress,
+      bn.and(new BN(bit128Mask,2)),
+      bn.shrn(hibits).and(new BN(bit128Mask,2)),
+      request.creatorFeeBips
+  ]
+  const hasher = Poseidon.createHash(inputs.length + 1, 6, 53)
+  myLog('get hasher *16 hash:', hasher(inputs).toString(16))
+  const hash = hasher(inputs).toString(10)
+  return toHex(hash);
+  // const hash = hasher(inputs).toString(10)
   // const hasher = Poseidon.createHash(inputs.length + 1, 6, 53)
   // const hash = hasher(inputs).toString(10);
   // TODO
@@ -675,7 +683,7 @@ export function calculateNftData(request: NFTMintRequestV3): string  {
   // NumericConversion.toHexString(nftData)
   //TEST for HARDCODE
   //return  hash;
-  return '0x1197d20d12bc9f80a4902c04c5a4b88371d32b0c14adce746eeea564850f47a5'
+  // return '0x1197d20d12bc9f80a4902c04c5a4b88371d32b0c14adce746eeea564850f47a5'
 
 
 }

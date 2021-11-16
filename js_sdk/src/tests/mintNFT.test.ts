@@ -16,7 +16,7 @@ import {
 } from '../defs/loopring_constants'
 
 import * as sign_tools from '../api/sign/sign_tools'
-import { getTokenInfoBySymbol, toBuffer } from '../utils'
+import { getTokenInfoBySymbol, toBuffer, zeroPad } from '../utils'
 
 const PrivateKeyProvider = require("truffle-privatekey-provider")
 
@@ -101,8 +101,8 @@ describe('Mint test', function () {
                 sellTokenId: 1
             }
             const storageId = await userApi.getNextStorageId(request2, apiKey)
-            let hash: any = new BN(nftId,'hex')
-            hash = toHex(hash);//new BigInteger(sha256(nftId.toString()).toString(), 16)
+            // let hash: any = new BN(nftId,'hex')
+            // hash = toHex(hash);//new BigInteger(sha256(nftId.toString()).toString(), 16)
 
             const request3: NFTMintRequestV3 = {
                 exchange: exchangeInfo.exchangeAddress,
@@ -112,7 +112,7 @@ describe('Mint test', function () {
                 toAddress: address,
                 nftType: 0,
                 tokenAddress: nftTokenAddress,
-                nftId: hash,  //nftId.toString(16),
+                nftId: nftId.toString(),  //nftId.toString(16),
                 amount: '30',
                 validUntil: VALID_UNTIL,
                 storageId: storageId.offchainId,
