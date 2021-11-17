@@ -631,7 +631,7 @@ export function get_EddsaSig_NFT_Mint(request: NFTMintRequestV3, eddsaKey: strin
     new BN(ethUtil.toBuffer(request.exchange)).toString(),
     request.minterId,
     request.toAccountId,
-    calculateNftData(request),
+    getNftData(request),
     request.amount,
     request.maxFee.tokenId,
     request.maxFee.amount,
@@ -641,52 +641,23 @@ export function get_EddsaSig_NFT_Mint(request: NFTMintRequestV3, eddsaKey: strin
   return getEdDSASigWithPoseidon(inputs, eddsaKey)
 }
 
-export function calculateNftData(request: NFTMintRequestV3): string  {
-  const bit128Mask = Array(128).fill(1).join('');
-  let bn: BN = new BN(request.nftId,'hex')
-  let hibits = 128
+export function getNftData(request: NFTMintRequestV3) {
+  const hasher = Poseidon.createHash(7, 6, 52);
+  const nftIDHi = new BN(request.nftId.substr(2, 32), 16).toString(10);
+  const nftIDLo = new BN(request.nftId.substr(2 + 32, 32), 16).toString(10);
+  // debugger
   const inputs = [
-      request.minterAddress,
-      request.nftType,
-      request.tokenAddress,
-      bn.and(new BN(bit128Mask,2)),
-      bn.shrn(hibits).and(new BN(bit128Mask,2)),
-      request.creatorFeeBips
-  ]
-  const hasher = Poseidon.createHash(inputs.length + 1, 6, 53)
+    request.minterAddress,
+    request.nftType,
+    request.tokenAddress,
+    nftIDLo,
+    nftIDHi,
+    request.creatorFeeBips
+  ];
   myLog('get hasher *16 hash:', hasher(inputs).toString(16))
-  const hash = hasher(inputs).toString(10)
-  return toHex(hash);
-  // const hash = hasher(inputs).toString(10)
-  // const hasher = Poseidon.createHash(inputs.length + 1, 6, 53)
-  // const hash = hasher(inputs).toString(10);
-  // TODO
-  // val hibits = 128
-  // val bit128Mask = BigInteger.ONE.shiftLeft(hibits).subtract(BigInteger.ONE)
-  //
-  // val inputs: Array[BigInteger] = Array(
-  //     NumericConversion.toBigInt(mint.minterAddress).bigInteger,
-  //     BigInteger.valueOf(mint.nftType),
-  //     NumericConversion.toBigInt(mint.tokenAddress).bigInteger,
-  //     NumericConversion.toBigInt(mint.nftId).bigInteger.and(bit128Mask),
-  //     NumericConversion
-  //         .toBigInt(mint.nftId)
-  //         .bigInteger
-  //         .shiftRight(hibits)
-  //         .and(bit128Mask),
-  //     BigInteger.valueOf(mint.creatorFeeBips)
-  // )
-  //
-  // val nftDataHasher = createPoseidonHash(7, 6, 52)
-  // nftDataHasher.add(inputs)
-  // val nftData = nftDataHasher.digest()
-  // NumericConversion.toHexString(nftData)
-  //TEST for HARDCODE
-  //return  hash;
-  // return '0x1197d20d12bc9f80a4902c04c5a4b88371d32b0c14adce746eeea564850f47a5'
-
-
+  return hasher(inputs).toString(10);
 }
+
 export function getNFTMintTypedData(data: NFTMintRequestV3, chainId: ChainId): EIP712TypedData {
 
   let message = {

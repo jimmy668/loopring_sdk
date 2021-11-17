@@ -1073,9 +1073,6 @@ export class UserAPI extends BaseAPI {
         if (!errorInfo) {
 
             request.eddsaSignature = sign_tools.get_EddsaSig_NFT_Mint(request, eddsaKey)
-            let hash: any = new BN(request.nftId,'hex')
-            hash = toHex(hash);//new BigInteger(sha256(nftId.toString()).toString(), 16)
-            request.nftId =  hash
 
             const reqParams: loopring_defs.ReqParams = {
                 url: LOOPRING_URLs.POST_NFT_MINT,

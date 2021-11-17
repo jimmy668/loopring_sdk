@@ -45,7 +45,7 @@ const privKey = "adc22517f2de0093429e5365b042da0ec9299353943db0f0cc104743c69104c
 // let eddkeyWhitelisted = '0x27a5b716c7309a30703ede3f1a218cdec857e424a31543f8a658e7d2208db33'
 
 let nftTokenAddress = '0x662168Dc15F4D516bE7741f3BBC3592Ea9A6eDB5'
-let nftId = 123
+let nftId = '0x000000000000000000000000000000000000000000000000000000000000007b'
 describe('Mint test', function () {
 
     beforeEach(async() => {
@@ -112,7 +112,7 @@ describe('Mint test', function () {
                 toAddress: address,
                 nftType: 0,
                 tokenAddress: nftTokenAddress,
-                nftId: nftId.toString(),  //nftId.toString(16),
+                nftId: nftId ,  //nftId.toString(16),
                 amount: '30',
                 validUntil: VALID_UNTIL,
                 storageId: storageId.offchainId,
