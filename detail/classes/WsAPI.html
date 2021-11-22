@@ -1,0 +1,774 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>WsAPI · Loopring SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="author" content="Loopring Dev Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../modules.html" />
+    
+    
+    <link rel="prev" href="WhitelistedUserAPI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://loopring.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ChangeLog.html">
+            
+                <a href="../../ChangeLog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDKs demo</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../js_sdk/INTRO.html">
+            
+                <a href="../../js_sdk/INTRO.html">
+            
+                    
+                    JS SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../js_sdk/INTRO.html">
+            
+                <a href="../../js_sdk/INTRO.html#install">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../js_sdk/unit_test.html">
+            
+                <a href="../../js_sdk/unit_test.html">
+            
+                    
+                    Unit Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../js_sdk/ammpool_api.html">
+            
+                <a href="../../js_sdk/ammpool_api.html">
+            
+                    
+                    AmmPool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="NFTAPI.html">
+            
+                <a href="NFTAPI.html">
+            
+                    
+                    NFT(Contract)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../js_sdk/contract_api.html">
+            
+                <a href="../../js_sdk/contract_api.html">
+            
+                    
+                    Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../js_sdk/exchange_api.html">
+            
+                <a href="../../js_sdk/exchange_api.html">
+            
+                    
+                    Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../js_sdk/user_api.html">
+            
+                <a href="../../js_sdk/user_api.html">
+            
+                    
+                    User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../js_sdk/whitelisted_user_api.html">
+            
+                <a href="../../js_sdk/whitelisted_user_api.html">
+            
+                    
+                    Whitelisted User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../js_sdk/wallet_api.html">
+            
+                <a href="../../js_sdk/wallet_api.html">
+            
+                    
+                    Wallet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../js_sdk/ws_api.html">
+            
+                <a href="../../js_sdk/ws_api.html">
+            
+                    
+                    WS REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../js_sdk/websocket_api.html">
+            
+                <a href="../../js_sdk/websocket_api.html">
+            
+                    
+                    Websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">more detail</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    class
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="AmmpoolAPI.html">
+            
+                <a href="AmmpoolAPI.html">
+            
+                    
+                    AmmpoolAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="ExchangeAPI.html">
+            
+                <a href="ExchangeAPI.html">
+            
+                    
+                    ExchangeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="NFTAPI.html">
+            
+                <a href="NFTAPI.html">
+            
+                    
+                    NFTAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="UserAPI.html">
+            
+                <a href="UserAPI.html">
+            
+                    
+                    UserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="WalletAPI.html">
+            
+                <a href="WalletAPI.html">
+            
+                    
+                    WalletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="WhitelistedUserAPI.html">
+            
+                <a href="WhitelistedUserAPI.html">
+            
+                    
+                    WhitelistedUserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.7" data-path="WsAPI.html">
+            
+                <a href="WsAPI.html">
+            
+                    
+                    WsAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    Read More
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Links</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/Loopring/hello_loopring">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://docs.loopring.io/en/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://loopring.org/#/">
+            
+                    
+                    About us
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <a target="_blank" href="https://loopring.io/#/newticket">
+            
+                    
+                    Submit a Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >WsAPI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="../README.md">@loopring-web/loopring-sdk</a> / <a href="../modules.html">Exports</a> / WsAPI</p>
+<h1 id="class-wsapi">Class: WsAPI</h1>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><p><code>BaseAPI</code></p>
+<p>↳ <strong><code>WsAPI</code></strong></p>
+</li>
+</ul>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="WsAPI.html#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="WsAPI.html#baseurl">baseUrl</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="WsAPI.html#getwskey">getWsKey</a></li>
+<li><a href="WsAPI.html#makereq">makeReq</a></li>
+<li><a href="WsAPI.html#setbaseurl">setBaseUrl</a></li>
+<li><a href="WsAPI.html#setchainid">setChainId</a></li>
+</ul>
+<h2 id="constructors">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new WsAPI</strong>(<code>param</code>, <code>timeout?</code>)</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>param</code></td>
+<td style="text-align:left"><code>InitParam</code></td>
+<td style="text-align:left"><code>undefined</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>timeout</code></td>
+<td style="text-align:left"><code>number</code></td>
+<td style="text-align:left"><code>DEFAULT_TIMEOUT</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.constructor</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/base_api.ts#L29" target="_blank">api/base_api.ts:29</a></p>
+<h2 id="properties">Properties</h2>
+<h3 id="baseurl">baseUrl</h3>
+<p>• <code>Protected</code> <strong>baseUrl</strong>: <code>string</code> = <code>&apos;&apos;</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.baseUrl</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/base_api.ts#L26" target="_blank">api/base_api.ts:26</a></p>
+<h2 id="methods">Methods</h2>
+<h3 id="getwskey">getWsKey</h3>
+<p>▸ <strong>getWsKey</strong>(): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code> ; <code>wsKey</code>: <code>any</code>  }&gt;</p>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code> ; <code>wsKey</code>: <code>any</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/ws_api.ts#L14" target="_blank">api/ws_api.ts:14</a></p>
+<hr>
+<h3 id="makereq">makeReq</h3>
+<p>▸ <code>Protected</code> <strong>makeReq</strong>(): <code>Request</code></p>
+<h4 id="returns">Returns</h4>
+<p><code>Request</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.makeReq</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/base_api.ts#L49" target="_blank">api/base_api.ts:49</a></p>
+<hr>
+<h3 id="setbaseurl">setBaseUrl</h3>
+<p>▸ <strong>setBaseUrl</strong>(<code>baseUrl</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>baseUrl</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.setBaseUrl</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/base_api.ts#L45" target="_blank">api/base_api.ts:45</a></p>
+<hr>
+<h3 id="setchainid">setChainId</h3>
+<p>▸ <strong>setChainId</strong>(<code>chainId</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>chainId</code></td>
+<td style="text-align:left"><a href="../enums/ChainId.md"><code>ChainId</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.setChainId</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/f560ad6/src/api/base_api.ts#L41" target="_blank">api/base_api.ts:41</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="WhitelistedUserAPI.html" class="navigation navigation-prev " aria-label="Previous page: WhitelistedUserAPI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../modules.html" class="navigation navigation-next " aria-label="Next page: Read More">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WsAPI","level":"3.1.7","depth":2,"next":{"title":"Read More","level":"3.2","depth":1,"path":"detail/modules.md","ref":"./detail/modules.md","articles":[]},"previous":{"title":"WhitelistedUserAPI","level":"3.1.6","depth":2,"path":"detail/classes/WhitelistedUserAPI.md","ref":"./detail/classes/WhitelistedUserAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/WsAPI.md","mtime":"2021-11-22T17:19:48.213Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-11-22T17:31:37.982Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
