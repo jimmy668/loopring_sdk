@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.20">
-        <meta name="author" content="Leo Chan">
+        <meta name="author" content="Loopring Dev Team">
         
         
     
@@ -58,8 +58,6 @@
     
     <link rel="next" href="unit_test.html" />
     
-    
-    <link rel="prev" href="../CHANGELOG.html" />
     
 
     </head>
@@ -112,9 +110,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../CHANGELOG.html">
+        <li class="chapter " data-level="1.2" >
             
-                <a href="../CHANGELOG.html">
+                <a target="_blank" href="https://github.com/Loopring/loopring_sdk/CHANGELOG.md">
             
                     
                     Changelog
@@ -132,9 +130,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="intro.html">
+        <li class="chapter active" data-level="2.1" data-path="INTRO.html">
             
-                <a href="intro.html">
+                <a href="INTRO.html">
             
                     
                     JS SDK
@@ -146,9 +144,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="intro.html">
+        <li class="chapter " data-level="2.1.1" data-path="INTRO.html">
             
-                <a href="intro.html#install">
+                <a href="INTRO.html#install">
             
                     
                     Overview
@@ -281,9 +279,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../python_sdk/intro.html">
+        <li class="chapter " data-level="2.2" data-path="../python_sdk/intro.md">
             
-                <a href="../python_sdk/intro.html">
+                <span>
             
                     
                     PYTHON SDK
@@ -295,9 +293,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="../python_sdk/intro.html">
+        <li class="chapter " data-level="2.2.1" data-path="../python_sdk/intro.md">
             
-                <a href="../python_sdk/intro.html#overview">
+                <span>
             
                     
                     Overview
@@ -378,60 +376,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="jssdk">JS_SDK</h1>
+                                <h1 id="js-sdk-introduction">JS SDK Introduction</h1>
 <h2 id="preinstall">Preinstall</h2>
 <p>Make sure you are using the original npm registry.</p>
 <pre><code class="lang-shell">    npm config set registry http://registry.npmjs.org
 </code></pre>
 <h2 id="install">Install</h2>
-<pre><code>yarn add loopring-sdk
-</code></pre><h2 id="getting-started">Getting Started</h2>
-<h4 id="init-apis">Init APIs</h4>
-<pre><code class="lang-javascript">    <span class="hljs-keyword">const</span> userApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> exchangeApi: ExchangeAPI = <span class="hljs-keyword">new</span> ExchangeAPI(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> exchangeApi: AmmpoolAPI = <span class="hljs-keyword">new</span> AmmpoolAPI(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> wsAPI: WsAPI = <span class="hljs-keyword">new</span> WsAPI(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI)
+<p>Using NPM</p>
+<pre><code class="lang-shell">npm i @loopring-web/loopring-sdk --save
 </code></pre>
-<h4 id="examplestransfer-process">Examples:(Transfer Process)</h4>
-<h5 id="step-0-init-api">step 0. init api</h5>
-<pre><code class="lang-javascript">    <span class="hljs-keyword">const</span> api: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI)
-    <span class="hljs-keyword">const</span> exchangeApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI)
+<p>Using Yarn</p>
+<pre><code class="lang-shell">yarn add @loopring-web/loopring-sdk
 </code></pre>
-<h5 id="step-1-get-storageid-for-transfer">step 1. get storageId for transfer</h5>
-<pre><code class="lang-javascript">        <span class="hljs-keyword">const</span> request: GetNextStorageIdRequest = {
-            <span class="hljs-attr">accountId</span>: acc.accountId, 
-            <span class="hljs-attr">sellTokenId</span>: <span class="hljs-number">1</span>
-        }
-        <span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> api.getNextStorageId(request, acc.apiKey)
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="initalize-the-apis">Initalize the APIs</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> userApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
+<span class="hljs-keyword">const</span> exchangeApi: ExchangeAPI = <span class="hljs-keyword">new</span> ExchangeAPI(ChainId.GORLI);
+<span class="hljs-keyword">const</span> exchangeApi: AmmpoolAPI = <span class="hljs-keyword">new</span> AmmpoolAPI(ChainId.GORLI);
+<span class="hljs-keyword">const</span> wsAPI: WsAPI = <span class="hljs-keyword">new</span> WsAPI(ChainId.GORLI);
+<span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI);
+<span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI);
 </code></pre>
-<h5 id="step-2-get-nonce-with-getaccountapi">step 2. get nonce with getAccountApi</h5>
-<pre><code class="lang-javascript">        <span class="hljs-keyword">const</span> { nonce } = <span class="hljs-keyword">await</span> exchangeApi.getAccount({
-            <span class="hljs-attr">owner</span>: acc.address
-        })
+<h3 id="example-transfer-process">Example (Transfer Process)</h3>
+<h4 id="1-initalize-the-api">1. Initalize the api</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> api: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
+<span class="hljs-keyword">const</span> exchangeApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
 </code></pre>
-<h5 id="step-3-submit-internal-transfer">step 3. submit internal transfer</h5>
-<pre><code class="lang-javascript">    <span class="hljs-keyword">const</span> request: OriginTransferRequestV3 = {
-        <span class="hljs-attr">exchange</span>: acc.exchangeAddr,
-        <span class="hljs-attr">payerAddr</span>: acc.address,
-        <span class="hljs-attr">payerId</span>: acc.accountId,
-        <span class="hljs-attr">payeeAddr</span>: <span class="hljs-string">&apos;0xb6AdaC3e924B4985Ad74646FEa3610f14cDFB79c&apos;</span>,
-        <span class="hljs-attr">payeeId</span>: <span class="hljs-number">10392</span>,
-        <span class="hljs-attr">storageId</span>: storageId.offchainId,
-        <span class="hljs-attr">token</span>: {
-            <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&apos;1&apos;</span>,
-            <span class="hljs-attr">volume</span>: <span class="hljs-string">&apos;100000000000000000000&apos;</span>,
-        },
-        <span class="hljs-attr">maxFee</span>: {
-            <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&apos;1&apos;</span>,
-            <span class="hljs-attr">volume</span>: <span class="hljs-string">&apos;9400000000000000000&apos;</span>,
-        },
-        <span class="hljs-attr">validUntil</span>: VALID_UNTIL,
-    }
+<h4 id="2-get-storageid-for-transfer">2. Get storageId for transfer</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: GetNextStorageIdRequest = {
+  <span class="hljs-attr">accountId</span>: acc.accountId,
+  <span class="hljs-attr">sellTokenId</span>: <span class="hljs-number">1</span>,
+};
+<span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> api.getNextStorageId(request, acc.apiKey);
+</code></pre>
+<h4 id="3-get-nonce-with-getaccountapi">3. Get nonce with getAccountApi</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { nonce } = <span class="hljs-keyword">await</span> exchangeApi.getAccount({
+  <span class="hljs-attr">owner</span>: acc.address,
+});
+</code></pre>
+<h4 id="4-submit-internal-transfer">4. Submit internal transfer</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: OriginTransferRequestV3 = {
+  <span class="hljs-attr">exchange</span>: acc.exchangeAddr,
+  <span class="hljs-attr">payerAddr</span>: acc.address,
+  <span class="hljs-attr">payerId</span>: acc.accountId,
+  <span class="hljs-attr">payeeAddr</span>: <span class="hljs-string">&quot;0xb6AdaC3e924B4985Ad74646FEa3610f14cDFB79c&quot;</span>,
+  <span class="hljs-attr">payeeId</span>: <span class="hljs-number">10392</span>,
+  <span class="hljs-attr">storageId</span>: storageId.offchainId,
+  <span class="hljs-attr">token</span>: {
+    <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&quot;1&quot;</span>,
+    <span class="hljs-attr">volume</span>: <span class="hljs-string">&quot;100000000000000000000&quot;</span>,
+  },
+  <span class="hljs-attr">maxFee</span>: {
+    <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&quot;1&quot;</span>,
+    <span class="hljs-attr">volume</span>: <span class="hljs-string">&quot;9400000000000000000&quot;</span>,
+  },
+  <span class="hljs-attr">validUntil</span>: VALID_UNTIL,
+};
 
-    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.submitInternalTransfer(request, web3, ChainId.GORLI, ConnectorNames.Injected, 
-        acc.eddsaKey, acc.apiKey, <span class="hljs-literal">true</span>)
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.submitInternalTransfer(
+  request,
+  web3,
+  ChainId.GORLI,
+  ConnectorNames.Injected,
+  acc.eddsaKey,
+  acc.apiKey,
+  <span class="hljs-literal">true</span>
+);
 </code></pre>
 
                                 
@@ -460,12 +470,8 @@
 
             
                 
-                <a href="../CHANGELOG.html" class="navigation navigation-prev " aria-label="Previous page: Changelog">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="unit_test.html" class="navigation navigation-next " aria-label="Next page: Unit Test">
+                <a href="unit_test.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unit Test">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -476,7 +482,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Unit Test","level":"2.1.2","depth":2,"path":"js_sdk/unit_test.md","ref":"./js_sdk/unit_test.md","articles":[]},"previous":{"title":"Changelog","level":"1.2","depth":1,"path":"CHANGELOG.md","ref":"CHANGELOG.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Leo Chan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/intro.md","mtime":"2021-07-12T16:06:41.966Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-08-20T04:09:18.489Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Unit Test","level":"2.1.2","depth":2,"path":"js_sdk/unit_test.md","ref":"./js_sdk/unit_test.md","articles":[]},"previous":{"title":"Changelog","level":"1.2","depth":1,"url":"https://github.com/Loopring/loopring_sdk/CHANGELOG.md","ref":"https://github.com/Loopring/loopring_sdk/CHANGELOG.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/INTRO.md","mtime":"2021-11-22T14:37:31.150Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-11-22T14:56:32.397Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
