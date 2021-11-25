@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ### JS SDK Version ChangeLog
+### v0.2.7
+    1) NFT refactory the interface fot doc
 ### v0.2.6
     1) NFT withdraw L2 -> L1
     2) NFT Deposit L1 -> L2  (NFT approvedAll fot Exchange)
