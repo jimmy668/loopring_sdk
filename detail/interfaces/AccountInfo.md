@@ -2,12 +2,30 @@
 
 # Interface: AccountInfo
 
+AccountInfo
+
+**`property`** accountId number Account ID
+
+**`property`** owner string  Ethereum address
+
+**`property`** frozen boolean The frozen state of the account, true stands for frozen, if the account is frozen, the user cant submit order.
+
+**`property`** publicKey PublicKey The user's public key
+
+**`property`** tags? string Comma separated list of tags such as VIP levels, etc
+
+**`property`** nonce number field.DexAccountV3.nonce
+
+**`property`** keyNonce number Nonce of users key change request, for backward compatible
+
+**`property`** keySeed string KeySeed of users L2 eddsaKey, the L2 key should be generated from this seed, i.e., L2_EDDSA_KEY=eth.sign(keySeed). Otherwise, user may meet error in login loopring DEX
+
 ## Table of contents
 
 ### Properties
 
 - [accountId](AccountInfo.md#accountid)
-- [fronzen](AccountInfo.md#fronzen)
+- [frozen](AccountInfo.md#frozen)
 - [keyNonce](AccountInfo.md#keynonce)
 - [keySeed](AccountInfo.md#keyseed)
 - [nonce](AccountInfo.md#nonce)
@@ -23,17 +41,17 @@
 
 #### Defined in
 
-[defs/account_defs.ts:4](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L4)
+[defs/account_defs.ts:15](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L15)
 
 ___
 
-### fronzen
+### frozen
 
-• **fronzen**: `boolean`
+• **frozen**: `boolean`
 
 #### Defined in
 
-[defs/account_defs.ts:6](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L6)
+[defs/account_defs.ts:17](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L17)
 
 ___
 
@@ -43,7 +61,7 @@ ___
 
 #### Defined in
 
-[defs/account_defs.ts:10](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L10)
+[defs/account_defs.ts:21](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L21)
 
 ___
 
@@ -53,7 +71,7 @@ ___
 
 #### Defined in
 
-[defs/account_defs.ts:11](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L11)
+[defs/account_defs.ts:22](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L22)
 
 ___
 
@@ -63,7 +81,7 @@ ___
 
 #### Defined in
 
-[defs/account_defs.ts:9](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L9)
+[defs/account_defs.ts:20](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L20)
 
 ___
 
@@ -73,7 +91,7 @@ ___
 
 #### Defined in
 
-[defs/account_defs.ts:5](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L5)
+[defs/account_defs.ts:16](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L16)
 
 ___
 
@@ -83,14 +101,14 @@ ___
 
 #### Defined in
 
-[defs/account_defs.ts:7](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L7)
+[defs/account_defs.ts:18](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L18)
 
 ___
 
 ### tags
 
-• **tags**: `string`
+• `Optional` **tags**: `string`
 
 #### Defined in
 
-[defs/account_defs.ts:8](https://github.com/Loopring/loopring_sdk/blob/d5fca11/src/defs/account_defs.ts#L8)
+[defs/account_defs.ts:19](https://github.com/Loopring/loopring_sdk/blob/1d20f38/src/defs/account_defs.ts#L19)
