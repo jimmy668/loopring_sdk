@@ -39,7 +39,7 @@ A user-defined id
 
 #### Defined in
 
-[defs/loopring_defs.ts:1386](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1386)
+[defs/loopring_defs.ts:1386](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1386)
 
 ___
 
@@ -53,7 +53,7 @@ ecdsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1368](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1368)
+[defs/loopring_defs.ts:1368](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1368)
 
 ___
 
@@ -67,7 +67,7 @@ eddsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1362](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1362)
+[defs/loopring_defs.ts:1362](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1362)
 
 ___
 
@@ -81,7 +81,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1308](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1308)
+[defs/loopring_defs.ts:1308](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1308)
 
 ___
 
@@ -95,7 +95,7 @@ fromAccountId
 
 #### Defined in
 
-[defs/loopring_defs.ts:1314](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1314)
+[defs/loopring_defs.ts:1314](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1314)
 
 ___
 
@@ -109,7 +109,7 @@ payer account address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1320](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1320)
+[defs/loopring_defs.ts:1320](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1320)
 
 ___
 
@@ -123,7 +123,7 @@ An approved hash string which was already submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:1374](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1374)
+[defs/loopring_defs.ts:1374](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1374)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1344](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1344)
+[defs/loopring_defs.ts:1344](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1344)
 
 ___
 
@@ -149,7 +149,7 @@ transfer memo
 
 #### Defined in
 
-[defs/loopring_defs.ts:1380](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1380)
+[defs/loopring_defs.ts:1380](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1380)
 
 ___
 
@@ -163,7 +163,7 @@ offchain Id
 
 #### Defined in
 
-[defs/loopring_defs.ts:1350](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1350)
+[defs/loopring_defs.ts:1350](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1350)
 
 ___
 
@@ -177,7 +177,7 @@ to account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1326](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1326)
+[defs/loopring_defs.ts:1326](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1326)
 
 ___
 
@@ -191,7 +191,7 @@ toAddress address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1332](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1332)
+[defs/loopring_defs.ts:1332](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1332)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1338](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1338)
+[defs/loopring_defs.ts:1338](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1338)
 
 ___
 
@@ -217,4 +217,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:1356](https://github.com/Loopring/loopring_sdk/blob/ee2acc4/src/defs/loopring_defs.ts#L1356)
+[defs/loopring_defs.ts:1356](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1356)
