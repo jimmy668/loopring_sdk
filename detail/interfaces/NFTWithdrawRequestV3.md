@@ -36,7 +36,7 @@ account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1405](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1405)
+[defs/loopring_defs.ts:1402](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1402)
 
 ___
 
@@ -50,7 +50,7 @@ ecdsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1471](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1471)
+[defs/loopring_defs.ts:1468](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1468)
 
 ___
 
@@ -64,7 +64,7 @@ eddsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1465](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1465)
+[defs/loopring_defs.ts:1462](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1462)
 
 ___
 
@@ -78,7 +78,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1399](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1399)
+[defs/loopring_defs.ts:1396](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1396)
 
 ___
 
@@ -92,7 +92,7 @@ extra data for complex withdraw mode, normally none
 
 #### Defined in
 
-[defs/loopring_defs.ts:1453](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1453)
+[defs/loopring_defs.ts:1450](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1450)
 
 ___
 
@@ -106,7 +106,7 @@ An approved hash string which was already submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:1477](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1477)
+[defs/loopring_defs.ts:1474](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1474)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1423](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1423)
+[defs/loopring_defs.ts:1420](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1420)
 
 ___
 
@@ -132,7 +132,7 @@ min gas for on-chain withdraw, Loopring exchange allocates gas for each distribu
 
 #### Defined in
 
-[defs/loopring_defs.ts:1441](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1441)
+[defs/loopring_defs.ts:1438](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1438)
 
 ___
 
@@ -146,7 +146,7 @@ account owner address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1411](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1411)
+[defs/loopring_defs.ts:1408](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1408)
 
 ___
 
@@ -160,7 +160,7 @@ offchain ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1429](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1429)
+[defs/loopring_defs.ts:1426](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1426)
 
 ___
 
@@ -174,7 +174,7 @@ withdraw to address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1447](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1447)
+[defs/loopring_defs.ts:1444](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1444)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1417](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1417)
+[defs/loopring_defs.ts:1414](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1414)
 
 ___
 
@@ -200,4 +200,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:1435](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1435)
+[defs/loopring_defs.ts:1432](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1432)

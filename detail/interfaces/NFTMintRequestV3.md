@@ -40,7 +40,7 @@ The amount of the token
 
 #### Defined in
 
-[defs/loopring_defs.ts:1539](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1539)
+[defs/loopring_defs.ts:1536](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1536)
 
 ___
 
@@ -54,7 +54,7 @@ fee to the creator of each NFT transaction.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1545](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1545)
+[defs/loopring_defs.ts:1542](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1542)
 
 ___
 
@@ -68,7 +68,7 @@ ecdsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1582](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1582)
+[defs/loopring_defs.ts:1579](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1579)
 
 ___
 
@@ -82,7 +82,7 @@ eddsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1576](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1576)
+[defs/loopring_defs.ts:1573](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1573)
 
 ___
 
@@ -96,7 +96,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1491](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1491)
+[defs/loopring_defs.ts:1488](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1488)
 
 ___
 
@@ -110,7 +110,7 @@ force to mint, regardless the previous mint record
 
 #### Defined in
 
-[defs/loopring_defs.ts:1570](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1570)
+[defs/loopring_defs.ts:1567](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1567)
 
 ___
 
@@ -124,7 +124,7 @@ An approved hash string which was already submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:1588](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1588)
+[defs/loopring_defs.ts:1585](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1585)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1564](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1564)
+[defs/loopring_defs.ts:1561](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1561)
 
 ___
 
@@ -150,7 +150,7 @@ account owner address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1503](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1503)
+[defs/loopring_defs.ts:1500](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1500)
 
 ___
 
@@ -164,7 +164,7 @@ account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1497](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1497)
+[defs/loopring_defs.ts:1494](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1494)
 
 ___
 
@@ -178,7 +178,7 @@ NFT_ID url_id
 
 #### Defined in
 
-[defs/loopring_defs.ts:1533](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1533)
+[defs/loopring_defs.ts:1530](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1530)
 
 ___
 
@@ -192,7 +192,7 @@ nftType: 0 for EIP1155, 1 for EIP712. EIP1155 by default.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1521](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1521)
+[defs/loopring_defs.ts:1518](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1518)
 
 ___
 
@@ -206,7 +206,7 @@ offchain ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1558](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1558)
+[defs/loopring_defs.ts:1555](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1555)
 
 ___
 
@@ -220,7 +220,7 @@ The account receive the minted NFT token, now should be minter himself.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1509](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1509)
+[defs/loopring_defs.ts:1506](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1506)
 
 ___
 
@@ -234,7 +234,7 @@ The account receive the minted NFT token, now should be minter himself.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1515](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1515)
+[defs/loopring_defs.ts:1512](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1512)
 
 ___
 
@@ -250,7 +250,7 @@ Contract address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1527](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1527)
+[defs/loopring_defs.ts:1524](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1524)
 
 ___
 
@@ -264,4 +264,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:1552](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1552)
+[defs/loopring_defs.ts:1549](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1549)

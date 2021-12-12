@@ -27,7 +27,7 @@ The public keys x part.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1693](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1693)
+[defs/loopring_defs.ts:1690](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1690)
 
 ___
 
@@ -41,4 +41,4 @@ The public keys y part.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1699](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1699)
+[defs/loopring_defs.ts:1696](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1696)

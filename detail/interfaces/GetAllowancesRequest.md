@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:632](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L632)
+[defs/loopring_defs.ts:630](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L630)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:633](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L633)
+[defs/loopring_defs.ts:631](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L631)

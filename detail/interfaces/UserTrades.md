@@ -17,14 +17,14 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:1089](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1089)
+[defs/loopring_defs.ts:1086](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1086)
 
 ___
 
 ### trades
 
-• **trades**: [`UserTrade`](UserTrade.md)[]
+• **trades**: [`MarketTradeInfo`](MarketTradeInfo.md)[]
 
 #### Defined in
 
-[defs/loopring_defs.ts:1090](https://github.com/Loopring/loopring_sdk/blob/904c903/src/defs/loopring_defs.ts#L1090)
+[defs/loopring_defs.ts:1087](https://github.com/Loopring/loopring_sdk/blob/1830d54/src/defs/loopring_defs.ts#L1087)
