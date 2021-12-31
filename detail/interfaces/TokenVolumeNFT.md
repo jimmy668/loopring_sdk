@@ -22,7 +22,7 @@ The amount of the token
 
 #### Defined in
 
-[defs/loopring_defs.ts:350](https://github.com/Loopring/loopring_sdk/blob/b7df545/src/defs/loopring_defs.ts#L350)
+[defs/loopring_defs.ts:363](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/defs/loopring_defs.ts#L363)
 
 ___
 
@@ -36,7 +36,7 @@ The Loopring's NFT token data identifier which is a hash string of NFT token add
 
 #### Defined in
 
-[defs/loopring_defs.ts:356](https://github.com/Loopring/loopring_sdk/blob/b7df545/src/defs/loopring_defs.ts#L356)
+[defs/loopring_defs.ts:369](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/defs/loopring_defs.ts#L369)
 
 ___
 
@@ -50,4 +50,4 @@ The Loopring\'s token identifier.
 
 #### Defined in
 
-[defs/loopring_defs.ts:344](https://github.com/Loopring/loopring_sdk/blob/b7df545/src/defs/loopring_defs.ts#L344)
+[defs/loopring_defs.ts:357](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/defs/loopring_defs.ts#L357)
