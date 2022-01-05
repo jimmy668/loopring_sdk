@@ -566,11 +566,14 @@
 <li><a href="WalletAPI.html#getcounterfactualinfo">getCounterFactualInfo</a></li>
 <li><a href="WalletAPI.html#getensbyaddress">getEnsByAddress</a></li>
 <li><a href="WalletAPI.html#getguardianapprovelist">getGuardianApproveList</a></li>
+<li><a href="WalletAPI.html#gethebaoconfig">getHebaoConfig</a></li>
+<li><a href="WalletAPI.html#gethebaooperationlogs">getHebaoOperationLogs</a></li>
 <li><a href="WalletAPI.html#getlatesttokenprices">getLatestTokenPrices</a></li>
 <li><a href="WalletAPI.html#getprotectors">getProtectors</a></li>
 <li><a href="WalletAPI.html#gettokenprices">getTokenPrices</a></li>
 <li><a href="WalletAPI.html#getuserassets">getUserAssets</a></li>
 <li><a href="WalletAPI.html#getusertradeamount">getUserTradeAmount</a></li>
+<li><a href="WalletAPI.html#lockhebaowallet">lockHebaoWallet</a></li>
 <li><a href="WalletAPI.html#makereq">makeReq</a></li>
 <li><a href="WalletAPI.html#rejectapprovehash">rejectApproveHash</a></li>
 <li><a href="WalletAPI.html#rejecthebao">rejectHebao</a></li>
@@ -607,14 +610,14 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.constructor</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L21" target="_blank">api/base_api.ts:21</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L21" target="_blank">api/base_api.ts:21</a></p>
 <h2 id="properties">Properties</h2>
 <h3 id="baseurl">baseUrl</h3>
 <p>• <code>Protected</code> <strong>baseUrl</strong>: <code>string</code> = <code>&quot;&quot;</code></p>
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.baseUrl</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L18" target="_blank">api/base_api.ts:18</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L18" target="_blank">api/base_api.ts:18</a></p>
 <h2 id="methods">Methods</h2>
 <h3 id="approvehebao">approveHebao</h3>
 <p>▸ <strong>approveHebao</strong>(<code>req</code>): <code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>unknown</code>  }&gt;</p>
@@ -636,7 +639,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>unknown</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L132" target="_blank">api/wallet_api.ts:132</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L127" target="_blank">api/wallet_api.ts:127</a></p>
 <hr>
 <h3 id="getaddressbyens">getAddressByENS</h3>
 <p>▸ <strong>getAddressByENS</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -677,7 +680,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L203" target="_blank">api/wallet_api.ts:203</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L200" target="_blank">api/wallet_api.ts:200</a></p>
 <hr>
 <h3 id="getapprovetypeddata">getApproveTypedData</h3>
 <p>▸ <code>Private</code> <strong>getApproveTypedData</strong>(<code>chainId</code>, <code>guardiaContractAddress</code>, <code>wallet</code>, <code>validUntil</code>, <code>newOwner</code>): <code>Object</code></p>
@@ -777,7 +780,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L67" target="_blank">api/wallet_api.ts:67</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L61" target="_blank">api/wallet_api.ts:61</a></p>
 <hr>
 <h3 id="getcounterfactualinfo">getCounterFactualInfo</h3>
 <p>▸ <strong>getCounterFactualInfo</strong>&lt;<code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
@@ -816,7 +819,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.getCounterFactualInfo</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L33" target="_blank">api/base_api.ts:33</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L33" target="_blank">api/base_api.ts:33</a></p>
 <hr>
 <h3 id="getensbyaddress">getEnsByAddress</h3>
 <p>▸ <strong>getEnsByAddress</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>ensName</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -857,7 +860,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>ensName</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L228" target="_blank">api/wallet_api.ts:228</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L227" target="_blank">api/wallet_api.ts:227</a></p>
 <hr>
 <h3 id="getguardianapprovelist">getGuardianApproveList</h3>
 <p>▸ <strong>getGuardianApproveList</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>guardiansArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -898,7 +901,55 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>guardiansArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L281" target="_blank">api/wallet_api.ts:281</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L321" target="_blank">api/wallet_api.ts:321</a></p>
+<hr>
+<h3 id="gethebaoconfig">getHebaoConfig</h3>
+<p>▸ <strong>getHebaoConfig</strong>(): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>any</code> = raw_data.data }&gt;</p>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>any</code> = raw_data.data }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L284" target="_blank">api/wallet_api.ts:284</a></p>
+<hr>
+<h3 id="gethebaooperationlogs">getHebaoOperationLogs</h3>
+<p>▸ <strong>getHebaoOperationLogs</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>operationArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+<td style="text-align:left">extends <code>unknown</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#hebaooperationlog"><code>HebaoOperationLog</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/HebaoOperationLogs.md"><code>HebaoOperationLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>operationArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L401" target="_blank">api/wallet_api.ts:401</a></p>
 <hr>
 <h3 id="getlatesttokenprices">getLatestTokenPrices</h3>
 <p>▸ <strong>getLatestTokenPrices</strong>(<code>request?</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code> ; <code>tokenPrices</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<code>number</code>&gt;  }&gt;</p>
@@ -920,7 +971,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code> ; <code>tokenPrices</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<code>number</code>&gt;  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L404" target="_blank">api/wallet_api.ts:404</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L479" target="_blank">api/wallet_api.ts:479</a></p>
 <hr>
 <h3 id="getprotectors">getProtectors</h3>
 <p>▸ <strong>getProtectors</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>protectorArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -966,7 +1017,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>protectorArray</code>: <code>T</code>[] ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L320" target="_blank">api/wallet_api.ts:320</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L366" target="_blank">api/wallet_api.ts:366</a></p>
 <hr>
 <h3 id="gettokenprices">getTokenPrices</h3>
 <p>▸ <strong>getTokenPrices</strong>(<code>request</code>): <code>Promise</code>&lt;{ <code>priceSeries</code>: <code>string</code>[] ; <code>raw_data</code>: <code>any</code> ; <code>timestampSeries</code>: <code>number</code>[] ; <code>tokenPrices</code>: <a href="../interfaces/TokenPriceInfo.md"><code>TokenPriceInfo</code></a>[]  }&gt;</p>
@@ -988,7 +1039,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>priceSeries</code>: <code>string</code>[] ; <code>raw_data</code>: <code>any</code> ; <code>timestampSeries</code>: <code>number</code>[] ; <code>tokenPrices</code>: <a href="../interfaces/TokenPriceInfo.md"><code>TokenPriceInfo</code></a>[]  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L372" target="_blank">api/wallet_api.ts:372</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L447" target="_blank">api/wallet_api.ts:447</a></p>
 <hr>
 <h3 id="getuserassets">getUserAssets</h3>
 <p>▸ <strong>getUserAssets</strong>(<code>request</code>): <code>Promise</code>&lt;{ <code>assetSeries</code>: <code>string</code>[] ; <code>dateSeries</code>: <code>string</code>[] ; <code>raw_data</code>: <code>any</code> ; <code>timestampSeries</code>: <code>number</code>[] ; <code>userAssets</code>: <a href="../interfaces/UserAssetInfo.md"><code>UserAssetInfo</code></a>[]  }&gt;</p>
@@ -1010,7 +1061,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>assetSeries</code>: <code>string</code>[] ; <code>dateSeries</code>: <code>string</code>[] ; <code>raw_data</code>: <code>any</code> ; <code>timestampSeries</code>: <code>number</code>[] ; <code>userAssets</code>: <a href="../interfaces/UserAssetInfo.md"><code>UserAssetInfo</code></a>[]  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L34" target="_blank">api/wallet_api.ts:34</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L29" target="_blank">api/wallet_api.ts:29</a></p>
 <hr>
 <h3 id="getusertradeamount">getUserTradeAmount</h3>
 <p>▸ <strong>getUserTradeAmount</strong>(<code>request</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code>  }&gt;</p>
@@ -1032,7 +1083,29 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>any</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L352" target="_blank">api/wallet_api.ts:352</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L427" target="_blank">api/wallet_api.ts:427</a></p>
+<hr>
+<h3 id="lockhebaowallet">lockHebaoWallet</h3>
+<p>▸ <strong>lockHebaoWallet</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>__namedParameters</code></td>
+<td style="text-align:left"><a href="../interfaces/LockHebaoHebaoParam.md"><code>LockHebaoHebaoParam</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L254" target="_blank">api/wallet_api.ts:254</a></p>
 <hr>
 <h3 id="makereq">makeReq</h3>
 <p>▸ <code>Protected</code> <strong>makeReq</strong>(): <code>Request</code></p>
@@ -1041,7 +1114,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.makeReq</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L74" target="_blank">api/base_api.ts:74</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L74" target="_blank">api/base_api.ts:74</a></p>
 <hr>
 <h3 id="rejectapprovehash">rejectApproveHash</h3>
 <p>▸ <strong>rejectApproveHash</strong>(<code>request</code>): <code>string</code></p>
@@ -1071,7 +1144,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L104" target="_blank">api/wallet_api.ts:104</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L99" target="_blank">api/wallet_api.ts:99</a></p>
 <hr>
 <h3 id="rejecthebao">rejectHebao</h3>
 <p>▸ <strong>rejectHebao</strong>(<code>req</code>): <code>Promise</code>&lt;<code>unknown</code>&gt;</p>
@@ -1093,7 +1166,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>unknown</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L122" target="_blank">api/wallet_api.ts:122</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L117" target="_blank">api/wallet_api.ts:117</a></p>
 <hr>
 <h3 id="sendmetatx">sendMetaTx</h3>
 <p>▸ <strong>sendMetaTx</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -1138,7 +1211,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L257" target="_blank">api/wallet_api.ts:257</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L299" target="_blank">api/wallet_api.ts:299</a></p>
 <hr>
 <h3 id="setbaseurl">setBaseUrl</h3>
 <p>▸ <strong>setBaseUrl</strong>(<code>baseUrl</code>): <code>void</code></p>
@@ -1162,7 +1235,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.setBaseUrl</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L70" target="_blank">api/base_api.ts:70</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L70" target="_blank">api/base_api.ts:70</a></p>
 <hr>
 <h3 id="setchainid">setChainId</h3>
 <p>▸ <strong>setChainId</strong>(<code>chainId</code>): <code>void</code></p>
@@ -1186,7 +1259,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.setChainId</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/base_api.ts#L66" target="_blank">api/base_api.ts:66</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/base_api.ts#L66" target="_blank">api/base_api.ts:66</a></p>
 <hr>
 <h3 id="submitapprovesignature">submitApproveSignature</h3>
 <p>▸ <strong>submitApproveSignature</strong>&lt;<code>R</code>, <code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
@@ -1227,7 +1300,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>address</code>: <code>undefined</code> | <code>string</code> ; <code>error</code>: <code>undefined</code> | <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/wallet_api.ts#L177" target="_blank">api/wallet_api.ts:177</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/wallet_api.ts#L172" target="_blank">api/wallet_api.ts:172</a></p>
 
                                 
                                 </section>
@@ -1271,7 +1344,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WalletAPI","level":"3.1.5","depth":2,"next":{"title":"WhitelistedUserAPI","level":"3.1.6","depth":2,"path":"detail/classes/WhitelistedUserAPI.md","ref":"./detail/classes/WhitelistedUserAPI.md","articles":[]},"previous":{"title":"UserAPI","level":"3.1.4","depth":2,"path":"detail/classes/UserAPI.md","ref":"./detail/classes/UserAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/WalletAPI.md","mtime":"2021-12-30T15:00:29.102Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-12-30T15:00:38.441Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WalletAPI","level":"3.1.5","depth":2,"next":{"title":"WhitelistedUserAPI","level":"3.1.6","depth":2,"path":"detail/classes/WhitelistedUserAPI.md","ref":"./detail/classes/WhitelistedUserAPI.md","articles":[]},"previous":{"title":"UserAPI","level":"3.1.4","depth":2,"path":"detail/classes/UserAPI.md","ref":"./detail/classes/UserAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/WalletAPI.md","mtime":"2022-01-05T16:26:12.065Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-01-05T16:26:14.394Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1323,10 +1396,6 @@
     </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

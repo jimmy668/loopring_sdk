@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/contract_api.ts:17](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/contract_api.ts#L17)
+[api/contract_api.ts:19](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/contract_api.ts#L19)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[api/contract_api.ts:18](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/contract_api.ts#L18)
+[api/contract_api.ts:20](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/contract_api.ts#L20)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/contract_api.ts:19](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/api/contract_api.ts#L19)
+[api/contract_api.ts:21](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/contract_api.ts#L21)

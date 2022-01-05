@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[defs/error_codes.ts:53](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/defs/error_codes.ts#L53)
+[defs/error_codes.ts:53](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/error_codes.ts#L53)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:54](https://github.com/Loopring/loopring_sdk/blob/f91f904/src/defs/error_codes.ts#L54)
+[defs/error_codes.ts:54](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/error_codes.ts#L54)
