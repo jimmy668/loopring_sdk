@@ -6,11 +6,22 @@
 
 ### Enumeration members
 
+- [NFT\_DEPLOY](OffchainNFTFeeReqType.md#nft_deploy)
 - [NFT\_MINT](OffchainNFTFeeReqType.md#nft_mint)
 - [NFT\_TRANSFER](OffchainNFTFeeReqType.md#nft_transfer)
 - [NFT\_WITHDRAWAL](OffchainNFTFeeReqType.md#nft_withdrawal)
 
 ## Enumeration members
+
+### NFT\_DEPLOY
+
+• **NFT\_DEPLOY** = `13`
+
+#### Defined in
+
+[defs/loopring_enums.ts:65](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_enums.ts#L65)
+
+___
 
 ### NFT\_MINT
 
@@ -18,7 +29,7 @@
 
 #### Defined in
 
-[defs/loopring_enums.ts:62](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_enums.ts#L62)
+[defs/loopring_enums.ts:62](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_enums.ts#L62)
 
 ___
 
@@ -28,7 +39,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:64](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_enums.ts#L64)
+[defs/loopring_enums.ts:64](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_enums.ts#L64)
 
 ___
 
@@ -38,4 +49,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:63](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_enums.ts#L63)
+[defs/loopring_enums.ts:63](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_enums.ts#L63)

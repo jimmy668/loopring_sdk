@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2131](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2131)
+[defs/loopring_defs.ts:2174](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2174)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2132](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2132)
+[defs/loopring_defs.ts:2175](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2175)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2133](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2133)
+[defs/loopring_defs.ts:2176](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2176)
 
 ___
 
@@ -54,10 +54,11 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `approveRecordId` | `string` |
+| `signer` | `string` |
 
 #### Defined in
 
-[defs/loopring_defs.ts:2129](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2129)
+[defs/loopring_defs.ts:2172](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2172)
 
 ___
 
@@ -67,7 +68,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2134](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2134)
+[defs/loopring_defs.ts:2177](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2177)
 
 ___
 
@@ -77,4 +78,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2130](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/loopring_defs.ts#L2130)
+[defs/loopring_defs.ts:2173](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2173)

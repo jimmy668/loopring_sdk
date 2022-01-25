@@ -6,12 +6,25 @@
 
 ### Enumeration members
 
+- [balanceOf](NFTMethod.md#balanceof)
 - [depositNFT](NFTMethod.md#depositnft)
 - [isApprovedForAll](NFTMethod.md#isapprovedforall)
+- [ownerOf](NFTMethod.md#ownerof)
 - [setApprovalForAll](NFTMethod.md#setapprovalforall)
+- [tokenURI](NFTMethod.md#tokenuri)
 - [uri](NFTMethod.md#uri)
 
 ## Enumeration members
+
+### balanceOf
+
+• **balanceOf** = `"balanceOf"`
+
+#### Defined in
+
+[api/nft_api.ts:44](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L44)
+
+___
 
 ### depositNFT
 
@@ -19,7 +32,7 @@
 
 #### Defined in
 
-[api/nft_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/nft_api.ts#L38)
+[api/nft_api.ts:43](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L43)
 
 ___
 
@@ -29,7 +42,17 @@ ___
 
 #### Defined in
 
-[api/nft_api.ts:36](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/nft_api.ts#L36)
+[api/nft_api.ts:40](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L40)
+
+___
+
+### ownerOf
+
+• **ownerOf** = `"ownerOf"`
+
+#### Defined in
+
+[api/nft_api.ts:45](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L45)
 
 ___
 
@@ -39,7 +62,17 @@ ___
 
 #### Defined in
 
-[api/nft_api.ts:35](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/nft_api.ts#L35)
+[api/nft_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L39)
+
+___
+
+### tokenURI
+
+• **tokenURI** = `"tokenURI"`
+
+#### Defined in
+
+[api/nft_api.ts:42](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L42)
 
 ___
 
@@ -49,4 +82,4 @@ ___
 
 #### Defined in
 
-[api/nft_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/api/nft_api.ts#L37)
+[api/nft_api.ts:41](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/api/nft_api.ts#L41)

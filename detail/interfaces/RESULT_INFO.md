@@ -7,24 +7,35 @@
 ### Properties
 
 - [code](RESULT_INFO.md#code)
+- [message](RESULT_INFO.md#message)
 - [msg](RESULT_INFO.md#msg)
 
 ## Properties
 
 ### code
 
-• **code**: `number`
+• `Optional` **code**: `number`
 
 #### Defined in
 
-[defs/error_codes.ts:53](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/error_codes.ts#L53)
+[defs/error_codes.ts:61](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/error_codes.ts#L61)
+
+___
+
+### message
+
+• `Optional` **message**: `string`
+
+#### Defined in
+
+[defs/error_codes.ts:63](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/error_codes.ts#L63)
 
 ___
 
 ### msg
 
-• **msg**: `string`
+• `Optional` **msg**: `string`
 
 #### Defined in
 
-[defs/error_codes.ts:54](https://github.com/Loopring/loopring_sdk/blob/cd42b57/src/defs/error_codes.ts#L54)
+[defs/error_codes.ts:62](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/error_codes.ts#L62)
