@@ -1,0 +1,2415 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>UserAPI · Loopring SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="author" content="Loopring Dev Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="WalletAPI.html" />
+    
+    
+    <link rel="prev" href="NFTAPI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://loopring.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ChangeLog.html">
+            
+                <a href="../../ChangeLog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://github.com/Loopring/loopring_sdk">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDKs demo</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../js_sdk/INTRO.html">
+            
+                <a href="../../js_sdk/INTRO.html">
+            
+                    
+                    JS SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../js_sdk/INTRO.html">
+            
+                <a href="../../js_sdk/INTRO.html#install">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../js_sdk/unit_test.html">
+            
+                <a href="../../js_sdk/unit_test.html">
+            
+                    
+                    Unit Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../js_sdk/ammpool_api.html">
+            
+                <a href="../../js_sdk/ammpool_api.html">
+            
+                    
+                    AmmPool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../js_sdk/nft_api.html">
+            
+                <a href="../../js_sdk/nft_api.html">
+            
+                    
+                    NFT(Contract)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../js_sdk/contract_api.html">
+            
+                <a href="../../js_sdk/contract_api.html">
+            
+                    
+                    Contract
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../js_sdk/exchange_api.html">
+            
+                <a href="../../js_sdk/exchange_api.html">
+            
+                    
+                    Exchange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../js_sdk/user_api.html">
+            
+                <a href="../../js_sdk/user_api.html">
+            
+                    
+                    User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../js_sdk/whitelisted_user_api.html">
+            
+                <a href="../../js_sdk/whitelisted_user_api.html">
+            
+                    
+                    Whitelisted User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../js_sdk/wallet_api.html">
+            
+                <a href="../../js_sdk/wallet_api.html">
+            
+                    
+                    Wallet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../js_sdk/ws_api.html">
+            
+                <a href="../../js_sdk/ws_api.html">
+            
+                    
+                    WS REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../js_sdk/websocket_api.html">
+            
+                <a href="../../js_sdk/websocket_api.html">
+            
+                    
+                    Websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">more detail</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    class
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="AmmpoolAPI.html">
+            
+                <a href="AmmpoolAPI.html">
+            
+                    
+                    AmmpoolAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="ExchangeAPI.html">
+            
+                <a href="ExchangeAPI.html">
+            
+                    
+                    ExchangeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="NFTAPI.html">
+            
+                <a href="NFTAPI.html">
+            
+                    
+                    NFTAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4" data-path="UserAPI.html">
+            
+                <a href="UserAPI.html">
+            
+                    
+                    UserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="WalletAPI.html">
+            
+                <a href="WalletAPI.html">
+            
+                    
+                    WalletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="WhitelistedUserAPI.html">
+            
+                <a href="WhitelistedUserAPI.html">
+            
+                    
+                    WhitelistedUserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="WsAPI.html">
+            
+                <a href="WsAPI.html">
+            
+                    
+                    WsAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    Read More
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Links</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/Loopring/hello_loopring">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://docs.loopring.io/en/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://loopring.org/#/">
+            
+                    
+                    About us
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <a target="_blank" href="https://loopring.io/#/newticket">
+            
+                    
+                    Submit a Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >UserAPI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="../README.md">@loopring-web/loopring-sdk</a> / <a href="../modules.html">Exports</a> / UserAPI</p>
+<h1 id="class-userapi">Class: UserAPI</h1>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><p><code>BaseAPI</code></p>
+<p>↳ <strong><code>UserAPI</code></strong></p>
+</li>
+</ul>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="UserAPI.html#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="UserAPI.html#baseurl">baseUrl</a></li>
+<li><a href="UserAPI.html#chainid">chainId</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="UserAPI.html#setreferrer">SetReferrer</a></li>
+<li><a href="UserAPI.html#cancelmultiordersbycreditorderid">cancelMultiOrdersByCreditOrderId</a></li>
+<li><a href="UserAPI.html#cancelmultiordersbyhash">cancelMultiOrdersByHash</a></li>
+<li><a href="UserAPI.html#cancelorder">cancelOrder</a></li>
+<li><a href="UserAPI.html#generr">genErr</a></li>
+<li><a href="UserAPI.html#getavailablebroker">getAvailableBroker</a></li>
+<li><a href="UserAPI.html#getcounterfactualinfo">getCounterFactualInfo</a></li>
+<li><a href="UserAPI.html#getminimumtokenamt">getMinimumTokenAmt</a></li>
+<li><a href="UserAPI.html#getnftoffchainfeeamt">getNFTOffchainFeeAmt</a></li>
+<li><a href="UserAPI.html#getnextstorageid">getNextStorageId</a></li>
+<li><a href="UserAPI.html#getoffchainfeeamt">getOffchainFeeAmt</a></li>
+<li><a href="UserAPI.html#getorderdetails">getOrderDetails</a></li>
+<li><a href="UserAPI.html#getorders">getOrders</a></li>
+<li><a href="UserAPI.html#getuserapikey">getUserApiKey</a></li>
+<li><a href="UserAPI.html#getuserbalances">getUserBalances</a></li>
+<li><a href="UserAPI.html#getuserdeposithistory">getUserDepositHistory</a></li>
+<li><a href="UserAPI.html#getuserfeerate">getUserFeeRate</a></li>
+<li><a href="UserAPI.html#getusernftbalances">getUserNFTBalances</a></li>
+<li><a href="UserAPI.html#getusernftdeposithistory">getUserNFTDepositHistory</a></li>
+<li><a href="UserAPI.html#getusernfttransferhistory">getUserNFTTransferHistory</a></li>
+<li><a href="UserAPI.html#getusernftwithdrawalhistory">getUserNFTWithdrawalHistory</a></li>
+<li><a href="UserAPI.html#getuseronchainwithdrawalhistory">getUserOnchainWithdrawalHistory</a></li>
+<li><a href="UserAPI.html#getuserorderfeerate">getUserOrderFeeRate</a></li>
+<li><a href="UserAPI.html#getuserpwdresettxs">getUserPwdResetTxs</a></li>
+<li><a href="UserAPI.html#getuserregtxs">getUserRegTxs</a></li>
+<li><a href="UserAPI.html#getusertrades">getUserTrades</a></li>
+<li><a href="UserAPI.html#getusertransferlist">getUserTransferList</a></li>
+<li><a href="UserAPI.html#getusertxs">getUserTxs</a></li>
+<li><a href="UserAPI.html#getuservipassets">getUserVIPAssets</a></li>
+<li><a href="UserAPI.html#getuservipinfo">getUserVIPInfo</a></li>
+<li><a href="UserAPI.html#makereq">makeReq</a></li>
+<li><a href="UserAPI.html#returntxhash">returnTxHash</a></li>
+<li><a href="UserAPI.html#setbaseurl">setBaseUrl</a></li>
+<li><a href="UserAPI.html#setchainid">setChainId</a></li>
+<li><a href="UserAPI.html#submitdeploynft">submitDeployNFT</a></li>
+<li><a href="UserAPI.html#submitinternaltransfer">submitInternalTransfer</a></li>
+<li><a href="UserAPI.html#submitnftintransfer">submitNFTInTransfer</a></li>
+<li><a href="UserAPI.html#submitnftmint">submitNFTMint</a></li>
+<li><a href="UserAPI.html#submitnftwithdraw">submitNFTWithdraw</a></li>
+<li><a href="UserAPI.html#submitoffchainwithdraw">submitOffchainWithdraw</a></li>
+<li><a href="UserAPI.html#submitorder">submitOrder</a></li>
+<li><a href="UserAPI.html#updateaccount">updateAccount</a></li>
+<li><a href="UserAPI.html#updateuserapikey">updateUserApiKey</a></li>
+</ul>
+<h2 id="constructors">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new UserAPI</strong>(<code>param</code>, <code>timeout?</code>)</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>param</code></td>
+<td style="text-align:left"><code>InitParam</code></td>
+<td style="text-align:left"><code>undefined</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>timeout</code></td>
+<td style="text-align:left"><code>number</code></td>
+<td style="text-align:left"><code>DEFAULT_TIMEOUT</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.constructor</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L81" target="_blank">api/base_api.ts:81</a></p>
+<h2 id="properties">Properties</h2>
+<h3 id="baseurl">baseUrl</h3>
+<p>• <code>Protected</code> <strong>baseUrl</strong>: <code>string</code> = <code>&quot;&quot;</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.baseUrl</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L33" target="_blank">api/base_api.ts:33</a></p>
+<hr>
+<h3 id="chainid">chainId</h3>
+<p>• <code>Protected</code> <strong>chainId</strong>: <a href="../enums/ChainId.md"><code>ChainId</code></a> = <code>ChainId.MAINNET</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.chainId</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L34" target="_blank">api/base_api.ts:34</a></p>
+<h2 id="methods">Methods</h2>
+<h3 id="setreferrer">SetReferrer</h3>
+<p>▸ <strong>SetReferrer</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>eddsaKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>result</code>: <code>any</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/SetReferrerRequest.md"><code>SetReferrerRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>result</code>: <code>any</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1700" target="_blank">api/user_api.ts:1700</a></p>
+<hr>
+<h3 id="cancelmultiordersbycreditorderid">cancelMultiOrdersByCreditOrderId</h3>
+<p>▸ <strong>cancelMultiOrdersByCreditOrderId</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>PrivateKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/CancelMultiOrdersByClientOrderIdRequest.md"><code>CancelMultiOrdersByClientOrderIdRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>PrivateKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L306" target="_blank">api/user_api.ts:306</a></p>
+<hr>
+<h3 id="cancelmultiordersbyhash">cancelMultiOrdersByHash</h3>
+<p>▸ <strong>cancelMultiOrdersByHash</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>PrivateKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/CancelMultiOrdersByHashRequest.md"><code>CancelMultiOrdersByHashRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>PrivateKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L272" target="_blank">api/user_api.ts:272</a></p>
+<hr>
+<h3 id="cancelorder">cancelOrder</h3>
+<p>▸ <strong>cancelOrder</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>PrivateKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/CancelOrderRequest.md"><code>CancelOrderRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>PrivateKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L234" target="_blank">api/user_api.ts:234</a></p>
+<hr>
+<h3 id="generr">genErr</h3>
+<p>▸ <code>Protected</code> <strong>genErr</strong>(<code>err</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>err</code></td>
+<td style="text-align:left"><code>Error</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.genErr</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L35" target="_blank">api/base_api.ts:35</a></p>
+<hr>
+<h3 id="getavailablebroker">getAvailableBroker</h3>
+<p>▸ <strong>getAvailableBroker</strong>(): <code>Promise</code>&lt;{ <code>broker</code>: <code>string</code>  }&gt;</p>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>broker</code>: <code>string</code>  }&gt;</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.getAvailableBroker</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L93" target="_blank">api/base_api.ts:93</a></p>
+<hr>
+<h3 id="getcounterfactualinfo">getCounterFactualInfo</h3>
+<p>▸ <strong>getCounterFactualInfo</strong>&lt;<code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetCounterFactualInfoRequest.md"><code>GetCounterFactualInfoRequest</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.getCounterFactualInfo</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L104" target="_blank">api/base_api.ts:104</a></p>
+<hr>
+<h3 id="getminimumtokenamt">getMinimumTokenAmt</h3>
+<p>▸ <strong>getMinimumTokenAmt</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>amountMap</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>&gt; ; <code>amounts</code>: [<a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>, <a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>] ; <code>cacheOverdueAt</code>: <code>any</code> ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetMinimumTokenAmtRequest.md"><code>GetMinimumTokenAmtRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>amountMap</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>&gt; ; <code>amounts</code>: [<a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>, <a href="../interfaces/TokenAmount.md"><code>TokenAmount</code></a>] ; <code>cacheOverdueAt</code>: <code>any</code> ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L709" target="_blank">api/user_api.ts:709</a></p>
+<hr>
+<h3 id="getnftoffchainfeeamt">getNFTOffchainFeeAmt</h3>
+<p>▸ <strong>getNFTOffchainFeeAmt</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>fees</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/OffchainFeeInfo.md"><code>OffchainFeeInfo</code></a>&gt; ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetNFTOffchainFeeAmtRequest.md"><code>GetNFTOffchainFeeAmtRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>fees</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/OffchainFeeInfo.md"><code>OffchainFeeInfo</code></a>&gt; ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L801" target="_blank">api/user_api.ts:801</a></p>
+<hr>
+<h3 id="getnextstorageid">getNextStorageId</h3>
+<p>▸ <strong>getNextStorageId</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>offchainId</code>: <code>number</code> ; <code>orderId</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetNextStorageIdRequest.md"><code>GetNextStorageIdRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>offchainId</code>: <code>number</code> ; <code>orderId</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L101" target="_blank">api/user_api.ts:101</a></p>
+<hr>
+<h3 id="getoffchainfeeamt">getOffchainFeeAmt</h3>
+<p>▸ <strong>getOffchainFeeAmt</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>fees</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/OffchainFeeInfo.md"><code>OffchainFeeInfo</code></a>&gt; ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetOffchainFeeAmtRequest.md"><code>GetOffchainFeeAmtRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>fees</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/OffchainFeeInfo.md"><code>OffchainFeeInfo</code></a>&gt; ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L758" target="_blank">api/user_api.ts:758</a></p>
+<hr>
+<h3 id="getorderdetails">getOrderDetails</h3>
+<p>▸ <strong>getOrderDetails</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>orderDetail</code>: <a href="../interfaces/OrderDetail.md"><code>OrderDetail</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetOrderDetailsRequest.md"><code>GetOrderDetailsRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>orderDetail</code>: <a href="../interfaces/OrderDetail.md"><code>OrderDetail</code></a> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L130" target="_blank">api/user_api.ts:130</a></p>
+<hr>
+<h3 id="getorders">getOrders</h3>
+<p>▸ <strong>getOrders</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>orders</code>: <a href="../interfaces/OrderDetail.md"><code>OrderDetail</code></a>[] ; <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetOrdersRequest.md"><code>GetOrdersRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>orders</code>: <a href="../interfaces/OrderDetail.md"><code>OrderDetail</code></a>[] ; <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L155" target="_blank">api/user_api.ts:155</a></p>
+<hr>
+<h3 id="getuserapikey">getUserApiKey</h3>
+<p>▸ <strong>getUserApiKey</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>eddsaKey</code>): <code>Promise</code>&lt;{ <code>apiKey</code>: <code>string</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserApiKeyRequest.md"><code>GetUserApiKeyRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>apiKey</code>: <code>string</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L25" target="_blank">api/user_api.ts:25</a></p>
+<hr>
+<h3 id="getuserbalances">getUserBalances</h3>
+<p>▸ <strong>getUserBalances</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>userBalances</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/UserBalanceInfo.md"><code>UserBalanceInfo</code></a>&gt;  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserBalancesRequest.md"><code>GetUserBalancesRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>userBalances</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/UserBalanceInfo.md"><code>UserBalanceInfo</code></a>&gt;  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L407" target="_blank">api/user_api.ts:407</a></p>
+<hr>
+<h3 id="getuserdeposithistory">getUserDepositHistory</h3>
+<p>▸ <strong>getUserDepositHistory</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userDepositHistory</code>: <a href="../interfaces/UserDepositHistoryTx.md"><code>UserDepositHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserDepositHistoryRequest.md"><code>GetUserDepositHistoryRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userDepositHistory</code>: <a href="../interfaces/UserDepositHistoryTx.md"><code>UserDepositHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L446" target="_blank">api/user_api.ts:446</a></p>
+<hr>
+<h3 id="getuserfeerate">getUserFeeRate</h3>
+<p>▸ <strong>getUserFeeRate</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>userFreeRateMap</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/UserFeeRateInfo.md"><code>UserFeeRateInfo</code></a>&gt;  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserFeeRateRequest.md"><code>GetUserFeeRateRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>userFreeRateMap</code>: <a href="../interfaces/LoopringMap.md"><code>LoopringMap</code></a>&lt;<a href="../interfaces/UserFeeRateInfo.md"><code>UserFeeRateInfo</code></a>&gt;  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L635" target="_blank">api/user_api.ts:635</a></p>
+<hr>
+<h3 id="getusernftbalances">getUserNFTBalances</h3>
+<p>▸ <strong>getUserNFTBalances</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTBalances</code>: <a href="../interfaces/UserNFTBalanceInfo.md"><code>UserNFTBalanceInfo</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserNFTBalancesRequest.md"><code>GetUserNFTBalancesRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTBalances</code>: <a href="../interfaces/UserNFTBalanceInfo.md"><code>UserNFTBalanceInfo</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1737" target="_blank">api/user_api.ts:1737</a></p>
+<hr>
+<h3 id="getusernftdeposithistory">getUserNFTDepositHistory</h3>
+<p>▸ <strong>getUserNFTDepositHistory</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTDepositHistory</code>: <a href="../interfaces/UserNFTDepositHistoryTx.md"><code>UserNFTDepositHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../modules.html#getusernftdeposithistoryrequest"><code>GetUserNFTDepositHistoryRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTDepositHistory</code>: <a href="../interfaces/UserNFTDepositHistoryTx.md"><code>UserNFTDepositHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1515" target="_blank">api/user_api.ts:1515</a></p>
+<hr>
+<h3 id="getusernfttransferhistory">getUserNFTTransferHistory</h3>
+<p>▸ <strong>getUserNFTTransferHistory</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTTransfers</code>: <a href="../interfaces/UserNFTTransferHistoryTx.md"><code>UserNFTTransferHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../modules.html#getusernfttransferhistoryrequest"><code>GetUserNFTTransferHistoryRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTTransfers</code>: <a href="../interfaces/UserNFTTransferHistoryTx.md"><code>UserNFTTransferHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1581" target="_blank">api/user_api.ts:1581</a></p>
+<hr>
+<h3 id="getusernftwithdrawalhistory">getUserNFTWithdrawalHistory</h3>
+<p>▸ <strong>getUserNFTWithdrawalHistory</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTWithdrawalHistory</code>: <a href="../interfaces/UserNFTWithdrawalHistoryTx.md"><code>UserNFTWithdrawalHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../modules.html#getusernftwithdrawalhistoryrequest"><code>GetUserNFTWithdrawalHistoryRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userNFTWithdrawalHistory</code>: <a href="../interfaces/UserNFTWithdrawalHistoryTx.md"><code>UserNFTWithdrawalHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1548" target="_blank">api/user_api.ts:1548</a></p>
+<hr>
+<h3 id="getuseronchainwithdrawalhistory">getUserOnchainWithdrawalHistory</h3>
+<p>▸ <strong>getUserOnchainWithdrawalHistory</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userOnchainWithdrawalHistory</code>: <a href="../interfaces/UserOnchainWithdrawalHistoryTx.md"><code>UserOnchainWithdrawalHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserOnchainWithdrawalHistoryRequest.md"><code>GetUserOnchainWithdrawalHistoryRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userOnchainWithdrawalHistory</code>: <a href="../interfaces/UserOnchainWithdrawalHistoryTx.md"><code>UserOnchainWithdrawalHistoryTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L479" target="_blank">api/user_api.ts:479</a></p>
+<hr>
+<h3 id="getuserorderfeerate">getUserOrderFeeRate</h3>
+<p>▸ <strong>getUserOrderFeeRate</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>feeRate</code>: <a href="../interfaces/FeeRateInfo.md"><code>FeeRateInfo</code></a> ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserOrderFeeRateRequest.md"><code>GetUserOrderFeeRateRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>feeRate</code>: <a href="../interfaces/FeeRateInfo.md"><code>FeeRateInfo</code></a> ; <code>gasPrice</code>: <code>number</code> ; <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L675" target="_blank">api/user_api.ts:675</a></p>
+<hr>
+<h3 id="getuserpwdresettxs">getUserPwdResetTxs</h3>
+<p>▸ <strong>getUserPwdResetTxs</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userPwdResetTxs</code>: <a href="../interfaces/UserRegTx.md"><code>UserRegTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserPwdResetTxsRequest.md"><code>GetUserPwdResetTxsRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userPwdResetTxs</code>: <a href="../interfaces/UserRegTx.md"><code>UserRegTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L373" target="_blank">api/user_api.ts:373</a></p>
+<hr>
+<h3 id="getuserregtxs">getUserRegTxs</h3>
+<p>▸ <strong>getUserRegTxs</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userRegTxs</code>: <a href="../interfaces/UserRegTx.md"><code>UserRegTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserRegTxsRequest.md"><code>GetUserRegTxsRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userRegTxs</code>: <a href="../interfaces/UserRegTx.md"><code>UserRegTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L340" target="_blank">api/user_api.ts:340</a></p>
+<hr>
+<h3 id="getusertrades">getUserTrades</h3>
+<p>▸ <strong>getUserTrades</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTrades</code>: <a href="../interfaces/MarketTradeInfo.md"><code>MarketTradeInfo</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserTradesRequest.md"><code>GetUserTradesRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTrades</code>: <a href="../interfaces/MarketTradeInfo.md"><code>MarketTradeInfo</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L586" target="_blank">api/user_api.ts:586</a></p>
+<hr>
+<h3 id="getusertransferlist">getUserTransferList</h3>
+<p>▸ <strong>getUserTransferList</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTransfers</code>: <a href="../interfaces/UserTransferRecord.md"><code>UserTransferRecord</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserTransferListRequest.md"><code>GetUserTransferListRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTransfers</code>: <a href="../interfaces/UserTransferRecord.md"><code>UserTransferRecord</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L512" target="_blank">api/user_api.ts:512</a></p>
+<hr>
+<h3 id="getusertxs">getUserTxs</h3>
+<p>▸ <strong>getUserTxs</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTxs</code>: <a href="../interfaces/UserTx.md"><code>UserTx</code></a>[]  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserTxsRequest.md"><code>GetUserTxsRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>totalNum</code>: <code>number</code> ; <code>userTxs</code>: <a href="../interfaces/UserTx.md"><code>UserTx</code></a>[]  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L545" target="_blank">api/user_api.ts:545</a></p>
+<hr>
+<h3 id="getuservipassets">getUserVIPAssets</h3>
+<p>▸ <strong>getUserVIPAssets</strong>&lt;<code>R</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: { <code>data</code>: <code>R</code>  } ; <code>vipAsset</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/getUserVIPAssetsRequest.md"><code>getUserVIPAssetsRequest</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: { <code>data</code>: <code>R</code>  } ; <code>vipAsset</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1766" target="_blank">api/user_api.ts:1766</a></p>
+<hr>
+<h3 id="getuservipinfo">getUserVIPInfo</h3>
+<p>▸ <strong>getUserVIPInfo</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>vipInfo</code>: { <code>createdAt</code>: <code>number</code> ; <code>org</code>: <code>any</code> ; <code>validTo</code>: <code>string</code> ; <code>vipTag</code>: <code>any</code>  }  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetUserVIPInfoRequest.md"><code>GetUserVIPInfoRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code> ; <code>vipInfo</code>: { <code>createdAt</code>: <code>number</code> ; <code>org</code>: <code>any</code> ; <code>validTo</code>: <code>string</code> ; <code>vipTag</code>: <code>any</code>  }  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1788" target="_blank">api/user_api.ts:1788</a></p>
+<hr>
+<h3 id="makereq">makeReq</h3>
+<p>▸ <code>Protected</code> <strong>makeReq</strong>(): <code>Request</code></p>
+<h4 id="returns">Returns</h4>
+<p><code>Request</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.makeReq</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L147" target="_blank">api/base_api.ts:147</a></p>
+<hr>
+<h3 id="returntxhash">returnTxHash</h3>
+<p>▸ <code>Protected</code> <strong>returnTxHash</strong>&lt;<code>T</code>&gt;(<code>raw_data</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt;  }</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>raw_data</code></td>
+<td style="text-align:left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt;  }</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.returnTxHash</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L61" target="_blank">api/base_api.ts:61</a></p>
+<hr>
+<h3 id="setbaseurl">setBaseUrl</h3>
+<p>▸ <strong>setBaseUrl</strong>(<code>baseUrl</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>baseUrl</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.setBaseUrl</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L143" target="_blank">api/base_api.ts:143</a></p>
+<hr>
+<h3 id="setchainid">setChainId</h3>
+<p>▸ <strong>setChainId</strong>(<code>chainId</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>chainId</code></td>
+<td style="text-align:left"><a href="../enums/ChainId.md"><code>ChainId</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.setChainId</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L138" target="_blank">api/base_api.ts:138</a></p>
+<hr>
+<h3 id="submitdeploynft">submitDeployNFT</h3>
+<p>▸ <strong>submitDeployNFT</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginDeployNFTRequestV3WithPatch.md"><code>OriginDeployNFTRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1057" target="_blank">api/user_api.ts:1057</a></p>
+<hr>
+<h3 id="submitinternaltransfer">submitInternalTransfer</h3>
+<p>▸ <strong>submitInternalTransfer</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginTransferRequestV3WithPatch.md"><code>OriginTransferRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L947" target="_blank">api/user_api.ts:947</a></p>
+<hr>
+<h3 id="submitnftintransfer">submitNFTInTransfer</h3>
+<p>▸ <strong>submitNFTInTransfer</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginNFTTransferRequestV3WithPatch.md"><code>OriginNFTTransferRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1182" target="_blank">api/user_api.ts:1182</a></p>
+<hr>
+<h3 id="submitnftmint">submitNFTMint</h3>
+<p>▸ <strong>submitNFTMint</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginNFTMINTRequestV3WithPatch.md"><code>OriginNFTMINTRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1398" target="_blank">api/user_api.ts:1398</a></p>
+<hr>
+<h3 id="submitnftwithdraw">submitNFTWithdraw</h3>
+<p>▸ <strong>submitNFTWithdraw</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginNFTWithdrawRequestV3WithPatch.md"><code>OriginNFTWithdrawRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1290" target="_blank">api/user_api.ts:1290</a></p>
+<hr>
+<h3 id="submitoffchainwithdraw">submitOffchainWithdraw</h3>
+<p>▸ <strong>submitOffchainWithdraw</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/OffChainWithdrawalRequestV3WithPatch.md"><code>OffChainWithdrawalRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L840" target="_blank">api/user_api.ts:840</a></p>
+<hr>
+<h3 id="submitorder">submitOrder</h3>
+<p>▸ <strong>submitOrder</strong>(<code>orderRequest</code>, <code>PrivateKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>any</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>any</code>, <code>&quot;resultInfo&quot;</code>&gt;  }&gt;</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>orderRequest</code></td>
+<td style="text-align:left"><a href="../interfaces/SubmitOrderRequestV3.md"><code>SubmitOrderRequestV3</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>PrivateKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>any</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>any</code>, <code>&quot;resultInfo&quot;</code>&gt;  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L190" target="_blank">api/user_api.ts:190</a></p>
+<hr>
+<h3 id="updateaccount">updateAccount</h3>
+<p>▸ <strong>updateAccount</strong>&lt;<code>T</code>&gt;(<code>req</code>, <code>options?</code>): <code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>req</code></td>
+<td style="text-align:left"><a href="../interfaces/UpdateAccountRequestV3WithPatch.md"><code>UpdateAccountRequestV3WithPatch</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options?</code></td>
+<td style="text-align:left"><code>Object</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.accountId?</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>options.counterFactualInfo?</code></td>
+<td style="text-align:left"><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <a href="../modules.html#tx_hash_result"><code>TX_HASH_RESULT</code></a>&lt;<code>T</code>&gt;&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L1614" target="_blank">api/user_api.ts:1614</a></p>
+<hr>
+<h3 id="updateuserapikey">updateUserApiKey</h3>
+<p>▸ <strong>updateUserApiKey</strong>&lt;<code>R</code>&gt;(<code>request</code>, <code>apiKey</code>, <code>eddsaKey</code>): <code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>R</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/UpdateUserApiKeyRequest.md"><code>UpdateUserApiKeyRequest</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>raw_data</code>: <code>R</code>  }&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/user_api.ts#L63" target="_blank">api/user_api.ts:63</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="NFTAPI.html" class="navigation navigation-prev " aria-label="Previous page: NFTAPI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="WalletAPI.html" class="navigation navigation-next " aria-label="Next page: WalletAPI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"UserAPI","level":"3.1.4","depth":2,"next":{"title":"WalletAPI","level":"3.1.5","depth":2,"path":"detail/classes/WalletAPI.md","ref":"./detail/classes/WalletAPI.md","articles":[]},"previous":{"title":"NFTAPI","level":"3.1.3","depth":2,"path":"detail/classes/NFTAPI.md","ref":"./detail/classes/NFTAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/UserAPI.md","mtime":"2022-01-26T13:30:45.825Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-01-26T13:30:47.524Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

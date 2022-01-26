@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2009](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2009)
+[defs/loopring_defs.ts:2009](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2009)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2011](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2011)
+[defs/loopring_defs.ts:2011](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2011)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2010](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2010)
+[defs/loopring_defs.ts:2010](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2010)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2013](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2013)
+[defs/loopring_defs.ts:2013](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2013)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2012](https://github.com/Loopring/loopring_sdk/blob/077bca2/src/defs/loopring_defs.ts#L2012)
+[defs/loopring_defs.ts:2012](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2012)
