@@ -36,7 +36,7 @@
 - [Order\_Missing\_Sig](LoopringErrorCode.md#order_missing_sig)
 - [Order\_Not\_Exist](LoopringErrorCode.md#order_not_exist)
 - [Orderhash\_Cannot\_Be\_Empty](LoopringErrorCode.md#orderhash_cannot_be_empty)
-- [SIGN\_COMMON](LoopringErrorCode.md#sign_common)
+- [SKD\_UNKNOW](LoopringErrorCode.md#skd_unknow)
 - [Sumbit\_Order\_Failed](LoopringErrorCode.md#sumbit_order_failed)
 - [Transfer\_Token\_Is\_Not\_Consistent\_With\_Fee\_Token](LoopringErrorCode.md#transfer_token_is_not_consistent_with_fee_token)
 - [Unknown\_Error](LoopringErrorCode.md#unknown_error)
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:45](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L45)
+[defs/error_codes.ts:47](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L47)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:46](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L46)
+[defs/error_codes.ts:48](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L48)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:47](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L47)
+[defs/error_codes.ts:49](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L49)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:44](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L44)
+[defs/error_codes.ts:46](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L46)
 
 ___
 
@@ -350,13 +350,13 @@ ___
 
 ___
 
-### SIGN\_COMMON
+### SKD\_UNKNOW
 
-• **SIGN\_COMMON** = `600000`
+• **SKD\_UNKNOW** = `500000`
 
 #### Defined in
 
-[defs/error_codes.ts:48](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L48)
+[defs/error_codes.ts:45](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/error_codes.ts#L45)
 
 ___
 
