@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[api/sign/sign_tools.ts:57](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L57)
+[api/sign/sign_tools.ts:57](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L57)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:51](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L51)
+[api/sign/sign_tools.ts:51](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L51)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:56](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L56)
+[api/sign/sign_tools.ts:56](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L56)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:58](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L58)
+[api/sign/sign_tools.ts:58](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L58)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:55](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L55)
+[api/sign/sign_tools.ts:55](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L55)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:54](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L54)
+[api/sign/sign_tools.ts:54](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L54)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:50](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L50)
+[api/sign/sign_tools.ts:50](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/sign/sign_tools.ts#L50)

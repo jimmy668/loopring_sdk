@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[api/nft_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L37)
+[api/nft_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/nft_api.ts#L37)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[api/nft_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L38)
+[api/nft_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/300ee65/src/api/nft_api.ts#L38)
