@@ -579,24 +579,27 @@ const eddsakey = await sign_tools.generateKeyPair({
   chainId: ChainId.GOERLI,
 });
 </code></pre><pre><code>
+
 ### Customer KeySeed Init
-&gt; KEY_MESSAGE  is an static varibale for BaseAPI
-&gt; extends BaseAPI list:  
-&gt; - AmmpoolAPI 
-&gt; - DelegateAPI 
-&gt; - ExchangeAPI 
-&gt; - GlobalAPI 
-&gt; - NFTAPI 
-&gt; - UserAPI  
-&gt; - WalletAPI 
-&gt; - WhitelistedUserAPI 
-&gt; - WsAPI
+BaseAPI.KEY_MESSAGE  is a static for BaseAPI, storage loopring Sign message
+
+&gt;_**Preview loopring customer keySeed is default value, so the api will return an empty keySeed, please keep them signature follow the loopring 
+&gt; ```BaseAPI.KEY_MESSAGE.replace(&quot;${exchangeAddress}&quot;,exchangeInfo.exchangeAddress).replace(&quot;${nonce}&quot;, (nonce - 1).toString())```**_
+
+extends BaseAPI list:  
+ - AmmpoolAPI 
+ - DelegateAPI 
+ - ExchangeAPI 
+ - GlobalAPI 
+ - NFTAPI 
+ - UserAPI  
+ - WalletAPI 
+ - WhitelistedUserAPI 
+ - WsAPI
+
 
 
 ```ts
-    /**
- * 
- */
     export const KEY_MESSAGE =
           &quot;Sign this message to access Loopring Exchange: &quot; +
           &quot;${exchangeAddress}&quot; +
@@ -622,17 +625,15 @@ const eddsakey = await sign_tools.generateKeyPair({
       chainId: ChainId.GOERLI,
     });
 </code></pre><h3 id="customer-keyseed-return">Customer KeySeed return</h3>
-<blockquote>
-<p> if Customer keySeed is set up <code>getAccount</code>, will return the string <code>.keySeed</code>.
- <code>generateKeyPair</code> directory use this keySeed
-```ts
-    const { accInfo } = await exchange.getAccount({
-    owner: loopring_exported_account.address,
+<p>if Customer keySeed is set up <code>getAccount</code>, will return the string <code>.keySeed</code>.
+<code>generateKeyPair</code> directory use this keySeed</p>
+<pre><code class="lang-ts">    <span class="hljs-keyword">const</span> { accInfo } = <span class="hljs-keyword">await</span> exchange.getAccount({
+    <span class="hljs-attr">owner</span>: loopring_exported_account.address,
     });
-    accInfo.keySeed</p>
-</blockquote>
-<pre><code>
-```ts generateKeyPair  accInfo.keySeed
+    accInfo.keySeed
+</code></pre>
+<h3 id="generatekeypair">generateKeyPair</h3>
+<p>```ts generateKeyPair  accInfo.keySeed
   ...
   const { accInfo } = await exchange.getAccount({
     owner: loopring_exported_account.address,
@@ -641,33 +642,32 @@ const eddsakey = await sign_tools.generateKeyPair({
   const eddsaKey = await sign_tools.generateKeyPair({
     web3,
     address: accInfo.owner,
-    /**
-     * emptyKeySeed from loopring preview customer, for support when keySeed is empty,
-     * please keep using loopring KEY_MESSAGE  
-     * &quot;Sign this message to access Loopring Exchange: &quot; + &quot;${exchangeAddress}&quot; + &quot; with key nonce: &quot; + &quot;${nonce}&quot;;
-     */
-    keySeed: account.keySeed &amp;&amp; account.keySeed !== &quot;&quot;
-      ? account.keySeed
-      : GlobalAPI.KEY_MESSAGE.replace(
-        &quot;${exchangeAddress}&quot;,
-        exchangeInfo.exchangeAddress
-      ).replace(&quot;${nonce}&quot;, (nonce - 1).toString()),
-    walletType: ConnectorNames.MetaMask,
-    chainId: ChainId.GOERLI,
-  });
+    /**</p>
+<pre><code> * emptyKeySeed from loopring preview customer, for support when keySeed is empty,
+ * please keep using loopring KEY_MESSAGE  
+ * &quot;Sign this message to access Loopring Exchange: &quot; + &quot;${exchangeAddress}&quot; + &quot; with key nonce: &quot; + &quot;${nonce}&quot;;
+ */
+keySeed: account.keySeed &amp;&amp; account.keySeed !== &quot;&quot;
+  ? account.keySeed
+  : GlobalAPI.KEY_MESSAGE.replace(
+    &quot;${exchangeAddress}&quot;,
+    exchangeInfo.exchangeAddress
+  ).replace(&quot;${nonce}&quot;, (nonce - 1).toString()),
+walletType: ConnectorNames.MetaMask,
+chainId: ChainId.GOERLI,
+</code></pre><p>  });
   console.log(&quot;eddsakey:&quot;, eddsaKey.sk);
   ... 
-}
+}</p>
+<pre><code>
+## getUserApiKey
 
-
-`
-</code></pre><h2 id="getuserapikey">getUserApiKey</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: GetUserApiKeyRequest = {
-  <span class="hljs-attr">accountId</span>: acc.accountId,
+```javascript
+const request: GetUserApiKeyRequest = {
+  accountId: acc.accountId,
 };
-<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.getUserApiKey(request, acc.eddsaKey);
-</code></pre>
-<h2 id="getusertranferlist">getUserTranferList</h2>
+const response = await api.getUserApiKey(request, acc.eddsaKey);
+</code></pre><h2 id="getusertranferlist">getUserTranferList</h2>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: GetUserTransferListRequest = {
   <span class="hljs-attr">accountId</span>: acc.accountId,
 };
@@ -832,7 +832,7 @@ const eddsakey = await sign_tools.generateKeyPair({
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User","level":"2.1.7","depth":2,"next":{"title":"Whitelisted User","level":"2.1.8","depth":2,"path":"js_sdk/whitelisted_user_api.md","ref":"./js_sdk/whitelisted_user_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.6","depth":2,"path":"js_sdk/exchange_api.md","ref":"./js_sdk/exchange_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/user_api.md","mtime":"2022-02-17T08:00:35.824Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-17T08:00:54.897Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User","level":"2.1.7","depth":2,"next":{"title":"Whitelisted User","level":"2.1.8","depth":2,"path":"js_sdk/whitelisted_user_api.md","ref":"./js_sdk/whitelisted_user_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.6","depth":2,"path":"js_sdk/exchange_api.md","ref":"./js_sdk/exchange_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/user_api.md","mtime":"2022-02-17T08:12:03.615Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-17T08:12:24.544Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
