@@ -8,6 +8,7 @@
 
 - [isContract](WalletType.md#iscontract)
 - [isInCounterFactualStatus](WalletType.md#isincounterfactualstatus)
+- [loopringWalletContractVersion](WalletType.md#loopringwalletcontractversion)
 
 ## Properties
 
@@ -17,7 +18,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2205](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2205)
+[defs/loopring_defs.ts:2314](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/defs/loopring_defs.ts#L2314)
 
 ___
 
@@ -27,4 +28,14 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2204](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/defs/loopring_defs.ts#L2204)
+[defs/loopring_defs.ts:2313](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/defs/loopring_defs.ts#L2313)
+
+___
+
+### loopringWalletContractVersion
+
+• **loopringWalletContractVersion**: `string`
+
+#### Defined in
+
+[defs/loopring_defs.ts:2315](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/defs/loopring_defs.ts#L2315)

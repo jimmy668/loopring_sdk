@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/sign/sign_tools.ts:46](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/sign/sign_tools.ts#L46)
+[api/sign/sign_tools.ts:41](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L41)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:44](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/sign/sign_tools.ts#L44)
+[api/sign/sign_tools.ts:39](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L39)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:45](https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/sign/sign_tools.ts#L45)
+[api/sign/sign_tools.ts:40](https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/sign/sign_tools.ts#L40)

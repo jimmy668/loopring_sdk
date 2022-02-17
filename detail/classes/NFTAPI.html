@@ -558,6 +558,7 @@
 <ul>
 <li><a href="NFTAPI.html#baseurl">baseUrl</a></li>
 <li><a href="NFTAPI.html#chainid">chainId</a></li>
+<li><a href="NFTAPI.html#key_message">KEY_MESSAGE</a></li>
 </ul>
 <h3 id="methods">Methods</h3>
 <ul>
@@ -575,6 +576,8 @@
 <li><a href="NFTAPI.html#getcounterfactualinfo">getCounterFactualInfo</a></li>
 <li><a href="NFTAPI.html#getinfofornfttokens">getInfoForNFTTokens</a></li>
 <li><a href="NFTAPI.html#getnftbalance">getNFTBalance</a></li>
+<li><a href="NFTAPI.html#ipfscid0tonftid">ipfsCid0ToNftID</a></li>
+<li><a href="NFTAPI.html#ipfsnftidtocid">ipfsNftIDToCid</a></li>
 <li><a href="NFTAPI.html#isapprovedforall">isApprovedForAll</a></li>
 <li><a href="NFTAPI.html#makereq">makeReq</a></li>
 <li><a href="NFTAPI.html#returntxhash">returnTxHash</a></li>
@@ -609,21 +612,28 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.constructor</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L81" target="_blank">api/base_api.ts:81</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L87" target="_blank">api/base_api.ts:87</a></p>
 <h2 id="properties">Properties</h2>
 <h3 id="baseurl">baseUrl</h3>
 <p>• <code>Protected</code> <strong>baseUrl</strong>: <code>string</code> = <code>&quot;&quot;</code></p>
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.baseUrl</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L33" target="_blank">api/base_api.ts:33</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L39" target="_blank">api/base_api.ts:39</a></p>
 <hr>
 <h3 id="chainid">chainId</h3>
 <p>• <code>Protected</code> <strong>chainId</strong>: <a href="../enums/ChainId.md"><code>ChainId</code></a> = <code>ChainId.MAINNET</code></p>
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.chainId</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L34" target="_blank">api/base_api.ts:34</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L40" target="_blank">api/base_api.ts:40</a></p>
+<hr>
+<h3 id="keymessage">KEY_MESSAGE</h3>
+<p>▪ <code>Static</code> <strong>KEY_MESSAGE</strong>: <code>string</code> = <code>KEY_MESSAGE</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p>BaseAPI.KEY_MESSAGE</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L38" target="_blank">api/base_api.ts:38</a></p>
 <h2 id="methods">Methods</h2>
 <h3 id="gencontract">_genContract</h3>
 <p>▸ <code>Private</code> <strong>_genContract</strong>(<code>web3</code>, <code>contractAddress</code>, <code>type?</code>): <code>any</code></p>
@@ -657,7 +667,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L75" target="_blank">api/nft_api.ts:75</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L78" target="_blank">api/nft_api.ts:78</a></p>
 <hr>
 <h3 id="gencontractdata">_genContractData</h3>
 <p>▸ <code>Private</code> <strong>_genContractData</strong>(<code>Contract</code>, <code>method</code>, <code>data</code>): <code>any</code></p>
@@ -687,7 +697,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L63" target="_blank">api/nft_api.ts:63</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L66" target="_blank">api/nft_api.ts:66</a></p>
 <hr>
 <h3 id="generc1155data">_genERC1155Data</h3>
 <p>▸ <code>Private</code> <strong>_genERC1155Data</strong>(<code>method</code>, <code>data</code>): <code>any</code></p>
@@ -713,7 +723,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L67" target="_blank">api/nft_api.ts:67</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L70" target="_blank">api/nft_api.ts:70</a></p>
 <hr>
 <h3 id="generc721data">_genERC721Data</h3>
 <p>▸ <code>Private</code> <strong>_genERC721Data</strong>(<code>method</code>, <code>data</code>): <code>any</code></p>
@@ -739,7 +749,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L71" target="_blank">api/nft_api.ts:71</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L74" target="_blank">api/nft_api.ts:74</a></p>
 <hr>
 <h3 id="approvenft">approveNFT</h3>
 <p>▸ <strong>approveNFT</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -762,7 +772,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L243" target="_blank">api/nft_api.ts:243</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L234" target="_blank">api/nft_api.ts:234</a></p>
 <hr>
 <h3 id="callcontractmethod">callContractMethod</h3>
 <p>▸ <code>Private</code> <strong>callContractMethod</strong>(<code>web3</code>, <code>method</code>, <code>data</code>, <code>contractAddress</code>, <code>type?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -806,7 +816,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L51" target="_blank">api/nft_api.ts:51</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L54" target="_blank">api/nft_api.ts:54</a></p>
 <hr>
 <h3 id="computenftaddress">computeNFTAddress</h3>
 <p>▸ <strong>computeNFTAddress</strong>(<code>__namedParameters</code>): <code>Object</code></p>
@@ -830,7 +840,7 @@
 <td style="text-align:left"><a href="../enums/ChainId.md"><code>ChainId</code></a></td>
 </tr>
 <tr>
-<td style="text-align:left"><code>__namedParameters.nftFactory</code></td>
+<td style="text-align:left"><code>__namedParameters.nftFactory?</code></td>
 <td style="text-align:left"><code>string</code></td>
 </tr>
 <tr>
@@ -857,7 +867,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L389" target="_blank">api/nft_api.ts:389</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L405" target="_blank">api/nft_api.ts:405</a></p>
 <hr>
 <h3 id="depositnft">depositNFT</h3>
 <p>▸ <strong>depositNFT</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -880,7 +890,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L342" target="_blank">api/nft_api.ts:342</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L357" target="_blank">api/nft_api.ts:357</a></p>
 <hr>
 <h3 id="generr">genErr</h3>
 <p>▸ <code>Protected</code> <strong>genErr</strong>(<code>err</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a></p>
@@ -904,7 +914,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.genErr</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L35" target="_blank">api/base_api.ts:35</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L41" target="_blank">api/base_api.ts:41</a></p>
 <hr>
 <h3 id="getavailablebroker">getAvailableBroker</h3>
 <p>▸ <strong>getAvailableBroker</strong>(): <code>Promise</code>&lt;{ <code>broker</code>: <code>string</code>  }&gt;</p>
@@ -913,7 +923,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.getAvailableBroker</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L93" target="_blank">api/base_api.ts:93</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L98" target="_blank">api/base_api.ts:98</a></p>
 <hr>
 <h3 id="getcontractnftmeta">getContractNFTMeta</h3>
 <p>▸ <strong>getContractNFTMeta</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -936,7 +946,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L189" target="_blank">api/nft_api.ts:189</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L192" target="_blank">api/nft_api.ts:192</a></p>
 <hr>
 <h3 id="getcounterfactualinfo">getCounterFactualInfo</h3>
 <p>▸ <strong>getCounterFactualInfo</strong>&lt;<code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
@@ -975,7 +985,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.getCounterFactualInfo</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L104" target="_blank">api/base_api.ts:104</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L109" target="_blank">api/base_api.ts:109</a></p>
 <hr>
 <h3 id="getinfofornfttokens">getInfoForNFTTokens</h3>
 <p>▸ <strong>getInfoForNFTTokens</strong>(<code>nftDatas</code>): <code>Promise</code>&lt;<code>undefined</code> | { [key: string]: <a href="../interfaces/NFTTokenInfo.md"><code>NFTTokenInfo</code></a>;  }&gt;</p>
@@ -1005,7 +1015,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>undefined</code> | { [key: string]: <a href="../interfaces/NFTTokenInfo.md"><code>NFTTokenInfo</code></a>;  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L148" target="_blank">api/nft_api.ts:148</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L151" target="_blank">api/nft_api.ts:151</a></p>
 <hr>
 <h3 id="getnftbalance">getNFTBalance</h3>
 <p>▸ <strong>getNFTBalance</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;{ <code>count?</code>: <code>string</code>  }&gt;</p>
@@ -1028,7 +1038,53 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>count?</code>: <code>string</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L96" target="_blank">api/nft_api.ts:96</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L99" target="_blank">api/nft_api.ts:99</a></p>
+<hr>
+<h3 id="ipfscid0tonftid">ipfsCid0ToNftID</h3>
+<p>▸ <strong>ipfsCid0ToNftID</strong>(<code>cidV0Str</code>): <code>string</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>cidV0Str</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>string</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L283" target="_blank">api/nft_api.ts:283</a></p>
+<hr>
+<h3 id="ipfsnftidtocid">ipfsNftIDToCid</h3>
+<p>▸ <strong>ipfsNftIDToCid</strong>(<code>nftId</code>): <code>any</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>nftId</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">16</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>any</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L296" target="_blank">api/nft_api.ts:296</a></p>
 <hr>
 <h3 id="isapprovedforall">isApprovedForAll</h3>
 <p>▸ <strong>isApprovedForAll</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -1051,7 +1107,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/nft_api.ts#L301" target="_blank">api/nft_api.ts:301</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/nft_api.ts#L316" target="_blank">api/nft_api.ts:316</a></p>
 <hr>
 <h3 id="makereq">makeReq</h3>
 <p>▸ <code>Protected</code> <strong>makeReq</strong>(): <code>Request</code></p>
@@ -1060,7 +1116,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.makeReq</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L147" target="_blank">api/base_api.ts:147</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L152" target="_blank">api/base_api.ts:152</a></p>
 <hr>
 <h3 id="returntxhash">returnTxHash</h3>
 <p>▸ <code>Protected</code> <strong>returnTxHash</strong>&lt;<code>T</code>&gt;(<code>raw_data</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt;  }</p>
@@ -1099,7 +1155,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.returnTxHash</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L61" target="_blank">api/base_api.ts:61</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L67" target="_blank">api/base_api.ts:67</a></p>
 <hr>
 <h3 id="setbaseurl">setBaseUrl</h3>
 <p>▸ <strong>setBaseUrl</strong>(<code>baseUrl</code>): <code>void</code></p>
@@ -1123,7 +1179,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.setBaseUrl</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L143" target="_blank">api/base_api.ts:143</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L148" target="_blank">api/base_api.ts:148</a></p>
 <hr>
 <h3 id="setchainid">setChainId</h3>
 <p>▸ <strong>setChainId</strong>(<code>chainId</code>): <code>void</code></p>
@@ -1147,7 +1203,7 @@
 <h4 id="inherited-from">Inherited from</h4>
 <p>BaseAPI.setChainId</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/5861d10/src/api/base_api.ts#L138" target="_blank">api/base_api.ts:138</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/a4b843d/src/api/base_api.ts#L143" target="_blank">api/base_api.ts:143</a></p>
 
                                 
                                 </section>
@@ -1191,7 +1247,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NFTAPI","level":"3.1.3","depth":2,"next":{"title":"UserAPI","level":"3.1.4","depth":2,"path":"detail/classes/UserAPI.md","ref":"./detail/classes/UserAPI.md","articles":[]},"previous":{"title":"ExchangeAPI","level":"3.1.2","depth":2,"path":"detail/classes/ExchangeAPI.md","ref":"./detail/classes/ExchangeAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/NFTAPI.md","mtime":"2022-01-27T08:56:13.538Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-01-27T08:56:15.876Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NFTAPI","level":"3.1.3","depth":2,"next":{"title":"UserAPI","level":"3.1.4","depth":2,"path":"detail/classes/UserAPI.md","ref":"./detail/classes/UserAPI.md","articles":[]},"previous":{"title":"ExchangeAPI","level":"3.1.2","depth":2,"path":"detail/classes/ExchangeAPI.md","ref":"./detail/classes/ExchangeAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/NFTAPI.md","mtime":"2022-02-17T08:00:52.832Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-17T08:00:54.897Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
