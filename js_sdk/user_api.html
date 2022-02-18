@@ -544,76 +544,50 @@
                                 <h1 id="user-api">User API</h1>
 <h2 id="customer-keyseed">Customer KeySeed</h2>
 <h3 id="customer-keyseed-format">Customer KeySeed format</h3>
+<p>BaseAPI.KEY_MESSAGE is a static for BaseAPI, storage loopring Sign message
+<code>with key nonce: ${nonce}</code> should be end of the string</p>
 <blockquote>
-<p>more detail read unit test updateAccount &amp; getUserApiKey &amp; customer_keySeed</p>
+<p>_**Preview loopring customer keySeed is default value,
+Api will return an empty keySeed,
+please keep them signature follow the loopring message</p>
+<p><code>BaseAPI.KEY_MESSAGE.replace(&quot;${exchangeAddress}&quot;,exchangeInfo.exchangeAddress).replace(&quot;${nonce}&quot;, (nonce - 1).toString())</code>**_</p>
+<p>More detail read unit test updateAccount &amp; getUserApiKey &amp; customer_keySeed</p>
 </blockquote>
-<p>Customer KeySeed</p>
+<p>extends BaseAPI list:</p>
+<ul>
+<li>AmmpoolAPI</li>
+<li>DelegateAPI</li>
+<li>ExchangeAPI</li>
+<li>GlobalAPI</li>
+<li>NFTAPI</li>
+<li>UserAPI</li>
+<li>WalletAPI</li>
+<li>WhitelistedUserAPI</li>
+<li>WsAPI</li>
+</ul>
+<p>updateAccount generateKeyPair</p>
 <pre><code class="lang-ts">    <span class="hljs-comment">/**
      * Customer KEY_MESSAGE as a const at website local
      * <span class="hljs-doctag">@description </span>Suggest follow this format,but you can use your owne message.
      * But make sure noece is include, ${nonce} important for support reset user apikey
-     *
+     * ` with key nonce: ${nonce}` should be end of string
+ *    
      *  <span class="hljs-doctag">@example </span>Loopring office keyseed format example
-     * export const KEY_MESSAGE =
-     * &quot;Sign this message to access Loopring Exchange: &quot; +
-     * &quot;${exchangeAddress}&quot; +
-     * &quot; with key nonce: &quot; +
-     * &quot;${nonce}&quot;;  //plese keep nonce varibale is inside the message; 
+     * export const KEY_MESSAGE =  &quot;*** your message **** &quot; +
+     * &quot; with key nonce: &quot; +  // required
+     * &quot;${nonce}&quot;;   // required, plese keep nonce varibale is inside the message; 
      */</span>
     <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> KEY_MESSAGE = 
         <span class="hljs-string">&quot;*** your message **** &quot;</span> +
-        <span class="hljs-string">&quot;${exchangeAddress}&quot;</span> +
-        <span class="hljs-string">&quot; *** your message **** &quot;</span> +
+        <span class="hljs-string">&quot; with key nonce: &quot;</span> +
         <span class="hljs-string">&quot;${nonce}&quot;</span>;
 
     <span class="hljs-keyword">const</span> eddsakey = <span class="hljs-keyword">await</span> sign_tools.generateKeyPair({
       web3,
       <span class="hljs-attr">address</span>: accInfo.owner,
       <span class="hljs-comment">// if KEY_MESSAGE is emyty,please keep loopring KEY_MESSAGE work</span>
-      <span class="hljs-attr">keySeed</span>: KEY_MESSAGE ? KEY_MESSAGE.replace(
-          <span class="hljs-string">&quot;${exchangeAddress}&quot;</span>,
-          exchangeInfo.exchangeAddress
-        ).replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, (accInfo.nonce-<span class="hljs-number">1</span>).toString()) 
+      <span class="hljs-attr">keySeed</span>: KEY_MESSAGE ? KEY_MESSAGE.replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, (accInfo.nonce).toString()) 
         : GlobalAPI.KEY_MESSAGE.replace(
-        <span class="hljs-string">&quot;${exchangeAddress}&quot;</span>,
-        exchangeInfo.exchangeAddress
-      ).replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, (accInfo.nonce-<span class="hljs-number">1</span>).toString()),
-      <span class="hljs-attr">walletType</span>: ConnectorNames.MetaMask,
-      <span class="hljs-attr">chainId</span>: ChainId.GOERLI,
-    });
-</code></pre>
-<h3 id="customer-keyseed-init">Customer KeySeed Init</h3>
-<p>BaseAPI.KEY_MESSAGE  is a static for BaseAPI, storage loopring Sign message</p>
-<blockquote>
-<p><em><strong>Preview loopring customer keySeed is default value,
-Api will return an empty keySeed,
-please keep them signature follow the loopring message
-<code>BaseAPI.KEY_MESSAGE.replace(&quot;${exchangeAddress}&quot;,exchangeInfo.exchangeAddress).replace(&quot;${nonce}&quot;, (nonce - 1).toString())</code></strong></em></p>
-</blockquote>
-<p>extends BaseAPI list:  </p>
-<ul>
-<li>AmmpoolAPI </li>
-<li>DelegateAPI </li>
-<li>ExchangeAPI </li>
-<li>GlobalAPI </li>
-<li>NFTAPI </li>
-<li>UserAPI  </li>
-<li>WalletAPI </li>
-<li>WhitelistedUserAPI </li>
-<li>WsAPI</li>
-</ul>
-<p>updateAccount generateKeyPair</p>
-<pre><code class="lang-ts">    <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> KEY_MESSAGE =
-          <span class="hljs-string">&quot;Sign this message to access Loopring Exchange: &quot;</span> +
-          <span class="hljs-string">&quot;${exchangeAddress}&quot;</span> +
-          <span class="hljs-string">&quot; with key nonce: &quot;</span> +
-          <span class="hljs-string">&quot;${nonce}&quot;</span>;
-    <span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> BaseAPI({ <span class="hljs-attr">chainId</span>: ChainId.GOERLI});
-    <span class="hljs-keyword">const</span> userApi = <span class="hljs-keyword">new</span> UserApi({ <span class="hljs-attr">chainId</span>: ChainId.GOERLI});
-    <span class="hljs-keyword">const</span> eddsaKey = <span class="hljs-keyword">await</span> sign_tools.generateKeyPair({
-      web3,
-      <span class="hljs-attr">address</span>: accInfo.owner,
-      <span class="hljs-attr">keySeed</span>: KEY_MESSAGE.replace(
         <span class="hljs-string">&quot;${exchangeAddress}&quot;</span>,
         exchangeInfo.exchangeAddress
       ).replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, (accInfo.nonce).toString()),
@@ -639,7 +613,7 @@ please keep them signature follow the loopring message
       <span class="hljs-attr">chainId</span>: ChainId.GOERLI,
       <span class="hljs-attr">walletType</span>: ConnectorNames.Unknown,
       <span class="hljs-attr">isHWAddr</span>: <span class="hljs-literal">false</span>,
-    });
+  });
 </code></pre>
 <h3 id="customer-keyseed-return">Customer KeySeed return</h3>
 <p>if Customer keySeed is set up <code>getAccount</code>, will return the string <code>.keySeed</code>.
@@ -647,9 +621,9 @@ please keep them signature follow the loopring message
 <pre><code class="lang-ts">    <span class="hljs-keyword">const</span> { accInfo } = <span class="hljs-keyword">await</span> exchange.getAccount({
     <span class="hljs-attr">owner</span>: loopring_exported_account.address,
     });
-    accInfo.keySeed
+    <span class="hljs-built_in">console</span>.log(accInfo.keySeed)
 </code></pre>
-<h3 id="generatekeypair">generateKeyPair</h3>
+<h3 id="generatekeypair-for-signature">generateKeyPair for signature</h3>
 <p>generateKeyPair when signature accInfo.keySeed</p>
 <pre><code class="lang-ts">  <span class="hljs-keyword">const</span> { accInfo } = <span class="hljs-keyword">await</span> exchange.getAccount({
     <span class="hljs-attr">owner</span>: loopring_exported_account.address,
@@ -675,6 +649,10 @@ please keep them signature follow the loopring message
     <span class="hljs-attr">chainId</span>: ChainId.GOERLI,
   });
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;eddsakey:&quot;</span>, eddsaKey.sk);
+  <span class="hljs-keyword">const</span> request: GetUserApiKeyRequest = {
+    <span class="hljs-attr">accountId</span>: acc.accountId,
+  };
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.getUserApiKey(request, acc.eddsaKey);
 </code></pre>
 <h2 id="getuserapikey">getUserApiKey</h2>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: GetUserApiKeyRequest = {
@@ -847,7 +825,7 @@ please keep them signature follow the loopring message
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User","level":"2.1.7","depth":2,"next":{"title":"Whitelisted User","level":"2.1.8","depth":2,"path":"js_sdk/whitelisted_user_api.md","ref":"./js_sdk/whitelisted_user_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.6","depth":2,"path":"js_sdk/exchange_api.md","ref":"./js_sdk/exchange_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/user_api.md","mtime":"2022-02-17T12:23:43.496Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-17T12:25:51.060Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User","level":"2.1.7","depth":2,"next":{"title":"Whitelisted User","level":"2.1.8","depth":2,"path":"js_sdk/whitelisted_user_api.md","ref":"./js_sdk/whitelisted_user_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.6","depth":2,"path":"js_sdk/exchange_api.md","ref":"./js_sdk/exchange_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/user_api.md","mtime":"2022-02-18T07:21:56.433Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-18T07:24:47.495Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
