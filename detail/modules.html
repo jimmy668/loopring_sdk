@@ -695,8 +695,12 @@
 <li><a href="interfaces/MarketInfo.md">MarketInfo</a></li>
 <li><a href="interfaces/MarketTradeInfo.md">MarketTradeInfo</a></li>
 <li><a href="interfaces/MarketsResponse.md">MarketsResponse</a></li>
+<li><a href="interfaces/NFTCounterFactualInfo.md">NFTCounterFactualInfo</a></li>
 <li><a href="interfaces/NFTMintRequestV3.md">NFTMintRequestV3</a></li>
+<li><a href="interfaces/NFTOrderRequestV3.md">NFTOrderRequestV3</a></li>
+<li><a href="interfaces/NFTTokenAmountInfo.md">NFTTokenAmountInfo</a></li>
 <li><a href="interfaces/NFTTokenInfo.md">NFTTokenInfo</a></li>
+<li><a href="interfaces/NFTTradeRequestV3.md">NFTTradeRequestV3</a></li>
 <li><a href="interfaces/NFTWithdrawRequestV3.md">NFTWithdrawRequestV3</a></li>
 <li><a href="interfaces/OffChainWithdrawalRequestV3.md">OffChainWithdrawalRequestV3</a></li>
 <li><a href="interfaces/OffChainWithdrawalRequestV3WithPatch.md">OffChainWithdrawalRequestV3WithPatch</a></li>
@@ -707,8 +711,10 @@
 <li><a href="interfaces/OriginDeployNFTRequestV3.md">OriginDeployNFTRequestV3</a></li>
 <li><a href="interfaces/OriginDeployNFTRequestV3WithPatch.md">OriginDeployNFTRequestV3WithPatch</a></li>
 <li><a href="interfaces/OriginNFTMINTRequestV3WithPatch.md">OriginNFTMINTRequestV3WithPatch</a></li>
+<li><a href="interfaces/OriginNFTTradeRequestV3WithPatch.md">OriginNFTTradeRequestV3WithPatch</a></li>
 <li><a href="interfaces/OriginNFTTransferRequestV3.md">OriginNFTTransferRequestV3</a></li>
 <li><a href="interfaces/OriginNFTTransferRequestV3WithPatch.md">OriginNFTTransferRequestV3WithPatch</a></li>
+<li><a href="interfaces/OriginNFTValidateOrderRequestV3WithPatch.md">OriginNFTValidateOrderRequestV3WithPatch</a></li>
 <li><a href="interfaces/OriginNFTWithdrawRequestV3WithPatch.md">OriginNFTWithdrawRequestV3WithPatch</a></li>
 <li><a href="interfaces/OriginTransferRequestV3.md">OriginTransferRequestV3</a></li>
 <li><a href="interfaces/OriginTransferRequestV3WithPatch.md">OriginTransferRequestV3WithPatch</a></li>
@@ -857,10 +863,12 @@
 <li><a href="modules.html#get_eddsasig_exitammpool">get_EddsaSig_ExitAmmPool</a></li>
 <li><a href="modules.html#get_eddsasig_joinammpool">get_EddsaSig_JoinAmmPool</a></li>
 <li><a href="modules.html#get_eddsasig_nft_mint">get_EddsaSig_NFT_Mint</a></li>
+<li><a href="modules.html#get_eddsasig_nft_order">get_EddsaSig_NFT_Order</a></li>
 <li><a href="modules.html#get_eddsasig_nft_transfer">get_EddsaSig_NFT_Transfer</a></li>
 <li><a href="modules.html#get_eddsasig_nft_withdraw">get_EddsaSig_NFT_Withdraw</a></li>
 <li><a href="modules.html#get_eddsasig_offchainwithdraw">get_EddsaSig_OffChainWithdraw</a></li>
 <li><a href="modules.html#get_eddsasig_transfer">get_EddsaSig_Transfer</a></li>
+<li><a href="modules.html#get_is_nft_token">get_Is_Nft_Token</a></li>
 <li><a href="modules.html#hasmarket">hasMarket</a></li>
 <li><a href="modules.html#iscontract">isContract</a></li>
 <li><a href="modules.html#isempty">isEmpty</a></li>
@@ -924,7 +932,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/error_codes.ts#L66" target="_blank">defs/error_codes.ts:66</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/error_codes.ts#L66" target="_blank">defs/error_codes.ts:66</a></p>
 <hr>
 <h3 id="getusernftdeposithistoryrequest">GetUserNFTDepositHistoryRequest</h3>
 <p>Ƭ <strong>GetUserNFTDepositHistoryRequest</strong>: <code>Object</code></p>
@@ -972,7 +980,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2064" target="_blank">defs/loopring_defs.ts:2064</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2221" target="_blank">defs/loopring_defs.ts:2221</a></p>
 <hr>
 <h3 id="getusernftminthistoryrequest">GetUserNFTMintHistoryRequest</h3>
 <p>Ƭ <strong>GetUserNFTMintHistoryRequest</strong>: <code>Object</code></p>
@@ -1020,7 +1028,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2051" target="_blank">defs/loopring_defs.ts:2051</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2208" target="_blank">defs/loopring_defs.ts:2208</a></p>
 <hr>
 <h3 id="getusernfttransferhistoryrequest">GetUserNFTTransferHistoryRequest</h3>
 <p>Ƭ <strong>GetUserNFTTransferHistoryRequest</strong>: <code>Object</code></p>
@@ -1064,7 +1072,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2039" target="_blank">defs/loopring_defs.ts:2039</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2196" target="_blank">defs/loopring_defs.ts:2196</a></p>
 <hr>
 <h3 id="getusernftwithdrawalhistoryrequest">GetUserNFTWithdrawalHistoryRequest</h3>
 <p>Ƭ <strong>GetUserNFTWithdrawalHistoryRequest</strong>: <code>Object</code></p>
@@ -1112,14 +1120,14 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2075" target="_blank">defs/loopring_defs.ts:2075</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2232" target="_blank">defs/loopring_defs.ts:2232</a></p>
 <hr>
 <h3 id="guardiacontractaddress">GuardiaContractAddress</h3>
 <p>Ƭ <strong>GuardiaContractAddress</strong>: <code>string</code></p>
 <p><strong><code>export</code></strong></p>
 <p><strong><code>interface</code></strong> ApproveHebaoRequest</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2269" target="_blank">defs/loopring_defs.ts:2269</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2426" target="_blank">defs/loopring_defs.ts:2426</a></p>
 <hr>
 <h3 id="guardian">Guardian</h3>
 <p>Ƭ <strong>Guardian</strong>: <code>Object</code></p>
@@ -1167,7 +1175,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2253" target="_blank">defs/loopring_defs.ts:2253</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2410" target="_blank">defs/loopring_defs.ts:2410</a></p>
 <hr>
 <h3 id="hebaooperationlog">HebaoOperationLog</h3>
 <p>Ƭ <strong>HebaoOperationLog</strong>: <code>Object</code></p>
@@ -1212,12 +1220,12 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2243" target="_blank">defs/loopring_defs.ts:2243</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2400" target="_blank">defs/loopring_defs.ts:2400</a></p>
 <hr>
 <h3 id="nftdata">NftData</h3>
 <p>Ƭ <strong>NftData</strong>: <code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2027" target="_blank">defs/loopring_defs.ts:2027</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2178" target="_blank">defs/loopring_defs.ts:2178</a></p>
 <hr>
 <h3 id="protector">Protector</h3>
 <p>Ƭ <strong>Protector</strong>: <code>Object</code></p>
@@ -1245,7 +1253,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2238" target="_blank">defs/loopring_defs.ts:2238</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2395" target="_blank">defs/loopring_defs.ts:2395</a></p>
 <hr>
 <h3 id="txhashapi">TX_HASH_API</h3>
 <p>Ƭ <strong>TX_HASH_API</strong>: <code>Object</code></p>
@@ -1269,7 +1277,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L43" target="_blank">defs/loopring_defs.ts:43</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L43" target="_blank">defs/loopring_defs.ts:43</a></p>
 <hr>
 <h3 id="txhashresult">TX_HASH_RESULT</h3>
 <p>Ƭ <strong>TX_HASH_RESULT</strong>&lt;<code>T</code>&gt;: <code>T</code> &amp; { <code>raw_data</code>: <code>T</code>  }</p>
@@ -1287,7 +1295,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L44" target="_blank">defs/loopring_defs.ts:44</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L44" target="_blank">defs/loopring_defs.ts:44</a></p>
 <hr>
 <h3 id="usernftminthistorytx">UserNFTMintHistoryTx</h3>
 <p>Ƭ <strong>UserNFTMintHistoryTx</strong>: <code>Object</code></p>
@@ -1395,24 +1403,24 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2165" target="_blank">defs/loopring_defs.ts:2165</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2322" target="_blank">defs/loopring_defs.ts:2322</a></p>
 <hr>
 <h3 id="userpwdresettx">UserPwdResetTx</h3>
 <p>Ƭ <strong>UserPwdResetTx</strong>: <a href="interfaces/UserRegTx.md"><code>UserRegTx</code></a></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L937" target="_blank">defs/loopring_defs.ts:937</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L937" target="_blank">defs/loopring_defs.ts:937</a></p>
 <hr>
 <h3 id="usertrade">UserTrade</h3>
 <p>Ƭ <strong>UserTrade</strong>: <a href="interfaces/MarketTradeInfo.md"><code>MarketTradeInfo</code></a></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1198" target="_blank">defs/loopring_defs.ts:1198</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1198" target="_blank">defs/loopring_defs.ts:1198</a></p>
 <hr>
 <h3 id="vipfeerateinfomap">VipFeeRateInfoMap</h3>
 <p>Ƭ <strong>VipFeeRateInfoMap</strong>: <code>Object</code></p>
 <h4 id="index-signature">Index signature</h4>
 <p>▪ [key: <code>string</code>]: <a href="interfaces/VipFeeRateInfo.md"><code>VipFeeRateInfo</code></a></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L41" target="_blank">defs/loopring_defs.ts:41</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L41" target="_blank">defs/loopring_defs.ts:41</a></p>
 <h2 id="properties">Properties</h2>
 <h3 id="contractwalletabi">contractWallet_abi</h3>
 <p>• <strong>contractWallet_abi</strong>: ({ <code>constant</code>: <code>undefined</code> = true; <code>inputs</code>: { <code>internalType</code>: <code>string</code> = &quot;bytes&quot;; <code>name</code>: <code>string</code> = &quot;_data&quot;; <code>type</code>: <code>string</code> = &quot;bytes&quot; }[] ; <code>name</code>: <code>string</code> = &quot;isValidSignature&quot;; <code>outputs</code>: { <code>internalType</code>: <code>string</code> = &quot;bytes4&quot;; <code>name</code>: <code>string</code> = &quot;magicValue&quot;; <code>type</code>: <code>string</code> = &quot;bytes4&quot; }[] ; <code>payable</code>: <code>undefined</code> = false; <code>stateMutability</code>: <code>string</code> = &quot;view&quot;; <code>type</code>: <code>string</code> = &quot;function&quot; } | { <code>constant</code>: <code>boolean</code> = true; <code>inputs</code>: { <code>name</code>: <code>string</code> = &quot;_account&quot;; <code>type</code>: <code>string</code> = &quot;address&quot; }[] ; <code>name</code>: <code>string</code> = &quot;getKeyData&quot;; <code>outputs</code>: { <code>name</code>: <code>string</code> = &quot;&quot;; <code>type</code>: <code>string</code> = &quot;address&quot; }[] ; <code>payable</code>: <code>boolean</code> = false; <code>stateMutability</code>: <code>string</code> = &quot;view&quot;; <code>type</code>: <code>string</code> = &quot;function&quot; })[]</p>
@@ -1451,12 +1459,12 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L22" target="_blank">api/contract_api.ts:22</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L22" target="_blank">api/contract_api.ts:22</a></p>
 <hr>
 <h3 id="defaulttimeout">DEFAULT_TIMEOUT</h3>
 <p>• <strong>DEFAULT_TIMEOUT</strong>: <code>30000</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_constants.ts#L3" target="_blank">defs/loopring_constants.ts:3</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_constants.ts#L3" target="_blank">defs/loopring_constants.ts:3</a></p>
 <hr>
 <h3 id="nftfactory">NFTFactory</h3>
 <p>• <strong>NFTFactory</strong>: <code>Object</code></p>
@@ -1480,17 +1488,17 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/web3_defs.ts#L24" target="_blank">defs/web3_defs.ts:24</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/web3_defs.ts#L24" target="_blank">defs/web3_defs.ts:24</a></p>
 <hr>
 <h3 id="networkcontextname">NetworkContextName</h3>
 <p>• <strong>NetworkContextName</strong>: <code>&quot;NETWORK&quot;</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/web3_defs.ts#L6" target="_blank">defs/web3_defs.ts:6</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/web3_defs.ts#L6" target="_blank">defs/web3_defs.ts:6</a></p>
 <hr>
 <h3 id="validuntil">VALID_UNTIL</h3>
 <p>• <strong>VALID_UNTIL</strong>: <code>1700000000</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_constants.ts#L1" target="_blank">defs/loopring_constants.ts:1</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_constants.ts#L1" target="_blank">defs/loopring_constants.ts:1</a></p>
 <h2 id="functions">Functions</h2>
 <h3 id="addhexprefix">addHexPrefix</h3>
 <p>▸ <strong>addHexPrefix</strong>(<code>input</code>): <code>string</code></p>
@@ -1513,7 +1521,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L16" target="_blank">utils/formatter.ts:16</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L16" target="_blank">utils/formatter.ts:16</a></p>
 <hr>
 <h3 id="ammpoolcalc">ammPoolCalc</h3>
 <p>▸ <strong>ammPoolCalc</strong>(<code>rawVal</code>, <code>isAtoB</code>, <code>coinA</code>, <code>coinB</code>): <code>Object</code></p>
@@ -1565,7 +1573,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L765" target="_blank">utils/swap_calc_utils.ts:765</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L765" target="_blank">utils/swap_calc_utils.ts:765</a></p>
 <hr>
 <h3 id="approve">approve</h3>
 <p>▸ <strong>approve</strong>(<code>web3</code>, <code>from</code>, <code>to</code>, <code>depositAddress</code>, <code>_value</code>, <code>chainId</code>, <code>nonce</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>sendByMetaMask</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -1623,7 +1631,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L199" target="_blank">api/contract_api.ts:199</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L199" target="_blank">api/contract_api.ts:199</a></p>
 <hr>
 <h3 id="approvemax">approveMax</h3>
 <p>▸ <strong>approveMax</strong>(<code>web3</code>, <code>owner</code>, <code>tokenAddress</code>, <code>depositAddress</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>chainId?</code>, <code>nonce</code>, <code>sendByMetaMask?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -1688,7 +1696,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L271" target="_blank">api/contract_api.ts:271</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L271" target="_blank">api/contract_api.ts:271</a></p>
 <hr>
 <h3 id="approvezero">approveZero</h3>
 <p>▸ <strong>approveZero</strong>(<code>web3</code>, <code>owner</code>, <code>tokenAddress</code>, <code>depositAddress</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>chainId?</code>, <code>nonce</code>, <code>sendByMetaMask?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -1753,7 +1761,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L238" target="_blank">api/contract_api.ts:238</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L238" target="_blank">api/contract_api.ts:238</a></p>
 <hr>
 <h3 id="clearhexprefix">clearHexPrefix</h3>
 <p>▸ <strong>clearHexPrefix</strong>(<code>input</code>): <code>string</code></p>
@@ -1778,7 +1786,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L194" target="_blank">utils/formatter.ts:194</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L194" target="_blank">utils/formatter.ts:194</a></p>
 <hr>
 <h3 id="convertpublickey">convertPublicKey</h3>
 <p>▸ <strong>convertPublicKey</strong>(<code>pk</code>): <code>BN</code></p>
@@ -1800,7 +1808,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BN</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L390" target="_blank">api/sign/sign_tools.ts:390</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L393" target="_blank">api/sign/sign_tools.ts:393</a></p>
 <hr>
 <h3 id="convertpublickey2">convertPublicKey2</h3>
 <p>▸ <strong>convertPublicKey2</strong>(<code>pk</code>): <code>BN</code></p>
@@ -1822,7 +1830,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BN</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L386" target="_blank">api/sign/sign_tools.ts:386</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L389" target="_blank">api/sign/sign_tools.ts:389</a></p>
 <hr>
 <h3 id="deposit">deposit</h3>
 <p>▸ <strong>deposit</strong>(<code>web3</code>, <code>from</code>, <code>exchangeAddress</code>, <code>token</code>, <code>value</code>, <code>fee</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>chainId?</code>, <code>nonce</code>, <code>sendByMetaMask?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -1897,7 +1905,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L300" target="_blank">api/contract_api.ts:300</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L300" target="_blank">api/contract_api.ts:300</a></p>
 <hr>
 <h3 id="dumperror400">dumpError400</h3>
 <p>▸ <code>Const</code> <strong>dumpError400</strong>(<code>reason</code>, <code>src?</code>): <code>void</code></p>
@@ -1926,7 +1934,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>void</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/network_tools.ts#L2" target="_blank">utils/network_tools.ts:2</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/network_tools.ts#L2" target="_blank">utils/network_tools.ts:2</a></p>
 <hr>
 <h3 id="eddsasign">eddsaSign</h3>
 <p>▸ <strong>eddsaSign</strong>(<code>typedData</code>, <code>eddsaKey</code>): <code>Object</code></p>
@@ -1966,7 +1974,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1244" target="_blank">api/sign/sign_tools.ts:1244</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1282" target="_blank">api/sign/sign_tools.ts:1282</a></p>
 <hr>
 <h3 id="forcewithdrawal">forceWithdrawal</h3>
 <p>▸ <strong>forceWithdrawal</strong>(<code>web3</code>, <code>from</code>, <code>accountID</code>, <code>exchangeAddress</code>, <code>token</code>, <code>fee</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>chainId?</code>, <code>nonce</code>, <code>sendByMetaMask?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -2041,7 +2049,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L348" target="_blank">api/contract_api.ts:348</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L348" target="_blank">api/contract_api.ts:348</a></p>
 <hr>
 <h3 id="formataddress">formatAddress</h3>
 <p>▸ <strong>formatAddress</strong>(<code>mixed</code>): <code>string</code></p>
@@ -2070,7 +2078,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L176" target="_blank">utils/formatter.ts:176</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L176" target="_blank">utils/formatter.ts:176</a></p>
 <hr>
 <h3 id="formateddsakey">formatEddsaKey</h3>
 <p>▸ <strong>formatEddsaKey</strong>(<code>key</code>): <code>string</code></p>
@@ -2092,7 +2100,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L255" target="_blank">utils/formatter.ts:255</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L255" target="_blank">utils/formatter.ts:255</a></p>
 <hr>
 <h3 id="formatkey">formatKey</h3>
 <p>▸ <strong>formatKey</strong>(<code>mixed</code>): <code>string</code></p>
@@ -2121,7 +2129,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L160" target="_blank">utils/formatter.ts:160</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L160" target="_blank">utils/formatter.ts:160</a></p>
 <hr>
 <h3 id="fromgwei">fromGWEI</h3>
 <p>▸ <strong>fromGWEI</strong>(<code>value</code>): <code>BigNumber</code></p>
@@ -2148,7 +2156,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BigNumber</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L142" target="_blank">utils/formatter.ts:142</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L142" target="_blank">utils/formatter.ts:142</a></p>
 <hr>
 <h3 id="fromwei">fromWEI</h3>
 <p>▸ <strong>fromWEI</strong>(<code>tokens</code>, <code>symbol</code>, <code>valueInWEI</code>, <code>precision?</code>, <code>ceil?</code>): <code>undefined</code> | <code>string</code></p>
@@ -2186,7 +2194,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>undefined</code> | <code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L52" target="_blank">utils/swap_calc_utils.ts:52</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L52" target="_blank">utils/swap_calc_utils.ts:52</a></p>
 <hr>
 <h3 id="genexchangedata">genExchangeData</h3>
 <p>▸ <strong>genExchangeData</strong>(<code>method</code>, <code>data</code>): <code>any</code></p>
@@ -2212,7 +2220,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L195" target="_blank">api/contract_api.ts:195</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L195" target="_blank">api/contract_api.ts:195</a></p>
 <hr>
 <h3 id="generatekeypair">generateKeyPair</h3>
 <p>▸ <strong>generateKeyPair</strong>(<code>__namedParameters</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>any</code> = result.counterFactualInfo; <code>formatedPx</code>: <code>string</code> ; <code>formatedPy</code>: <code>string</code> ; <code>keyPair</code>: { <code>publicKeyX</code>: <code>any</code> ; <code>publicKeyY</code>: <code>any</code> ; <code>secretKey</code>: <code>any</code>  } ; <code>sk</code>: <code>string</code>  }&gt;</p>
@@ -2234,7 +2242,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>any</code> = result.counterFactualInfo; <code>formatedPx</code>: <code>string</code> ; <code>formatedPy</code>: <code>string</code> ; <code>keyPair</code>: { <code>publicKeyX</code>: <code>any</code> ; <code>publicKeyY</code>: <code>any</code> ; <code>secretKey</code>: <code>any</code>  } ; <code>sk</code>: <code>string</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L61" target="_blank">api/sign/sign_tools.ts:61</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L64" target="_blank">api/sign/sign_tools.ts:64</a></p>
 <hr>
 <h3 id="getaccountarg">getAccountArg</h3>
 <p>▸ <code>Const</code> <strong>getAccountArg</strong>(): <code>Object</code></p>
@@ -2255,7 +2263,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L25" target="_blank">defs/ws_defs.ts:25</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L25" target="_blank">defs/ws_defs.ts:25</a></p>
 <hr>
 <h3 id="getammexitecdsatypeddata">getAmmExitEcdsaTypedData</h3>
 <p>▸ <strong>getAmmExitEcdsaTypedData</strong>(<code>data</code>, <code>patch</code>): <code>EIP712TypedData</code></p>
@@ -2281,7 +2289,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1315" target="_blank">api/sign/sign_tools.ts:1315</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1353" target="_blank">api/sign/sign_tools.ts:1353</a></p>
 <hr>
 <h3 id="getammjoinecdsatypeddata">getAmmJoinEcdsaTypedData</h3>
 <p>▸ <strong>getAmmJoinEcdsaTypedData</strong>(<code>data</code>, <code>patch</code>): <code>Object</code></p>
@@ -2382,7 +2390,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1260" target="_blank">api/sign/sign_tools.ts:1260</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1298" target="_blank">api/sign/sign_tools.ts:1298</a></p>
 <hr>
 <h3 id="getammpoolarg">getAmmpoolArg</h3>
 <p>▸ <code>Const</code> <strong>getAmmpoolArg</strong>(<code>poolAddress</code>): <code>Object</code></p>
@@ -2426,7 +2434,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L137" target="_blank">defs/ws_defs.ts:137</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L137" target="_blank">defs/ws_defs.ts:137</a></p>
 <hr>
 <h3 id="getbasequote">getBaseQuote</h3>
 <p>▸ <strong>getBaseQuote</strong>(<code>symbol</code>): { <code>base</code>: <code>undefined</code> = undefined; <code>quote</code>: <code>undefined</code> = undefined } | { <code>base</code>: <code>string</code> ; <code>quote</code>: <code>string</code>  }</p>
@@ -2448,7 +2456,7 @@
 <h4 id="returns">Returns</h4>
 <p>{ <code>base</code>: <code>undefined</code> = undefined; <code>quote</code>: <code>undefined</code> = undefined } | { <code>base</code>: <code>string</code> ; <code>quote</code>: <code>string</code>  }</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L5" target="_blank">utils/symbol_tools.ts:5</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L5" target="_blank">utils/symbol_tools.ts:5</a></p>
 <hr>
 <h3 id="getcandlestickarg">getCandlestickArg</h3>
 <p>▸ <code>Const</code> <strong>getCandlestickArg</strong>(<code>market</code>): <code>Object</code></p>
@@ -2488,7 +2496,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L130" target="_blank">defs/ws_defs.ts:130</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L130" target="_blank">defs/ws_defs.ts:130</a></p>
 <hr>
 <h3 id="getcurprice">getCurPrice</h3>
 <p>▸ <strong>getCurPrice</strong>(<code>reserveIn</code>, <code>reserveOut</code>): <code>string</code></p>
@@ -2514,7 +2522,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L411" target="_blank">utils/swap_calc_utils.ts:411</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L411" target="_blank">utils/swap_calc_utils.ts:411</a></p>
 <hr>
 <h3 id="getdisplaysymbol">getDisplaySymbol</h3>
 <p>▸ <strong>getDisplaySymbol</strong>(<code>settingsCurrency</code>): <code>&quot;&quot;</code> | <code>&quot;￥&quot;</code> | <code>&quot;$&quot;</code></p>
@@ -2537,7 +2545,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>&quot;&quot;</code> | <code>&quot;￥&quot;</code> | <code>&quot;$&quot;</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L215" target="_blank">utils/formatter.ts:215</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L215" target="_blank">utils/formatter.ts:215</a></p>
 <hr>
 <h3 id="getecdsasig">getEcDSASig</h3>
 <p>▸ <strong>getEcDSASig</strong>(<code>web3</code>, <code>typedData</code>, <code>address</code>, <code>type</code>, <code>chainId</code>, <code>accountId?</code>, <code>pwd?</code>, <code>walletType?</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -2602,7 +2610,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L291" target="_blank">api/sign/sign_tools.ts:291</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L294" target="_blank">api/sign/sign_tools.ts:294</a></p>
 <hr>
 <h3 id="geteddsasig">getEdDSASig</h3>
 <p>▸ <strong>getEdDSASig</strong>(<code>method</code>, <code>basePath</code>, <code>api_url</code>, <code>requestInfo</code>, <code>PrivateKey</code>): <code>string</code></p>
@@ -2641,7 +2649,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L183" target="_blank">api/sign/sign_tools.ts:183</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L186" target="_blank">api/sign/sign_tools.ts:186</a></p>
 <hr>
 <h3 id="geteddsasigwithposeidon">getEdDSASigWithPoseidon</h3>
 <p>▸ <code>Const</code> <strong>getEdDSASigWithPoseidon</strong>(<code>inputs</code>, <code>PrivateKey</code>): <code>string</code></p>
@@ -2668,7 +2676,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L217" target="_blank">api/sign/sign_tools.ts:217</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L220" target="_blank">api/sign/sign_tools.ts:220</a></p>
 <hr>
 <h3 id="getexistedmarket">getExistedMarket</h3>
 <p>▸ <code>Const</code> <strong>getExistedMarket</strong>(<code>marketArr</code>, <code>base</code>, <code>quote</code>): <code>Object</code></p>
@@ -2727,7 +2735,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L86" target="_blank">utils/symbol_tools.ts:86</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L86" target="_blank">utils/symbol_tools.ts:86</a></p>
 <hr>
 <h3 id="getmidprice">getMidPrice</h3>
 <p>▸ <strong>getMidPrice</strong>(<code>__namedParameters</code>): <code>Object</code></p>
@@ -2843,7 +2851,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/exchange_api.ts#L124" target="_blank">api/exchange_api.ts:124</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/exchange_api.ts#L124" target="_blank">api/exchange_api.ts:124</a></p>
 <hr>
 <h3 id="getminreceived">getMinReceived</h3>
 <p>▸ <strong>getMinReceived</strong>(<code>amountBOut</code>, <code>minimumDecimal</code>, <code>slipBips</code>): <code>Object</code></p>
@@ -2895,7 +2903,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L514" target="_blank">utils/swap_calc_utils.ts:514</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L514" target="_blank">utils/swap_calc_utils.ts:514</a></p>
 <hr>
 <h3 id="getmixorderarg">getMixOrderArg</h3>
 <p>▸ <code>Const</code> <strong>getMixOrderArg</strong>(<code>__namedParameters</code>): <code>any</code></p>
@@ -2937,7 +2945,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L93" target="_blank">defs/ws_defs.ts:93</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L93" target="_blank">defs/ws_defs.ts:93</a></p>
 <hr>
 <h3 id="getnftminttypeddata">getNFTMintTypedData</h3>
 <p>▸ <strong>getNFTMintTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -2963,7 +2971,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L711" target="_blank">api/sign/sign_tools.ts:711</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L714" target="_blank">api/sign/sign_tools.ts:714</a></p>
 <hr>
 <h3 id="getnfttransfertypeddata">getNFTTransferTypedData</h3>
 <p>▸ <strong>getNFTTransferTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -2989,7 +2997,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1124" target="_blank">api/sign/sign_tools.ts:1124</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1162" target="_blank">api/sign/sign_tools.ts:1162</a></p>
 <hr>
 <h3 id="getnftwithdrawtypeddata">getNFTWithdrawTypedData</h3>
 <p>▸ <strong>getNFTWithdrawTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -3015,7 +3023,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L761" target="_blank">api/sign/sign_tools.ts:761</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L764" target="_blank">api/sign/sign_tools.ts:764</a></p>
 <hr>
 <h3 id="getnftdata">getNftData</h3>
 <p>▸ <strong>getNftData</strong>(<code>request</code>): <code>any</code></p>
@@ -3037,7 +3045,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L695" target="_blank">api/sign/sign_tools.ts:695</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L698" target="_blank">api/sign/sign_tools.ts:698</a></p>
 <hr>
 <h3 id="getnonce">getNonce</h3>
 <p>▸ <strong>getNonce</strong>(<code>web3</code>, <code>addr</code>): <code>Promise</code>&lt;<code>number</code>&gt;</p>
@@ -3063,7 +3071,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>number</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L143" target="_blank">api/contract_api.ts:143</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L143" target="_blank">api/contract_api.ts:143</a></p>
 <hr>
 <h3 id="getorderarg">getOrderArg</h3>
 <p>▸ <code>Const</code> <strong>getOrderArg</strong>(<code>market</code>): <code>Object</code></p>
@@ -3103,7 +3111,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L38" target="_blank">defs/ws_defs.ts:38</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L38" target="_blank">defs/ws_defs.ts:38</a></p>
 <hr>
 <h3 id="getorderbookarg">getOrderBookArg</h3>
 <p>▸ <code>Const</code> <strong>getOrderBookArg</strong>(<code>__namedParameters</code>): <code>any</code></p>
@@ -3149,7 +3157,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L62" target="_blank">defs/ws_defs.ts:62</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L62" target="_blank">defs/ws_defs.ts:62</a></p>
 <hr>
 <h3 id="getoutputamount">getOutputAmount</h3>
 <p>▸ <strong>getOutputAmount</strong>(<code>__namedParameters</code>): <code>undefined</code> | { <code>amountBOut</code>: <code>string</code> ; <code>amountBOutSlip</code>: { <code>minReceived</code>: <code>string</code> ; <code>minReceivedVal</code>: <code>string</code> ; <code>minimumDecimal</code>: <code>number</code>  } ; <code>amountBOutWithoutFee</code>: <code>string</code> ; <code>amountS</code>: <code>string</code> ; <code>buyAmt</code>: <code>string</code> ; <code>exceedDepth</code>: <code>boolean</code> ; <code>feeBips</code>: <code>string</code> ; <code>isAtoB</code>: <code>boolean</code> ; <code>isReverse</code>: <code>boolean</code> ; <code>output</code>: <code>any</code> ; <code>priceImpact</code>: <code>string</code> ; <code>sellAmt</code>: <code>string</code> ; <code>slipBips</code>: <code>string</code> ; <code>takerRate</code>: <code>string</code>  }</p>
@@ -3220,7 +3228,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>undefined</code> | { <code>amountBOut</code>: <code>string</code> ; <code>amountBOutSlip</code>: { <code>minReceived</code>: <code>string</code> ; <code>minReceivedVal</code>: <code>string</code> ; <code>minimumDecimal</code>: <code>number</code>  } ; <code>amountBOutWithoutFee</code>: <code>string</code> ; <code>amountS</code>: <code>string</code> ; <code>buyAmt</code>: <code>string</code> ; <code>exceedDepth</code>: <code>boolean</code> ; <code>feeBips</code>: <code>string</code> ; <code>isAtoB</code>: <code>boolean</code> ; <code>isReverse</code>: <code>boolean</code> ; <code>output</code>: <code>any</code> ; <code>priceImpact</code>: <code>string</code> ; <code>sellAmt</code>: <code>string</code> ; <code>slipBips</code>: <code>string</code> ; <code>takerRate</code>: <code>string</code>  }</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L530" target="_blank">utils/swap_calc_utils.ts:530</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L530" target="_blank">utils/swap_calc_utils.ts:530</a></p>
 <hr>
 <h3 id="getpair">getPair</h3>
 <p>▸ <code>Const</code> <strong>getPair</strong>(<code>marketArr</code>, <code>market</code>): <code>Object</code></p>
@@ -3273,7 +3281,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L121" target="_blank">utils/symbol_tools.ts:121</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L121" target="_blank">utils/symbol_tools.ts:121</a></p>
 <hr>
 <h3 id="getpriceimpact">getPriceImpact</h3>
 <p>▸ <strong>getPriceImpact</strong>(<code>reserveIn</code>, <code>reserveOut</code>, <code>amountS</code>, <code>feeBips</code>, <code>takerFee</code>): <code>string</code></p>
@@ -3311,7 +3319,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L447" target="_blank">utils/swap_calc_utils.ts:447</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L447" target="_blank">utils/swap_calc_utils.ts:447</a></p>
 <hr>
 <h3 id="getreserveinfo">getReserveInfo</h3>
 <p>▸ <strong>getReserveInfo</strong>(<code>sell</code>, <code>buy</code>, <code>marketArr</code>, <code>tokenMap</code>, <code>marketMap</code>, <code>ammPoolSnapshot?</code>): <code>undefined</code> | { <code>buyToken</code>: <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a> ; <code>coinA</code>: <code>undefined</code> | <a href="interfaces/TokenVolumeV3.md"><code>TokenVolumeV3</code></a> ; <code>coinB</code>: <code>undefined</code> | <a href="interfaces/TokenVolumeV3.md"><code>TokenVolumeV3</code></a> ; <code>isReverse</code>: <code>boolean</code> ; <code>marketInfo</code>: <a href="interfaces/MarketInfo.md"><code>MarketInfo</code></a> ; <code>reserveIn</code>: <code>string</code> ; <code>reserveOut</code>: <code>string</code> ; <code>sellToken</code>: <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a>  }</p>
@@ -3361,7 +3369,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>undefined</code> | { <code>buyToken</code>: <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a> ; <code>coinA</code>: <code>undefined</code> | <a href="interfaces/TokenVolumeV3.md"><code>TokenVolumeV3</code></a> ; <code>coinB</code>: <code>undefined</code> | <a href="interfaces/TokenVolumeV3.md"><code>TokenVolumeV3</code></a> ; <code>isReverse</code>: <code>boolean</code> ; <code>marketInfo</code>: <a href="interfaces/MarketInfo.md"><code>MarketInfo</code></a> ; <code>reserveIn</code>: <code>string</code> ; <code>reserveOut</code>: <code>string</code> ; <code>sellToken</code>: <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a>  }</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L327" target="_blank">utils/swap_calc_utils.ts:327</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L327" target="_blank">utils/swap_calc_utils.ts:327</a></p>
 <hr>
 <h3 id="gettickerarg">getTickerArg</h3>
 <p>▸ <code>Const</code> <strong>getTickerArg</strong>(<code>market</code>): <code>Object</code></p>
@@ -3401,7 +3409,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L123" target="_blank">defs/ws_defs.ts:123</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L123" target="_blank">defs/ws_defs.ts:123</a></p>
 <hr>
 <h3 id="gettoprice">getToPrice</h3>
 <p>▸ <strong>getToPrice</strong>(<code>amountS</code>, <code>amountB</code>): <code>string</code></p>
@@ -3427,7 +3435,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L429" target="_blank">utils/swap_calc_utils.ts:429</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L429" target="_blank">utils/swap_calc_utils.ts:429</a></p>
 <hr>
 <h3 id="gettoken">getToken</h3>
 <p>▸ <code>Const</code> <strong>getToken</strong>(<code>tokens</code>, <code>token</code>): <code>any</code></p>
@@ -3453,7 +3461,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L28" target="_blank">utils/swap_calc_utils.ts:28</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L28" target="_blank">utils/swap_calc_utils.ts:28</a></p>
 <hr>
 <h3 id="gettokeninfobyid">getTokenInfoById</h3>
 <p>▸ <code>Const</code> <strong>getTokenInfoById</strong>(<code>tokenIdMap</code>, <code>id</code>): <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a></p>
@@ -3479,7 +3487,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L60" target="_blank">utils/symbol_tools.ts:60</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L60" target="_blank">utils/symbol_tools.ts:60</a></p>
 <hr>
 <h3 id="gettokeninfobysymbol">getTokenInfoBySymbol</h3>
 <p>▸ <code>Const</code> <strong>getTokenInfoBySymbol</strong>(<code>tokenSymbolMap</code>, <code>symbol</code>): <code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a></p>
@@ -3505,7 +3513,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>undefined</code> | <a href="interfaces/TokenInfo.md"><code>TokenInfo</code></a></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L45" target="_blank">utils/symbol_tools.ts:45</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L45" target="_blank">utils/symbol_tools.ts:45</a></p>
 <hr>
 <h3 id="gettokeninfobytoken">getTokenInfoByToken</h3>
 <p>▸ <code>Const</code> <strong>getTokenInfoByToken</strong>(<code>ammBalance</code>, <code>tokens</code>, <code>token</code>): <code>Object</code></p>
@@ -3557,7 +3565,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L35" target="_blank">utils/swap_calc_utils.ts:35</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L35" target="_blank">utils/swap_calc_utils.ts:35</a></p>
 <hr>
 <h3 id="gettradearg">getTradeArg</h3>
 <p>▸ <code>Const</code> <strong>getTradeArg</strong>(<code>market</code>): <code>Object</code></p>
@@ -3597,7 +3605,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/ws_defs.ts#L116" target="_blank">defs/ws_defs.ts:116</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/ws_defs.ts#L116" target="_blank">defs/ws_defs.ts:116</a></p>
 <hr>
 <h3 id="gettransfertypeddata">getTransferTypedData</h3>
 <p>▸ <strong>getTransferTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -3623,7 +3631,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L990" target="_blank">api/sign/sign_tools.ts:990</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1028" target="_blank">api/sign/sign_tools.ts:1028</a></p>
 <hr>
 <h3 id="getupdateaccountecdsatypeddata">getUpdateAccountEcdsaTypedData</h3>
 <p>▸ <strong>getUpdateAccountEcdsaTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -3649,7 +3657,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L398" target="_blank">api/sign/sign_tools.ts:398</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L401" target="_blank">api/sign/sign_tools.ts:401</a></p>
 <hr>
 <h3 id="getwithdrawtypeddata">getWithdrawTypedData</h3>
 <p>▸ <strong>getWithdrawTypedData</strong>(<code>data</code>, <code>chainId</code>): <code>EIP712TypedData</code></p>
@@ -3675,7 +3683,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>EIP712TypedData</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L542" target="_blank">api/sign/sign_tools.ts:542</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L545" target="_blank">api/sign/sign_tools.ts:545</a></p>
 <hr>
 <h3 id="geteddsasigexitammpool">get_EddsaSig_ExitAmmPool</h3>
 <p>▸ <strong>get_EddsaSig_ExitAmmPool</strong>(<code>data</code>, <code>patch</code>): <code>Object</code></p>
@@ -3715,7 +3723,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1360" target="_blank">api/sign/sign_tools.ts:1360</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1398" target="_blank">api/sign/sign_tools.ts:1398</a></p>
 <hr>
 <h3 id="geteddsasigjoinammpool">get_EddsaSig_JoinAmmPool</h3>
 <p>▸ <strong>get_EddsaSig_JoinAmmPool</strong>(<code>data</code>, <code>patch</code>): <code>Object</code></p>
@@ -3755,7 +3763,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1307" target="_blank">api/sign/sign_tools.ts:1307</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1345" target="_blank">api/sign/sign_tools.ts:1345</a></p>
 <hr>
 <h3 id="geteddsasignftmint">get_EddsaSig_NFT_Mint</h3>
 <p>▸ <strong>get_EddsaSig_NFT_Mint</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
@@ -3781,7 +3789,33 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L882" target="_blank">api/sign/sign_tools.ts:882</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L885" target="_blank">api/sign/sign_tools.ts:885</a></p>
+<hr>
+<h3 id="geteddsasignftorder">get_EddsaSig_NFT_Order</h3>
+<p>▸ <strong>get_EddsaSig_NFT_Order</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="interfaces/NFTOrderRequestV3.md"><code>NFTOrderRequestV3</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>string</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L910" target="_blank">api/sign/sign_tools.ts:910</a></p>
 <hr>
 <h3 id="geteddsasignfttransfer">get_EddsaSig_NFT_Transfer</h3>
 <p>▸ <strong>get_EddsaSig_NFT_Transfer</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
@@ -3807,7 +3841,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1103" target="_blank">api/sign/sign_tools.ts:1103</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1141" target="_blank">api/sign/sign_tools.ts:1141</a></p>
 <hr>
 <h3 id="geteddsasignftwithdraw">get_EddsaSig_NFT_Withdraw</h3>
 <p>▸ <strong>get_EddsaSig_NFT_Withdraw</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
@@ -3833,7 +3867,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L663" target="_blank">api/sign/sign_tools.ts:663</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L666" target="_blank">api/sign/sign_tools.ts:666</a></p>
 <hr>
 <h3 id="geteddsasigoffchainwithdraw">get_EddsaSig_OffChainWithdraw</h3>
 <p>▸ <strong>get_EddsaSig_OffChainWithdraw</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
@@ -3859,7 +3893,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L510" target="_blank">api/sign/sign_tools.ts:510</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L513" target="_blank">api/sign/sign_tools.ts:513</a></p>
 <hr>
 <h3 id="geteddsasigtransfer">get_EddsaSig_Transfer</h3>
 <p>▸ <strong>get_EddsaSig_Transfer</strong>(<code>request</code>, <code>eddsaKey</code>): <code>string</code></p>
@@ -3885,7 +3919,29 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L969" target="_blank">api/sign/sign_tools.ts:969</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1007" target="_blank">api/sign/sign_tools.ts:1007</a></p>
+<hr>
+<h3 id="getisnfttoken">get_Is_Nft_Token</h3>
+<p>▸ <strong>get_Is_Nft_Token</strong>(<code>tokenId</code>): <code>boolean</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>tokenId</code></td>
+<td style="text-align:left"><code>number</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>boolean</code></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L903" target="_blank">api/sign/sign_tools.ts:903</a></p>
 <hr>
 <h3 id="hasmarket">hasMarket</h3>
 <p>▸ <code>Const</code> <strong>hasMarket</strong>(<code>marketArr</code>, <code>market</code>): <code>boolean</code></p>
@@ -3911,7 +3967,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>boolean</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/symbol_tools.ts#L75" target="_blank">utils/symbol_tools.ts:75</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/symbol_tools.ts#L75" target="_blank">utils/symbol_tools.ts:75</a></p>
 <hr>
 <h3 id="iscontract">isContract</h3>
 <p>▸ <strong>isContract</strong>(<code>web3</code>, <code>address</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -3937,7 +3993,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/base_api.ts#L542" target="_blank">api/base_api.ts:542</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/base_api.ts#L542" target="_blank">api/base_api.ts:542</a></p>
 <hr>
 <h3 id="isempty">isEmpty</h3>
 <p>▸ <strong>isEmpty</strong>(<code>input</code>): <code>boolean</code></p>
@@ -3959,7 +4015,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>boolean</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L86" target="_blank">utils/swap_calc_utils.ts:86</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L86" target="_blank">utils/swap_calc_utils.ts:86</a></p>
 <hr>
 <h3 id="makeexitammpoolrequest">makeExitAmmPoolRequest</h3>
 <p>▸ <strong>makeExitAmmPoolRequest</strong>(<code>rawVal</code>, <code>isAtoB</code>, <code>slippageTolerance</code>, <code>owner</code>, <code>fees</code>, <code>ammPoolSnapshot</code>, <code>tokenMap</code>, <code>idIdx</code>, <code>offchainId?</code>): <code>Object</code></p>
@@ -4037,7 +4093,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L879" target="_blank">utils/swap_calc_utils.ts:879</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L879" target="_blank">utils/swap_calc_utils.ts:879</a></p>
 <hr>
 <h3 id="makeexitammpoolrequest2">makeExitAmmPoolRequest2</h3>
 <p>▸ <strong>makeExitAmmPoolRequest2</strong>(<code>rawVal</code>, <code>slippageTolerance</code>, <code>owner</code>, <code>fees</code>, <code>ammPoolSnapshot</code>, <code>tokenMap</code>, <code>idIdx</code>, <code>offchainId?</code>): <code>Object</code></p>
@@ -4130,7 +4186,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L942" target="_blank">utils/swap_calc_utils.ts:942</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L942" target="_blank">utils/swap_calc_utils.ts:942</a></p>
 <hr>
 <h3 id="makejoinammpoolrequest">makeJoinAmmPoolRequest</h3>
 <p>▸ <strong>makeJoinAmmPoolRequest</strong>(<code>rawVal</code>, <code>isAtoB</code>, <code>slippageTolerance</code>, <code>owner</code>, <code>fees</code>, <code>ammPoolSnapshot</code>, <code>tokenMap</code>, <code>idIdx</code>, <code>coinAOffchainId?</code>, <code>coinBOffchainId?</code>, <code>rawValMatchForRawVal?</code>): <code>Object</code></p>
@@ -4230,7 +4286,7 @@
 </tbody>
 </table>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L810" target="_blank">utils/swap_calc_utils.ts:810</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L810" target="_blank">utils/swap_calc_utils.ts:810</a></p>
 <hr>
 <h3 id="numberwithcommas">numberWithCommas</h3>
 <p>▸ <strong>numberWithCommas</strong>(<code>number</code>): <code>any</code></p>
@@ -4255,7 +4311,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L265" target="_blank">utils/formatter.ts:265</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L265" target="_blank">utils/formatter.ts:265</a></p>
 <hr>
 <h3 id="padlefteven">padLeftEven</h3>
 <p>▸ <strong>padLeftEven</strong>(<code>hex</code>): <code>any</code></p>
@@ -4277,7 +4333,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>any</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L206" target="_blank">utils/formatter.ts:206</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L206" target="_blank">utils/formatter.ts:206</a></p>
 <hr>
 <h3 id="sendrawtx">sendRawTx</h3>
 <p>▸ <strong>sendRawTx</strong>(<code>web3</code>, <code>from</code>, <code>to</code>, <code>value</code>, <code>data</code>, <code>chainId</code>, <code>nonce</code>, <code>gasPrice</code>, <code>gasLimit</code>, <code>sendByMetaMask?</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -4349,7 +4405,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L148" target="_blank">api/contract_api.ts:148</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L148" target="_blank">api/contract_api.ts:148</a></p>
 <hr>
 <h3 id="sendtransaction">sendTransaction</h3>
 <p>▸ <strong>sendTransaction</strong>(<code>web3</code>, <code>tx</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -4376,7 +4432,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L69" target="_blank">api/contract_api.ts:69</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L69" target="_blank">api/contract_api.ts:69</a></p>
 <hr>
 <h3 id="sign">sign</h3>
 <p>▸ <strong>sign</strong>(<code>web3</code>, <code>account</code>, <code>hash</code>): <code>Promise</code>&lt;<code>unknown</code>&gt;</p>
@@ -4407,7 +4463,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>unknown</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L38" target="_blank">api/contract_api.ts:38</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L38" target="_blank">api/contract_api.ts:38</a></p>
 <hr>
 <h3 id="signeip712">signEip712</h3>
 <p>▸ <strong>signEip712</strong>(<code>web3</code>, <code>account</code>, <code>method</code>, <code>params</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -4442,7 +4498,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L238" target="_blank">api/sign/sign_tools.ts:238</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L241" target="_blank">api/sign/sign_tools.ts:241</a></p>
 <hr>
 <h3 id="signeip712walletconnect">signEip712WalletConnect</h3>
 <p>▸ <strong>signEip712WalletConnect</strong>(<code>web3</code>, <code>account</code>, <code>typedData</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
@@ -4472,7 +4528,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>any</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L274" target="_blank">api/sign/sign_tools.ts:274</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L277" target="_blank">api/sign/sign_tools.ts:277</a></p>
 <hr>
 <h3 id="signethereumtx">signEthereumTx</h3>
 <p>▸ <strong>signEthereumTx</strong>(<code>web3</code>, <code>account</code>, <code>rawTx</code>, <code>chainId</code>): <code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> ; <code>rawTx</code>: <code>any</code> = jsonTx; <code>result</code>: <code>string</code>  } | { <code>error</code>: <code>any</code> ; <code>rawTx</code>: <code>undefined</code> = jsonTx; <code>result</code>: <code>undefined</code>  }&gt;</p>
@@ -4507,7 +4563,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>error</code>: <code>undefined</code> ; <code>rawTx</code>: <code>any</code> = jsonTx; <code>result</code>: <code>string</code>  } | { <code>error</code>: <code>any</code> ; <code>rawTx</code>: <code>undefined</code> = jsonTx; <code>result</code>: <code>undefined</code>  }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/contract_api.ts#L102" target="_blank">api/contract_api.ts:102</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/contract_api.ts#L102" target="_blank">api/contract_api.ts:102</a></p>
 <hr>
 <h3 id="signnftmintwithdatastructure">signNFTMintWithDataStructure</h3>
 <p>▸ <strong>signNFTMintWithDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4549,7 +4605,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L900" target="_blank">api/sign/sign_tools.ts:900</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L938" target="_blank">api/sign/sign_tools.ts:938</a></p>
 <hr>
 <h3 id="signnftmintwithdatastructureforcontract">signNFTMintWithDataStructureForContract</h3>
 <p>▸ <strong>signNFTMintWithDataStructureForContract</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4591,7 +4647,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L945" target="_blank">api/sign/sign_tools.ts:945</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L983" target="_blank">api/sign/sign_tools.ts:983</a></p>
 <hr>
 <h3 id="signnftmintwithoutdatastructure">signNFTMintWithoutDataStructure</h3>
 <p>▸ <strong>signNFTMintWithoutDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4633,7 +4689,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L923" target="_blank">api/sign/sign_tools.ts:923</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L961" target="_blank">api/sign/sign_tools.ts:961</a></p>
 <hr>
 <h3 id="signnfttransferwithdatastructureforcontract">signNFTTransferWithDataStructureForContract</h3>
 <p>▸ <strong>signNFTTransferWithDataStructureForContract</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4675,7 +4731,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1221" target="_blank">api/sign/sign_tools.ts:1221</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1259" target="_blank">api/sign/sign_tools.ts:1259</a></p>
 <hr>
 <h3 id="signnfttransferwithoutdatastructure">signNFTTransferWithoutDataStructure</h3>
 <p>▸ <strong>signNFTTransferWithoutDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4717,7 +4773,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1192" target="_blank">api/sign/sign_tools.ts:1192</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1230" target="_blank">api/sign/sign_tools.ts:1230</a></p>
 <hr>
 <h3 id="signnftwithdrawwithdatastructure">signNFTWithdrawWithDataStructure</h3>
 <p>▸ <strong>signNFTWithdrawWithDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4759,7 +4815,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L813" target="_blank">api/sign/sign_tools.ts:813</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L816" target="_blank">api/sign/sign_tools.ts:816</a></p>
 <hr>
 <h3 id="signnftwithdrawwithdatastructureforcontract">signNFTWithdrawWithDataStructureForContract</h3>
 <p>▸ <strong>signNFTWithdrawWithDataStructureForContract</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4801,7 +4857,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L858" target="_blank">api/sign/sign_tools.ts:858</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L861" target="_blank">api/sign/sign_tools.ts:861</a></p>
 <hr>
 <h3 id="signnftwithdrawwithoutdatastructure">signNFTWithdrawWithoutDataStructure</h3>
 <p>▸ <strong>signNFTWithdrawWithoutDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4843,7 +4899,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L836" target="_blank">api/sign/sign_tools.ts:836</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L839" target="_blank">api/sign/sign_tools.ts:839</a></p>
 <hr>
 <h3 id="signoffchainwithdrawwithdatastructure">signOffchainWithdrawWithDataStructure</h3>
 <p>▸ <strong>signOffchainWithdrawWithDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4885,7 +4941,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L594" target="_blank">api/sign/sign_tools.ts:594</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L597" target="_blank">api/sign/sign_tools.ts:597</a></p>
 <hr>
 <h3 id="signoffchainwithdrawwithdatastructureforcontract">signOffchainWithdrawWithDataStructureForContract</h3>
 <p>▸ <strong>signOffchainWithdrawWithDataStructureForContract</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4927,7 +4983,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L639" target="_blank">api/sign/sign_tools.ts:639</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L642" target="_blank">api/sign/sign_tools.ts:642</a></p>
 <hr>
 <h3 id="signoffchainwithdrawwithoutdatastructure">signOffchainWithdrawWithoutDataStructure</h3>
 <p>▸ <strong>signOffchainWithdrawWithoutDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -4969,7 +5025,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L617" target="_blank">api/sign/sign_tools.ts:617</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L620" target="_blank">api/sign/sign_tools.ts:620</a></p>
 <hr>
 <h3 id="signtnftransferwithdatastructure">signTNFTransferWithDataStructure</h3>
 <p>▸ <strong>signTNFTransferWithDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5011,7 +5067,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1169" target="_blank">api/sign/sign_tools.ts:1169</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1207" target="_blank">api/sign/sign_tools.ts:1207</a></p>
 <hr>
 <h3 id="signtransferwithdatastructure">signTransferWithDataStructure</h3>
 <p>▸ <strong>signTransferWithDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5053,7 +5109,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1035" target="_blank">api/sign/sign_tools.ts:1035</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1073" target="_blank">api/sign/sign_tools.ts:1073</a></p>
 <hr>
 <h3 id="signtransferwithdatastructureforcontract">signTransferWithDataStructureForContract</h3>
 <p>▸ <strong>signTransferWithDataStructureForContract</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5095,7 +5151,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1080" target="_blank">api/sign/sign_tools.ts:1080</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1118" target="_blank">api/sign/sign_tools.ts:1118</a></p>
 <hr>
 <h3 id="signtransferwithoutdatastructure">signTransferWithoutDataStructure</h3>
 <p>▸ <strong>signTransferWithoutDataStructure</strong>(<code>web3</code>, <code>owner</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5137,7 +5193,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L1058" target="_blank">api/sign/sign_tools.ts:1058</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L1096" target="_blank">api/sign/sign_tools.ts:1096</a></p>
 <hr>
 <h3 id="signupdateaccountwithdatastructure">signUpdateAccountWithDataStructure</h3>
 <p>▸ <strong>signUpdateAccountWithDataStructure</strong>(<code>web3</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5175,7 +5231,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L443" target="_blank">api/sign/sign_tools.ts:443</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L446" target="_blank">api/sign/sign_tools.ts:446</a></p>
 <hr>
 <h3 id="signupdateaccountwithdatastructureforcontract">signUpdateAccountWithDataStructureForContract</h3>
 <p>▸ <strong>signUpdateAccountWithDataStructureForContract</strong>(<code>web3</code>, <code>bodyParams</code>, <code>chainId</code>, <code>accountId</code>, <code>counterFactualInfo?</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5213,7 +5269,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L487" target="_blank">api/sign/sign_tools.ts:487</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L490" target="_blank">api/sign/sign_tools.ts:490</a></p>
 <hr>
 <h3 id="signupdateaccountwithoutdatastructure">signUpdateAccountWithoutDataStructure</h3>
 <p>▸ <strong>signUpdateAccountWithoutDataStructure</strong>(<code>web3</code>, <code>bodyParams</code>, <code>chainId</code>, <code>walletType</code>, <code>accountId</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
@@ -5251,7 +5307,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = response.result } | { <code>counterFactualInfo</code>: <code>any</code> = signature.counterFactualInfo; <code>ecdsaSig</code>: <code>any</code> = signature.sig }&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/api/sign/sign_tools.ts#L466" target="_blank">api/sign/sign_tools.ts:466</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/api/sign/sign_tools.ts#L469" target="_blank">api/sign/sign_tools.ts:469</a></p>
 <hr>
 <h3 id="sleep">sleep</h3>
 <p>▸ <strong>sleep</strong>(<code>milliseconds</code>): <code>Promise</code>&lt;<code>unknown</code>&gt;</p>
@@ -5273,7 +5329,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Promise</code>&lt;<code>unknown</code>&gt;</p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/network_tools.ts#L13" target="_blank">utils/network_tools.ts:13</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/network_tools.ts#L13" target="_blank">utils/network_tools.ts:13</a></p>
 <hr>
 <h3 id="tobn">toBN</h3>
 <p>▸ <strong>toBN</strong>(<code>mixed</code>): <code>BN</code></p>
@@ -5301,7 +5357,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BN</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L133" target="_blank">utils/formatter.ts:133</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L133" target="_blank">utils/formatter.ts:133</a></p>
 <hr>
 <h3 id="tobig">toBig</h3>
 <p>▸ <strong>toBig</strong>(<code>mixed</code>): <code>BigNumber</code></p>
@@ -5335,7 +5391,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BigNumber</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L107" target="_blank">utils/formatter.ts:107</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L107" target="_blank">utils/formatter.ts:107</a></p>
 <hr>
 <h3 id="tobuffer">toBuffer</h3>
 <p>▸ <strong>toBuffer</strong>(<code>mixed</code>): <code>Buffer</code> | <code>Uint8Array</code></p>
@@ -5361,7 +5417,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Buffer</code> | <code>Uint8Array</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L28" target="_blank">utils/formatter.ts:28</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L28" target="_blank">utils/formatter.ts:28</a></p>
 <hr>
 <h3 id="tofixed">toFixed</h3>
 <p>▸ <strong>toFixed</strong>(<code>number</code>, <code>precision</code>, <code>ceil</code>): <code>string</code></p>
@@ -5397,7 +5453,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L233" target="_blank">utils/formatter.ts:233</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L233" target="_blank">utils/formatter.ts:233</a></p>
 <hr>
 <h3 id="togwei">toGWEI</h3>
 <p>▸ <strong>toGWEI</strong>(<code>value</code>): <code>BigNumber</code></p>
@@ -5424,7 +5480,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>BigNumber</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L151" target="_blank">utils/formatter.ts:151</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L151" target="_blank">utils/formatter.ts:151</a></p>
 <hr>
 <h3 id="tohex">toHex</h3>
 <p>▸ <strong>toHex</strong>(<code>mixed</code>): <code>string</code></p>
@@ -5458,7 +5514,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L51" target="_blank">utils/formatter.ts:51</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L51" target="_blank">utils/formatter.ts:51</a></p>
 <hr>
 <h3 id="tonumber">toNumber</h3>
 <p>▸ <strong>toNumber</strong>(<code>mixed</code>): <code>number</code></p>
@@ -5492,7 +5548,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>number</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L80" target="_blank">utils/formatter.ts:80</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L80" target="_blank">utils/formatter.ts:80</a></p>
 <hr>
 <h3 id="towei">toWEI</h3>
 <p>▸ <strong>toWEI</strong>(<code>tokens</code>, <code>symbol</code>, <code>value</code>, <code>rm?</code>): <code>string</code></p>
@@ -5531,7 +5587,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L70" target="_blank">utils/swap_calc_utils.ts:70</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L70" target="_blank">utils/swap_calc_utils.ts:70</a></p>
 <hr>
 <h3 id="updatepriceimpactnew">updatePriceImpact_new</h3>
 <p>▸ <strong>updatePriceImpact_new</strong>(<code>reverseIn</code>, <code>reverseOut</code>, <code>amountS</code>, <code>sellDecimal</code>, <code>amountBOut</code>, <code>buyDecimal</code>, <code>feeBips</code>, <code>takerFee</code>, <code>isAtoB</code>, <code>isReversed</code>, <code>exceedDepth</code>, <code>depth</code>): <code>string</code></p>
@@ -5597,7 +5653,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>string</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/swap_calc_utils.ts#L467" target="_blank">utils/swap_calc_utils.ts:467</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/swap_calc_utils.ts#L467" target="_blank">utils/swap_calc_utils.ts:467</a></p>
 <hr>
 <h3 id="zeropad">zeroPad</h3>
 <p>▸ <strong>zeroPad</strong>(<code>num</code>, <code>places</code>): <code>Buffer</code> | <code>Uint8Array</code></p>
@@ -5627,7 +5683,7 @@
 <h4 id="returns">Returns</h4>
 <p><code>Buffer</code> | <code>Uint8Array</code></p>
 <h4 id="defined-in">Defined in</h4>
-<p><a href="https://github.com/Loopring/loopring_sdk/blob/532648f/src/utils/formatter.ts#L42" target="_blank">utils/formatter.ts:42</a></p>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/02976c9/src/utils/formatter.ts#L42" target="_blank">utils/formatter.ts:42</a></p>
 
                                 
                                 </section>
@@ -5667,7 +5723,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Read More","level":"3.2","depth":1,"next":{"title":"Python","level":"4.1","depth":1,"url":"https://github.com/Loopring/hello_loopring","ref":"https://github.com/Loopring/hello_loopring","articles":[]},"previous":{"title":"WsAPI","level":"3.1.7","depth":2,"path":"detail/classes/WsAPI.md","ref":"./detail/classes/WsAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/modules.md","mtime":"2022-02-18T07:24:45.359Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-18T07:24:47.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Read More","level":"3.2","depth":1,"next":{"title":"Python","level":"4.1","depth":1,"url":"https://github.com/Loopring/hello_loopring","ref":"https://github.com/Loopring/hello_loopring","articles":[]},"previous":{"title":"WsAPI","level":"3.1.7","depth":2,"path":"detail/classes/WsAPI.md","ref":"./detail/classes/WsAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/modules.md","mtime":"2022-02-25T05:59:58.174Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-02-25T06:00:00.456Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

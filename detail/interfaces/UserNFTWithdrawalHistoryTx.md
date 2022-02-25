@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2114](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2114)
+[defs/loopring_defs.ts:2271](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2271)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2118](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2118)
+[defs/loopring_defs.ts:2275](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2275)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2128](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2128)
+[defs/loopring_defs.ts:2285](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2285)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2121](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2121)
+[defs/loopring_defs.ts:2278](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2278)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2125](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2125)
+[defs/loopring_defs.ts:2282](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2282)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2126](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2126)
+[defs/loopring_defs.ts:2283](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2283)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2120](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2120)
+[defs/loopring_defs.ts:2277](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2277)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2119](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2119)
+[defs/loopring_defs.ts:2276](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2276)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2112](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2112)
+[defs/loopring_defs.ts:2269](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2269)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2110](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2110)
+[defs/loopring_defs.ts:2267](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2267)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2127](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2127)
+[defs/loopring_defs.ts:2284](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2284)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2123](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2123)
+[defs/loopring_defs.ts:2280](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2280)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2117](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2117)
+[defs/loopring_defs.ts:2274](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2274)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2115](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2115)
+[defs/loopring_defs.ts:2272](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2272)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2124](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2124)
+[defs/loopring_defs.ts:2281](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2281)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2111](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2111)
+[defs/loopring_defs.ts:2268](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2268)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2116](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2116)
+[defs/loopring_defs.ts:2273](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2273)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2132](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2132)
+[defs/loopring_defs.ts:2289](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2289)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2113](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2113)
+[defs/loopring_defs.ts:2270](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2270)
 
 ___
 
@@ -240,4 +240,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2122](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L2122)
+[defs/loopring_defs.ts:2279](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2279)

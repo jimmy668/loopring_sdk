@@ -31,7 +31,7 @@ user account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1867](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1867)
+[defs/loopring_defs.ts:1998](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1998)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1912](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1912)
+[defs/loopring_defs.ts:2043](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2043)
 
 ___
 
@@ -55,7 +55,7 @@ ecdsa signature of this request
 
 #### Defined in
 
-[defs/loopring_defs.ts:1903](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1903)
+[defs/loopring_defs.ts:2034](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2034)
 
 ___
 
@@ -69,7 +69,7 @@ eddsa signature of this request
 
 #### Defined in
 
-[defs/loopring_defs.ts:1897](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1897)
+[defs/loopring_defs.ts:2028](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2028)
 
 ___
 
@@ -83,7 +83,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1855](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1855)
+[defs/loopring_defs.ts:1986](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1986)
 
 ___
 
@@ -97,7 +97,7 @@ An approved hash string which was submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:1909](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1909)
+[defs/loopring_defs.ts:2040](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2040)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1911](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1911)
+[defs/loopring_defs.ts:2042](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2042)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1879](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1879)
+[defs/loopring_defs.ts:2010](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2010)
 
 ___
 
@@ -133,7 +133,7 @@ Nonce of users exchange account that used in off-chain requests.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1891](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1891)
+[defs/loopring_defs.ts:2022](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2022)
 
 ___
 
@@ -147,7 +147,7 @@ owner address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1861](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1861)
+[defs/loopring_defs.ts:1992](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1992)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1873](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1873)
+[defs/loopring_defs.ts:2004](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2004)
 
 ___
 
@@ -173,4 +173,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:1885](https://github.com/Loopring/loopring_sdk/blob/532648f/src/defs/loopring_defs.ts#L1885)
+[defs/loopring_defs.ts:2016](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2016)
