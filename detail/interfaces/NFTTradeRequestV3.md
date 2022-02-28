@@ -19,7 +19,7 @@
 
 ### maker
 
-• **maker**: [`NFTOrderRequestV3`](NFTOrderRequestV3.md)
+• **maker**: [`NFTOrderRequestV3`](../modules.md#nftorderrequestv3)
 
 maker order
 
@@ -27,7 +27,7 @@ maker order
 
 #### Defined in
 
-[defs/loopring_defs.ts:1847](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1847)
+[defs/loopring_defs.ts:1884](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1884)
 
 ___
 
@@ -41,13 +41,13 @@ maker fee bips
 
 #### Defined in
 
-[defs/loopring_defs.ts:1853](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1853)
+[defs/loopring_defs.ts:1890](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1890)
 
 ___
 
 ### taker
 
-• **taker**: [`NFTOrderRequestV3`](NFTOrderRequestV3.md)
+• **taker**: [`NFTOrderRequestV3`](../modules.md#nftorderrequestv3)
 
 taker order
 
@@ -55,7 +55,7 @@ taker order
 
 #### Defined in
 
-[defs/loopring_defs.ts:1859](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1859)
+[defs/loopring_defs.ts:1896](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1896)
 
 ___
 
@@ -69,4 +69,4 @@ taker fee bips
 
 #### Defined in
 
-[defs/loopring_defs.ts:1865](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1865)
+[defs/loopring_defs.ts:1902](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1902)

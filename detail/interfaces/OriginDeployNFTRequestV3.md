@@ -25,7 +25,7 @@ Submit Deploy NFT params
 
 #### Defined in
 
-[defs/loopring_defs.ts:1437](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1437)
+[defs/loopring_defs.ts:1456](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1456)
 
 ___
 
@@ -39,7 +39,7 @@ nftData
 
 #### Defined in
 
-[defs/loopring_defs.ts:1430](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1430)
+[defs/loopring_defs.ts:1449](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1449)
 
 ___
 
@@ -53,7 +53,7 @@ NFT address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1436](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1436)
+[defs/loopring_defs.ts:1455](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1455)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1417](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L1417)
+[defs/loopring_defs.ts:1436](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1436)

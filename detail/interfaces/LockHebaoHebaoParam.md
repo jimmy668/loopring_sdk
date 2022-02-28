@@ -12,6 +12,7 @@
 - [gasLimit](LockHebaoHebaoParam.md#gaslimit)
 - [gasPrice](LockHebaoHebaoParam.md#gasprice)
 - [isVersion1](LockHebaoHebaoParam.md#isversion1)
+- [nonce](LockHebaoHebaoParam.md#nonce)
 - [sendByMetaMask](LockHebaoHebaoParam.md#sendbymetamask)
 - [value](LockHebaoHebaoParam.md#value)
 - [wallet](LockHebaoHebaoParam.md#wallet)
@@ -25,7 +26,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2454](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2454)
+[defs/loopring_defs.ts:2491](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2491)
 
 ___
 
@@ -35,7 +36,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2451](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2451)
+[defs/loopring_defs.ts:2488](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2488)
 
 ___
 
@@ -45,7 +46,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2448](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2448)
+[defs/loopring_defs.ts:2485](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2485)
 
 ___
 
@@ -55,7 +56,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2453](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2453)
+[defs/loopring_defs.ts:2490](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2490)
 
 ___
 
@@ -65,7 +66,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2452](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2452)
+[defs/loopring_defs.ts:2489](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2489)
 
 ___
 
@@ -75,7 +76,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2455](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2455)
+[defs/loopring_defs.ts:2493](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2493)
+
+___
+
+### nonce
+
+• **nonce**: `number`
+
+#### Defined in
+
+[defs/loopring_defs.ts:2492](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2492)
 
 ___
 
@@ -85,7 +96,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2456](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2456)
+[defs/loopring_defs.ts:2494](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2494)
 
 ___
 
@@ -95,7 +106,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2450](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2450)
+[defs/loopring_defs.ts:2487](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2487)
 
 ___
 
@@ -105,7 +116,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2449](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2449)
+[defs/loopring_defs.ts:2486](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2486)
 
 ___
 
@@ -115,4 +126,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2447](https://github.com/Loopring/loopring_sdk/blob/02976c9/src/defs/loopring_defs.ts#L2447)
+[defs/loopring_defs.ts:2484](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L2484)
