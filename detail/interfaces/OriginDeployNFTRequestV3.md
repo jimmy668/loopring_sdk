@@ -25,7 +25,7 @@ Submit Deploy NFT params
 
 #### Defined in
 
-[defs/loopring_defs.ts:1456](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1456)
+[defs/loopring_defs.ts:1456](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L1456)
 
 ___
 
@@ -39,7 +39,7 @@ nftData
 
 #### Defined in
 
-[defs/loopring_defs.ts:1449](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1449)
+[defs/loopring_defs.ts:1449](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L1449)
 
 ___
 
@@ -53,14 +53,14 @@ NFT address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1455](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1455)
+[defs/loopring_defs.ts:1455](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L1455)
 
 ___
 
 ### transfer
 
-• **transfer**: `Omit`<[`OriginTransferRequestV3`](OriginTransferRequestV3.md), ``"payeeId"`` \| ``"maxFee"`` \| ``"memo"``\> & { `maxFee?`: { `tokenId`: ``0`` ; `volume`: ``"0"``  } ; `memo?`: `string` ; `payeeId?`: ``0``  }
+• **transfer**: `Omit`<[`OriginTransferRequestV3`](OriginTransferRequestV3.md), ``"payeeId"`` \| ``"maxFee"`` \| ``"memo"``\> & { `maxFee?`: { `tokenId`: `string` \| `number` ; `volume`: ``"0"``  } ; `memo?`: `string` ; `payeeId?`: ``0``  }
 
 #### Defined in
 
-[defs/loopring_defs.ts:1436](https://github.com/Loopring/loopring_sdk/blob/18accaa/src/defs/loopring_defs.ts#L1436)
+[defs/loopring_defs.ts:1436](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L1436)
