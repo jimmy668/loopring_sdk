@@ -6,7 +6,6 @@
 
 ### Properties
 
-- [creatorFeeBips](NFTTokenInfo.md#creatorfeebips)
 - [minter](NFTTokenInfo.md#minter)
 - [nftData](NFTTokenInfo.md#nftdata)
 - [nftId](NFTTokenInfo.md#nftid)
@@ -16,23 +15,13 @@
 
 ## Properties
 
-### creatorFeeBips
-
-• **creatorFeeBips**: ``0``
-
-#### Defined in
-
-[defs/loopring_defs.ts:2223](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2223)
-
-___
-
 ### minter
 
 • **minter**: `string`
 
 #### Defined in
 
-[defs/loopring_defs.ts:2219](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2219)
+[defs/loopring_defs.ts:2219](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2219)
 
 ___
 
@@ -42,7 +31,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2218](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2218)
+[defs/loopring_defs.ts:2218](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2218)
 
 ___
 
@@ -52,7 +41,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2222](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2222)
+[defs/loopring_defs.ts:2222](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2222)
 
 ___
 
@@ -62,7 +51,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2220](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2220)
+[defs/loopring_defs.ts:2220](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2220)
 
 ___
 
@@ -72,7 +61,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2224](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2224)
+[defs/loopring_defs.ts:2223](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2223)
 
 ___
 
@@ -82,4 +71,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2221](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/loopring_defs.ts#L2221)
+[defs/loopring_defs.ts:2221](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L2221)

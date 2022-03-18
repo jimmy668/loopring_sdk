@@ -7,13 +7,13 @@
 ### Enumeration members
 
 - [Authereum](ConnectorNames.md#authereum)
+- [Coinbase](ConnectorNames.md#coinbase)
 - [Ledger](ConnectorNames.md#ledger)
 - [MetaMask](ConnectorNames.md#metamask)
 - [Network](ConnectorNames.md#network)
 - [Trezor](ConnectorNames.md#trezor)
 - [Unknown](ConnectorNames.md#unknown)
 - [WalletConnect](ConnectorNames.md#walletconnect)
-- [WalletLink](ConnectorNames.md#walletlink)
 
 ## Enumeration members
 
@@ -23,7 +23,17 @@
 
 #### Defined in
 
-[defs/web3_defs.ts:16](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L16)
+[defs/web3_defs.ts:16](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L16)
+
+___
+
+### Coinbase
+
+• **Coinbase** = `"Coinbase"`
+
+#### Defined in
+
+[defs/web3_defs.ts:13](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L13)
 
 ___
 
@@ -33,7 +43,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:14](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L14)
+[defs/web3_defs.ts:14](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L14)
 
 ___
 
@@ -43,7 +53,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:10](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L10)
+[defs/web3_defs.ts:10](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L10)
 
 ___
 
@@ -53,7 +63,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:11](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L11)
+[defs/web3_defs.ts:11](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L11)
 
 ___
 
@@ -63,7 +73,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:15](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L15)
+[defs/web3_defs.ts:15](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L15)
 
 ___
 
@@ -73,7 +83,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:9](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L9)
+[defs/web3_defs.ts:9](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L9)
 
 ___
 
@@ -83,14 +93,4 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:12](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L12)
-
-___
-
-### WalletLink
-
-• **WalletLink** = `"WalletLink"`
-
-#### Defined in
-
-[defs/web3_defs.ts:13](https://github.com/Loopring/loopring_sdk/blob/c031084/src/defs/web3_defs.ts#L13)
+[defs/web3_defs.ts:12](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/web3_defs.ts#L12)
