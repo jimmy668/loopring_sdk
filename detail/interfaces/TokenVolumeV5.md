@@ -21,7 +21,7 @@ The volume of the token
 
 #### Defined in
 
-[defs/loopring_defs.ts:368](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L368)
+[defs/loopring_defs.ts:368](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L368)
 
 ___
 
@@ -35,4 +35,4 @@ The Loopring\'s token identifier.
 
 #### Defined in
 
-[defs/loopring_defs.ts:362](https://github.com/Loopring/loopring_sdk/blob/9d83b66/src/defs/loopring_defs.ts#L362)
+[defs/loopring_defs.ts:362](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L362)
