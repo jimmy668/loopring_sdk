@@ -19,7 +19,7 @@ import { modulo } from './field';
 import { TextEncoder } from "web-encoding";
 
 // @ts-ignore
-import { crypto_generichash } from 'sodium-javascript';
+var blake2b = require('blake2b')
 
 export class PoseidonParams {
   public p: BigNumber;
@@ -68,7 +68,8 @@ export class permunation {
 
     const buf = Buffer.alloc(outputLength)
     // console.log(`hashOfSize32Bytes ${buf.toString()}`)    
-    crypto_generichash(buf, message)
+    // console.log(`message ${message}`)    
+    blake2b(buf.length, null).update(message).final(buf)
     const items = buf.toJSON().data
     // console.log(`items ${items}`)
 
@@ -91,7 +92,7 @@ export class permunation {
 
     const buf = Buffer.alloc(outputLength)
     // console.log(`hashOfSize32Bytes ${buf.toString()}`)    
-    crypto_generichash(buf, message)
+    blake2b(buf.length, null).update(message).final(buf)
     const items = buf.toJSON().data
     // console.log(`items ${items}`)
 
