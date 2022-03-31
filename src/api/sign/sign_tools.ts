@@ -86,15 +86,15 @@ export async function generateKeyPair({
   );
 
   if (!result.error) {
-    // myLog("sig:", result.sig);
+    myLog("sig:", result.sig);
     const seedBuff = ethUtil.sha256(fm.toBuffer(result.sig))
-    // myLog(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
+    myLog(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
     const seed = BigNumber.from("0x" + seedBuff.toString('hex'))
-    // myLog(`seed ${seed.toString()}`)
+    myLog(`seed ${seed.toString()}`)
     const bitIntDataItems = bnToBuf(seed.toString());
-    // myLog(`bigIntData ${bitIntDataItems}`)
+    myLog(`bigIntData ${bitIntDataItems}`)
     const keyPair = EDDSAUtil.generateKeyPair(bitIntDataItems)
-    // myLog("keyPair", keyPair)
+    myLog("keyPair", keyPair)
 
     const formatedPx = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyX)));
     const formatedPy = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyY)));
