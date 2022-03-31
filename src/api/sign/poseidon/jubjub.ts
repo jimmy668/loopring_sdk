@@ -49,14 +49,14 @@ export class Point {
     let p = new Point(this.x, this.y)
     let a = Point.infinity()
     let i = 0
-    while (!scaler.eq(0)) {
+    while (!scaler.eq(BigNumber.from("0"))) {
       const bitwiseAnd = scaler.and(BigNumber.from("1"))
-      if (!bitwiseAnd.eq(0)) {
+      if (!bitwiseAnd.eq(BigNumber.from("0"))) {
         a = a.add(p)
       }
       p = p.add(p)
-      scaler = scaler.div(2)
-      // console.log(i + " scaler", scaler.toString())
+      scaler = scaler.div(BigNumber.from("2"))
+      console.log(i + " scaler", scaler.toString())
       i = i + 1
     }
     return a

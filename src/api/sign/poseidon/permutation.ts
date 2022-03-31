@@ -71,16 +71,16 @@ export class permunation {
     // console.log(`message ${message}`)    
     blake2b(buf.length, null).update(message).final(buf)
     const items = buf.toJSON().data
-    // console.log(`items ${items}`)
+    console.log(`H items ${items}`)
 
     let sum = BigNumber.from("0")
     var i = 0
     for (var i = 0; i < items.length; i++) {
       const itemBigInt = BigNumber.from(items[i])
-      const tmp = itemBigInt.mul((BigNumber.from(256).pow(BigNumber.from(i))))
+      const tmp = itemBigInt.mul((BigNumber.from("256").pow(BigNumber.from(i))))
       sum = sum.add(tmp)
     }
-    // console.log(`sum ${sum}`)
+    console.log(`sum ${sum}`)
     return sum
   }
 
@@ -94,16 +94,16 @@ export class permunation {
     // console.log(`hashOfSize32Bytes ${buf.toString()}`)    
     blake2b(buf.length, null).update(message).final(buf)
     const items = buf.toJSON().data
-    // console.log(`items ${items}`)
+    console.log(`H_Bigint items ${items}`)
 
     let sum = BigNumber.from("0")
     var i = 0
     for (var i = 0; i < items.length; i++) {
       const itemBigInt = BigNumber.from(items[i])
-      const tmp = itemBigInt.mul((BigNumber.from(256).pow(BigNumber.from(i))))
+      const tmp = itemBigInt.mul((BigNumber.from("256").pow(BigNumber.from(i))))
       sum = sum.add(tmp)
     }
-    // console.log(`sum ${sum}`)
+    console.log(`sum ${sum}`)
     return sum
   }
 

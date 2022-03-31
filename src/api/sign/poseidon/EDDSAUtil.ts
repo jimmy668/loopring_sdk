@@ -53,12 +53,12 @@ export class EDDSAUtil {
     console.log("sum", bigInt.toString())
 
     const secretKey = bigInt.mod(jubjub.JUBJUB_L)
-    // console.log("secretKey", secretKey.toString())
+    console.log("secretKey", secretKey.toString())
 
     const copySecretKey = BigNumber.from(secretKey.toString())
     const B = SignatureScheme.B()
     const publicKey = B.mul(copySecretKey)
-    // console.log("publicKey", publicKey.x.n.toString(), publicKey.y.n.toString())
+    console.log("publicKey", publicKey.x.n.toString(), publicKey.y.n.toString())
 
     const keyPair = {
       "publicKeyX": publicKey.x.n.toString(),
