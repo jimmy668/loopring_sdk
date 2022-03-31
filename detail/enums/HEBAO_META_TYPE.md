@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[defs/loopring_constants.ts:18](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_constants.ts#L18)
+[defs/loopring_constants.ts:15](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_constants.ts#L15)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_constants.ts:16](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_constants.ts#L16)
+[defs/loopring_constants.ts:13](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_constants.ts#L13)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_constants.ts:19](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_constants.ts#L19)
+[defs/loopring_constants.ts:16](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_constants.ts#L16)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_constants.ts:17](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_constants.ts#L17)
+[defs/loopring_constants.ts:14](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_constants.ts#L14)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_constants.ts:20](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_constants.ts#L20)
+[defs/loopring_constants.ts:17](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_constants.ts#L17)

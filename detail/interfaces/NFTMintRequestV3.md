@@ -42,7 +42,7 @@ The amount of the token
 
 #### Defined in
 
-[defs/loopring_defs.ts:1703](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1703)
+[defs/loopring_defs.ts:1740](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1740)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1754](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1754)
+[defs/loopring_defs.ts:1791](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1791)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1753](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1753)
+[defs/loopring_defs.ts:1790](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1790)
 
 ___
 
@@ -76,7 +76,7 @@ ecdsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1746](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1746)
+[defs/loopring_defs.ts:1783](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1783)
 
 ___
 
@@ -90,7 +90,7 @@ eddsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:1740](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1740)
+[defs/loopring_defs.ts:1777](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1777)
 
 ___
 
@@ -104,7 +104,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1655](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1655)
+[defs/loopring_defs.ts:1692](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1692)
 
 ___
 
@@ -118,7 +118,7 @@ force to mint, regardless the previous mint record
 
 #### Defined in
 
-[defs/loopring_defs.ts:1734](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1734)
+[defs/loopring_defs.ts:1771](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1771)
 
 ___
 
@@ -132,7 +132,7 @@ An approved hash string which was already submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:1752](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1752)
+[defs/loopring_defs.ts:1789](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1789)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1722](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1722)
+[defs/loopring_defs.ts:1759](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1759)
 
 ___
 
@@ -158,7 +158,7 @@ account owner address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1667](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1667)
+[defs/loopring_defs.ts:1704](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1704)
 
 ___
 
@@ -172,7 +172,7 @@ account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1661](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1661)
+[defs/loopring_defs.ts:1698](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1698)
 
 ___
 
@@ -186,7 +186,7 @@ NFT_ID url_id
 
 #### Defined in
 
-[defs/loopring_defs.ts:1697](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1697)
+[defs/loopring_defs.ts:1734](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1734)
 
 ___
 
@@ -200,7 +200,7 @@ nftType: 0 for EIP1155, 1 for EIP712. EIP1155 by default.
 
 #### Defined in
 
-[defs/loopring_defs.ts:1685](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1685)
+[defs/loopring_defs.ts:1722](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1722)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1728](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1728)
+[defs/loopring_defs.ts:1765](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1765)
 
 ___
 
@@ -228,7 +228,7 @@ offchain ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:1716](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1716)
+[defs/loopring_defs.ts:1753](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1753)
 
 ___
 
@@ -236,13 +236,13 @@ ___
 
 • **toAccountId**: `number`
 
-The account receive the minted NFT token, now should be minter himself.
+The account receive the minted NFTAction token, now should be minter himself.
 
 **`memberof`** OriginNFTMintRequestV3
 
 #### Defined in
 
-[defs/loopring_defs.ts:1673](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1673)
+[defs/loopring_defs.ts:1710](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1710)
 
 ___
 
@@ -250,13 +250,13 @@ ___
 
 • `Optional` **toAddress**: `string`
 
-The account receive the minted NFT token, now should be minter himself.
+The account receive the minted NFTAction token, now should be minter himself.
 
 **`memberof`** OriginNFTMintRequestV3
 
 #### Defined in
 
-[defs/loopring_defs.ts:1679](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1679)
+[defs/loopring_defs.ts:1716](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1716)
 
 ___
 
@@ -272,7 +272,7 @@ Contract address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1691](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1691)
+[defs/loopring_defs.ts:1728](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1728)
 
 ___
 
@@ -286,4 +286,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:1710](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1710)
+[defs/loopring_defs.ts:1747](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1747)

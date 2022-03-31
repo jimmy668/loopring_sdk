@@ -9,6 +9,7 @@
 - [accountId](GetUserNFTTxsRequest.md#accountid)
 - [end](GetUserNFTTxsRequest.md#end)
 - [limit](GetUserNFTTxsRequest.md#limit)
+- [metadata](GetUserNFTTxsRequest.md#metadata)
 - [offset](GetUserNFTTxsRequest.md#offset)
 - [start](GetUserNFTTxsRequest.md#start)
 - [types](GetUserNFTTxsRequest.md#types)
@@ -21,7 +22,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:1093](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1093)
+[defs/loopring_defs.ts:1129](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1129)
 
 ___
 
@@ -31,7 +32,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1096](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1096)
+[defs/loopring_defs.ts:1133](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1133)
 
 ___
 
@@ -41,7 +42,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1098](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1098)
+[defs/loopring_defs.ts:1135](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1135)
+
+___
+
+### metadata
+
+• `Optional` **metadata**: `boolean`
+
+#### Defined in
+
+[defs/loopring_defs.ts:1131](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1131)
 
 ___
 
@@ -51,7 +62,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1097](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1097)
+[defs/loopring_defs.ts:1134](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1134)
 
 ___
 
@@ -61,7 +72,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1095](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1095)
+[defs/loopring_defs.ts:1132](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1132)
 
 ___
 
@@ -71,4 +82,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1099](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1099)
+[defs/loopring_defs.ts:1136](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1136)

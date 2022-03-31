@@ -10,6 +10,7 @@
 - [address](KeyPairParams.md#address)
 - [chainId](KeyPairParams.md#chainid)
 - [counterFactualInfo](KeyPairParams.md#counterfactualinfo)
+- [isMobile](KeyPairParams.md#ismobile)
 - [keySeed](KeyPairParams.md#keyseed)
 - [walletType](KeyPairParams.md#wallettype)
 - [web3](KeyPairParams.md#web3)
@@ -22,7 +23,7 @@
 
 #### Defined in
 
-[api/sign/sign_tools.ts:59](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L59)
+[api/sign/sign_tools.ts:59](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L59)
 
 ___
 
@@ -32,7 +33,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:55](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L55)
+[api/sign/sign_tools.ts:55](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L55)
 
 ___
 
@@ -42,7 +43,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:58](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L58)
+[api/sign/sign_tools.ts:58](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L58)
 
 ___
 
@@ -52,7 +53,17 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:60](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L60)
+[api/sign/sign_tools.ts:60](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L60)
+
+___
+
+### isMobile
+
+• `Optional` **isMobile**: `boolean`
+
+#### Defined in
+
+[api/sign/sign_tools.ts:61](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L61)
 
 ___
 
@@ -62,7 +73,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:57](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L57)
+[api/sign/sign_tools.ts:57](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L57)
 
 ___
 
@@ -72,7 +83,7 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:56](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L56)
+[api/sign/sign_tools.ts:56](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L56)
 
 ___
 
@@ -82,4 +93,4 @@ ___
 
 #### Defined in
 
-[api/sign/sign_tools.ts:54](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/sign/sign_tools.ts#L54)
+[api/sign/sign_tools.ts:54](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/sign/sign_tools.ts#L54)

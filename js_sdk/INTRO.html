@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="unit_test.html" />
+    <link rel="next" href="Deposit.html" />
     
     
 
@@ -170,7 +170,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="unit_test.html">
+        <li class="chapter " data-level="2.1.2" data-path="Deposit.html">
+            
+                <a href="Deposit.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="unit_test.html">
             
                 <a href="unit_test.html">
             
@@ -183,7 +196,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="signature_api.html">
+        <li class="chapter " data-level="2.1.4" data-path="signature_api.html">
             
                 <a href="signature_api.html">
             
@@ -196,7 +209,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="ammpool_api.html">
+        <li class="chapter " data-level="2.1.5" data-path="ammpool_api.html">
             
                 <a href="ammpool_api.html">
             
@@ -209,7 +222,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="nft_api.html">
+        <li class="chapter " data-level="2.1.6" data-path="nft_api.html">
             
                 <a href="nft_api.html">
             
@@ -222,7 +235,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="contract_api.html">
+        <li class="chapter " data-level="2.1.7" data-path="contract_api.html">
             
                 <a href="contract_api.html">
             
@@ -235,7 +248,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="exchange_api.html">
+        <li class="chapter " data-level="2.1.8" data-path="exchange_api.html">
             
                 <a href="exchange_api.html">
             
@@ -248,7 +261,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.8" data-path="user_api.html">
+        <li class="chapter " data-level="2.1.9" data-path="user_api.html">
             
                 <a href="user_api.html">
             
@@ -261,7 +274,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.9" data-path="whitelisted_user_api.html">
+        <li class="chapter " data-level="2.1.10" data-path="whitelisted_user_api.html">
             
                 <a href="whitelisted_user_api.html">
             
@@ -274,7 +287,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.10" data-path="wallet_api.html">
+        <li class="chapter " data-level="2.1.11" data-path="wallet_api.html">
             
                 <a href="wallet_api.html">
             
@@ -287,7 +300,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.11" data-path="ws_api.html">
+        <li class="chapter " data-level="2.1.12" data-path="ws_api.html">
             
                 <a href="ws_api.html">
             
@@ -300,7 +313,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.12" data-path="websocket_api.html">
+        <li class="chapter " data-level="2.1.13" data-path="websocket_api.html">
             
                 <a href="websocket_api.html">
             
@@ -553,102 +566,246 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="js-sdk-introduction">JS SDK Introduction</h1>
-<h2 id="preinstall">Preinstall</h2>
-<p>Make sure you are using the original npm registry.</p>
-<pre><code class="lang-shell">    npm config set registry http://registry.npmjs.org
+<ul>
+<li><a href="#-quick-start">Quick Start</a>   </li>
+<li><a href="#1-initialize-the-apis">Initialize the APIs</a></li>
+<li><a href="#2-simple-demo-for-transfer">Simple Demo for Transfer</a></li>
+<li><a href="#3-error-code">Error Code</a></li>
+<li><a href="#reference">Reference</a><ul>
+<li><a href="#mockdata">mockData</a></li>
+<li><a href="#getapikey">getApiKey</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="🚀-quick-start">🚀 Quick Start</h2>
+<pre><code class="lang-shell"><span class="hljs-meta">#</span><span class="bash"> Using npm</span>
+npm i @loopring-web/loopring-sdk --save
 </code></pre>
-<h2 id="install">Install</h2>
-<p>Using NPM</p>
-<pre><code class="lang-shell">npm i @loopring-web/loopring-sdk --save
+<pre><code class="lang-shell"><span class="hljs-meta">#</span><span class="bash"> Using yarn</span>
+yarn add @loopring-web/loopring-sdk
 </code></pre>
-<p>Using Yarn</p>
-<pre><code class="lang-shell">yarn add @loopring-web/loopring-sdk
+<blockquote>
+<p>Make sure you are using the original npm registry.<br><code>npm config set registry http://registry.npmjs.org</code></p>
+</blockquote>
+<h2 id="1-initialize-apis">1. Initialize APIs</h2>
+<pre><code class="lang-ts"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> sdk <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@loopring-web/loopring-sdk&quot;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoopringAPI</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> userAPI: UserAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> exchangeAPI: ExchangeAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> ammpoolAPI: AmmpoolAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> walletAPI: WalletAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> wsAPI: WsAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> nftAPI: NFTAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> delegate: DelegateAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> globalAPI: GlobalAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> WhitelistedUserAPI: WhitelistedUserAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> contractAPI: <span class="hljs-keyword">typeof</span> ContractAPI;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> __chainId__: ChainId;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> InitApi = <span class="hljs-function">(<span class="hljs-params">chainId: ChainId</span>) =&gt;</span> {
+    LoopringAPI.userAPI = <span class="hljs-keyword">new</span> sdk.UserAPI({ chainId });
+    LoopringAPI.exchangeAPI = <span class="hljs-keyword">new</span> sdk.ExchangeAPI({ chainId });
+    LoopringAPI.globalAPI = <span class="hljs-keyword">new</span> sdk.GlobalAPI({ chainId });
+    LoopringAPI.ammpoolAPI = <span class="hljs-keyword">new</span> sdk.AmmpoolAPI({ chainId });
+    LoopringAPI.walletAPI = <span class="hljs-keyword">new</span> sdk.WalletAPI({ chainId });
+    LoopringAPI.wsAPI = <span class="hljs-keyword">new</span> sdk.WsAPI({ chainId });
+    LoopringAPI.WhitelistedUserAPI = <span class="hljs-keyword">new</span> sdk.WhitelistedUserAPI({ chainId });
+    LoopringAPI.nftAPI = <span class="hljs-keyword">new</span> sdk.NFTAPI({ chainId });
+    LoopringAPI.__chainId__ = chainId; <span class="hljs-comment">// </span>
+    LoopringAPI.contractAPI = sdk.ContractAPI;
+  };
+}
+LoopringAPI.InitApi(sdk.ChainId.GOERLI); <span class="hljs-comment">// LoopringAPI.InitApi(ChainId.MAINNET)</span>
 </code></pre>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="initialize-the-apis">Initialize the APIs</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> userApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
-<span class="hljs-keyword">const</span> exchangeApi: ExchangeAPI = <span class="hljs-keyword">new</span> ExchangeAPI(ChainId.GORLI);
-<span class="hljs-keyword">const</span> exchangeApi: AmmpoolAPI = <span class="hljs-keyword">new</span> AmmpoolAPI(ChainId.GORLI);
-<span class="hljs-keyword">const</span> wsAPI: WsAPI = <span class="hljs-keyword">new</span> WsAPI(ChainId.GORLI);
-<span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI);
-<span class="hljs-keyword">const</span> walletAPI: WalletAPI = <span class="hljs-keyword">new</span> WalletAPI(ChainId.GORLI);
-</code></pre>
-<h3 id="example-transfer-process">Example (Transfer Process)</h3>
-<h4 id="1-initialize-the-api">1. Initialize the api</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> api: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
-<span class="hljs-keyword">const</span> exchangeApi: UserAPI = <span class="hljs-keyword">new</span> UserApi(ChainId.GORLI);
-</code></pre>
-<h4 id="2-get-storageid-for-transfer">2. Get storageId for transfer</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: GetNextStorageIdRequest = {
-  <span class="hljs-attr">accountId</span>: acc.accountId,
-  <span class="hljs-attr">sellTokenId</span>: <span class="hljs-number">1</span>,
-};
-<span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> api.getNextStorageId(request, acc.apiKey);
-</code></pre>
-<h4 id="3-get-nonce-with-getaccountapi">3. Get nonce with getAccountApi</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> { nonce } = <span class="hljs-keyword">await</span> exchangeApi.getAccount({
-  <span class="hljs-attr">owner</span>: acc.address,
+<ul>
+<li>contractAPI -- Ethereum method</li>
+<li>exchangeAPI -- Loopring Exchange Info</li>
+<li>wsAPI -- Websocket</li>
+<li>nftAPI -- NFT metadata &amp; contract Info</li>
+<li>walletAPI -- Wallet Info &amp; Layer1 Info</li>
+<li>userAPI &amp; globalAPI -- layer2 asset(ERC20 &amp; NFT) Info </li>
+<li>ammpoolAPI -- user layer2 Amm Info</li>
+</ul>
+<h2 id="2-simple-demo-for-transfer">2. Simple Demo for Transfer</h2>
+<p><a href="#reference">Test MockData</a></p>
+<hr>
+<h4 id="step1-getaccount----layer2-account-info">Step1: getAccount -- Layer2 Account info</h4>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> { accInfo } = <span class="hljs-keyword">await</span> LoopringAPI.exchangeAPI.getAccount({
+  <span class="hljs-attr">owner</span>: LOOPRING_EXPORTED_ACCOUNT.address,
 });
 </code></pre>
-<h4 id="4-submit-internal-transfer">4. Submit internal transfer</h4>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> request: OriginTransferRequestV3 = {
-  <span class="hljs-attr">exchange</span>: acc.exchangeAddr,
-  <span class="hljs-attr">payerAddr</span>: acc.address,
-  <span class="hljs-attr">payerId</span>: acc.accountId,
-  <span class="hljs-attr">payeeAddr</span>: <span class="hljs-string">&quot;0xb6AdaC3e924B4985Ad74646FEa3610f14cDFB79c&quot;</span>,
-  <span class="hljs-attr">payeeId</span>: <span class="hljs-number">10392</span>,
-  <span class="hljs-attr">storageId</span>: storageId.offchainId,
-  <span class="hljs-attr">token</span>: {
-    <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&quot;1&quot;</span>,
-    <span class="hljs-attr">volume</span>: <span class="hljs-string">&quot;100000000000000000000&quot;</span>,
-  },
-  <span class="hljs-attr">maxFee</span>: {
-    <span class="hljs-attr">tokenId</span>: <span class="hljs-string">&quot;1&quot;</span>,
-    <span class="hljs-attr">volume</span>: <span class="hljs-string">&quot;9400000000000000000&quot;</span>,
-  },
-  <span class="hljs-attr">validUntil</span>: VALID_UNTIL,
+<p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/account/account.test.ts" target="_blank">account.test.ts</a></p>
+<hr>
+<h4 id="step2-getuserbalance">Step2: getUserBalance</h4>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> { userBalances } = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getUserBalances(
+  { <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId, <span class="hljs-attr">tokens</span>: <span class="hljs-string">&quot;&quot;</span> },
+  apiKey  <span class="hljs-comment">// Please see the reference get-apikey</span>
+);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Layer2 ERC20 Balance: <span class="hljs-subst">${userBalances}</span>`</span>);
+</code></pre>
+<p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/account/account.test.ts" target="_blank">account.test.ts</a></p>
+<p>Reference: <a href="#get-apikey">apiKey</a></p>
+<hr>
+<h4 id="step2-getstorageid">Step2: getStorageId</h4>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> request2: GetNextStorageIdRequest = {
+  <span class="hljs-attr">accountId</span>: accInfo.accountId,
+  <span class="hljs-attr">sellTokenId</span>: <span class="hljs-number">1</span>,
 };
 
-<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.submitInternalTransfer(
-  request,
-  web3,
-  ChainId.GORLI,
-  ConnectorNames.Injected,
-  acc.eddsaKey,
-  acc.apiKey,
-  <span class="hljs-literal">true</span>
+<span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getNextStorageId(
+  request2,
+  apiKey
 );
 </code></pre>
-<h2 id="error-code">Error code</h2>
-<h3 id="error-format">Error format</h3>
-<pre><code class="lang-ts">   <span class="hljs-comment">/* 
-    * @param ErrorCode
-    * Service side code is from  100000 - 199999
-    * SDK side code is from  500000 - 599999
-    * 
-    * @param message
-    * Service side message show to devlopr debug
-    * 
-    * @param msg?
-    * UI level used, shw to customer, inculde information about error resson and solution 
-    */</span>
+<p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/transfer/transferNFT.test.ts" target="_blank">transferNFT.test.ts</a></p>
+<hr>
+<h4 id="step3-getfee">Step3: getFee</h4>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> requestFee: GetNFTOffchainFeeAmtRequest = {
+  <span class="hljs-attr">accountId</span>: accInfo.accountId,
+  <span class="hljs-comment">// tokenAddress: LOOPRING_EXPORTED_ACCOUNT.nftTokenAddress,</span>
+  <span class="hljs-attr">requestType</span>: OffchainNFTFeeReqType.NFT_TRANSFER,
+  <span class="hljs-attr">amount</span>: <span class="hljs-string">&quot;0&quot;</span>,
+};
+<span class="hljs-keyword">const</span> responseFee = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getNFTOffchainFeeAmt(
+  requestFee,
+  apiKey
+);
+</code></pre>
+<p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/transfer/transferNFT.test.ts" target="_blank">transferNFT.test.ts</a></p>
+<hr>
+<h4 id="step4-submittransfer">Step4: submitTransfer</h4>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> request3: OriginNFTTransferRequestV3 = {
+  <span class="hljs-attr">exchange</span>: LOOPRING_EXPORTED_ACCOUNT.exchangeAddr,
+  <span class="hljs-attr">fromAccountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+  <span class="hljs-attr">fromAddress</span>: LOOPRING_EXPORTED_ACCOUNT.address,
+  <span class="hljs-attr">toAccountId</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// toAccountId is not required, input 0 as default</span>
+  <span class="hljs-attr">toAddress</span>: LOOPRING_EXPORTED_ACCOUNT.address2,
+  <span class="hljs-attr">token</span>: {
+    <span class="hljs-attr">tokenId</span>: LOOPRING_EXPORTED_ACCOUNT.nftTokenId,
+    <span class="hljs-attr">nftData</span>: LOOPRING_EXPORTED_ACCOUNT.nftData,
+    <span class="hljs-attr">amount</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  },
+  <span class="hljs-attr">maxFee</span>: {
+    <span class="hljs-attr">tokenId</span>:
+      <span class="hljs-comment">// @ts-ignore</span>
+      TOKEN_INFO.tokenMap[responseFee.fees[<span class="hljs-number">1</span>]?.token?.toString() ?? <span class="hljs-string">&quot;LRC&quot;</span>]
+        .tokenId,
+    <span class="hljs-attr">amount</span>: responseFee.fees[<span class="hljs-number">1</span>]?.fee ?? <span class="hljs-string">&quot;9400000000000000000&quot;</span>,
+  },
+  <span class="hljs-attr">storageId</span>: storageId.offchainId,
+  <span class="hljs-attr">validUntil</span>: <span class="hljs-number">1667396982</span>,
+  <span class="hljs-comment">// memo: &apos;&apos;,</span>
+};
 
-    <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> RESULT_INFO {
-      code?: <span class="hljs-built_in">number</span>;
-      msg?: <span class="hljs-built_in">string</span>;
-      message?: <span class="hljs-built_in">string</span>;
-    }
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.submitNFTInTransfer({
+  <span class="hljs-attr">request</span>: request3,
+  web3,
+  <span class="hljs-attr">chainId</span>: ChainId.GOERLI,
+  <span class="hljs-attr">walletType</span>: ConnectorNames.Unknown,
+  <span class="hljs-attr">eddsaKey</span>: eddsaKey.sk,
+  apiKey,
+});
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;response:&quot;</span>, response);
+</code></pre>
+<h2 id="3-error-code">3. Error code</h2>
+<h3 id="error-format">Error format</h3>
+<pre><code class="lang-ts"><span class="hljs-comment">/* 
+* @param ErrorCode
+* Service side code is from  100000 - 199999
+* SDK side code is from  500000 - 599999
+* 
+* @param message
+* Service side message show to devlopr debug
+* 
+* @param msg?
+* UI level used, shw to customer, inculde information about error resson and solution 
+*/</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> RESULT_INFO {
+  code?: <span class="hljs-built_in">number</span>;
+  msg?: <span class="hljs-built_in">string</span>;
+  message?: <span class="hljs-built_in">string</span>;
+}
 </code></pre>
 <blockquote>
 <p>We3 Function or API, catch or get any error, will only return a <code>RESULT_INFO</code>
 Loopring API current now have two common Error format,
-From sdk it will convert v3/wallet follow dex rule.</p>
-<ul>
-<li>v3/wallet: <code>api will always return a resultInfo object</code> </li>
-<li>other dex/v3: <code>api will return a resultInfo object only when catch error</code></li>
-</ul>
+From sdk it will convert v3/wallet follow dex rule.<br>v3/wallet: <code>api will always return a resultInfo object</code><br>other dex/v3: <code>api will return a resultInfo object only when catch error</code></p>
 <p>More detail please read code error_codes.ts</p>
 </blockquote>
+<h2 id="reference">Reference</h2>
+<h3 id="mockdata">mockData</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> LOOPRING_EXPORTED_ACCOUNT = {
+  <span class="hljs-attr">address</span>: <span class="hljs-string">&quot;0x727E0Fa09389156Fc803EaF9C7017338EfD76E7F&quot;</span>, <span class="hljs-comment">// Primary test address</span>
+  <span class="hljs-attr">privateKey</span>:
+    <span class="hljs-string">&quot;adc22517f2de0093429e5365b042da0ec9299353943db0f0cc104743c69104cf&quot;</span>, <span class="hljs-comment">// Primary test address privateKey</span>
+  <span class="hljs-attr">accountId</span>: <span class="hljs-number">12454</span>,   <span class="hljs-comment">// Primary test address accountId (from LoopringAPI.exchangeAPI.getAccount)</span>
+  <span class="hljs-attr">address2</span>: <span class="hljs-string">&quot;0xb6d8c39D5528357dBCe6BEd82aC71c74e9D19079&quot;</span>, <span class="hljs-comment">// secoundary test address</span>
+  <span class="hljs-attr">privateKey2</span>:
+    <span class="hljs-string">&quot;e020ed769032ba95d9a5207687a663d6198fe2f5cedf28a250f7cbd8c81a5263&quot;</span>, <span class="hljs-comment">// secoundary test address privateKey</span>
+  <span class="hljs-attr">accountId2</span>: <span class="hljs-number">10488</span>,   <span class="hljs-comment">// secoundary test address accountId</span>
+  <span class="hljs-attr">addressCF</span>: <span class="hljs-string">&quot;0x23dE4Da688c94a66E8bbE9BCc95CB03b4e209C15&quot;</span>,  <span class="hljs-comment">// counter factual test address </span>
+  <span class="hljs-attr">accountIdCF</span>: <span class="hljs-number">11632</span>, <span class="hljs-comment">// counter factual test accountId </span>
+  <span class="hljs-attr">addressContractWallet</span>: <span class="hljs-string">&quot;0xD4BD7c71B6d4A09217ccc713f740d6ed8f4EA0cd&quot;</span>, <span class="hljs-comment">// Loopring wallet test address </span>
+  <span class="hljs-attr">depositAddress</span>: <span class="hljs-string">&quot;0xb684B265f650a77afd27Ce0D95252a7329B5bD72&quot;</span>, <span class="hljs-comment">// Loopring depositAddress (from LoopringAPI.exchangeAPI.getExchangeInfo)</span>
+  <span class="hljs-attr">exchangeAddress</span>: <span class="hljs-string">&quot;0x2e76EBd1c7c0C8e7c2B875b6d505a260C525d25e&quot;</span>,  <span class="hljs-comment">// Loopring exchangeAddress (from LoopringAPI.exchangeAPI.getExchangeInfo)</span>
+  <span class="hljs-attr">whitelistedAddress</span>: <span class="hljs-string">&quot;0x35405E1349658BcA12810d0f879Bf6c5d89B512C&quot;</span>,
+  <span class="hljs-attr">whitelistedEddkey</span>:
+    <span class="hljs-string">&quot;0x27a5b716c7309a30703ede3f1a218cdec857e424a31543f8a658e7d2208db33&quot;</span>,
+  <span class="hljs-attr">chainId</span>: <span class="hljs-number">5</span>, <span class="hljs-comment">// GOERLI  chainId </span>
+  <span class="hljs-attr">nftTokenAddress</span>: <span class="hljs-string">&quot;0x8394cB7e768070217592572582228f62CdDE4FCE&quot;</span>, <span class="hljs-comment">// NFT contract token addrss</span>
+  <span class="hljs-attr">nftTokenId</span>: <span class="hljs-string">&quot;32768&quot;</span>, <span class="hljs-comment">// NFT loopring tokenId (from LoopringAPI.userAPI.getUserNFTBalances &amp; LoopringAPI.nftAPI.getInfoForNFTTokens )</span>
+  <span class="hljs-attr">nftId</span>: <span class="hljs-string">&quot;0xa0ce8990402955e559799af24ea765b14ffecc32dfa1cce2dadaf20016b074e6&quot;</span>,  <span class="hljs-comment">// NFT token id (contract -&gt; uri)</span>
+  <span class="hljs-attr">nftData</span>: <span class="hljs-string">&quot;0x1a2001aac7a1fd00cef07889cdb67b1355f86e5bc9df71cfa44fa1c7b49f598f&quot;</span>, <span class="hljs-comment">// NFT loopring nftData (from LoopringAPI.userAPI.getUserNFTBalances &amp; LoopringAPI.nftAPI.getInfoForNFTTokens )</span>
+  <span class="hljs-attr">testNotOx</span>: <span class="hljs-string">&quot;ff7d59d9316eba168837e3ef924bcdfd64b237d8&quot;</span>,
+  <span class="hljs-attr">tradeLRCValue</span>: <span class="hljs-number">1000000000000000000</span>,
+  <span class="hljs-attr">tradeETHValue</span>: <span class="hljs-number">0.0001</span>,
+  <span class="hljs-attr">gasPrice</span>: <span class="hljs-number">19</span>, <span class="hljs-comment">// for test</span>
+  <span class="hljs-attr">gasLimit</span>: <span class="hljs-number">200000</span>, <span class="hljs-comment">// for test</span>
+};
+
+<span class="hljs-comment">//welcome use [@loopring-web/web3-provider](#https://www.npmjs.com/package/@loopring-web/web3-provider)</span>
+<span class="hljs-keyword">const</span> provider = <span class="hljs-keyword">new</span> PrivateKeyProvider(
+  LOOPRING_EXPORTED_ACCOUNT.privateKey,
+  <span class="hljs-string">&quot;https://goerli.infura.io/v3/a06ed9c6b5424b61beafff27ecc3abf3&quot;</span>
+);
+<span class="hljs-keyword">const</span> provider2 = <span class="hljs-keyword">new</span> PrivateKeyProvider(
+  LOOPRING_EXPORTED_ACCOUNT.privateKey2,
+  <span class="hljs-string">&quot;https://goerli.infura.io/v3/a06ed9c6b5424b61beafff27ecc3abf3&quot;</span>
+);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> web3 = <span class="hljs-keyword">new</span> Web3(provider);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> web3_2 = <span class="hljs-keyword">new</span> Web3(provider2);
+</code></pre>
+<p>welcome use <a href="#https://www.npmjs.com/package/@loopring-web/web3-provider">@loopring-web/web3-provider</a></p>
+<h3 id="getapikey">getApiKey</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> {accInfo} = <span class="hljs-keyword">await</span> LoopringAPI.exchangeAPI.getAccount({
+  <span class="hljs-attr">owner</span>: LOOPRING_EXPORTED_ACCOUNT.address,
+});
+
+<span class="hljs-keyword">const</span> eddsakey = <span class="hljs-keyword">await</span> sign_tools.generateKeyPair({
+  web3,
+  <span class="hljs-attr">address</span>: accInfo.owner,
+  <span class="hljs-attr">keySeed</span>:
+    accInfo.keySeed &amp;&amp; accInfo.keySeed !== <span class="hljs-string">&quot;&quot;</span>
+      ? accInfo.keySeed
+      : BaseAPI.KEY_MESSAGE.replace(
+        <span class="hljs-string">&quot;${exchangeAddress}&quot;</span>,
+        LOOPRING_EXPORTED_ACCOUNT.exchangeAddr
+      ).replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, (accInfo.nonce - <span class="hljs-number">1</span>).toString()),
+  <span class="hljs-attr">walletType</span>: ConnectorNames.MetaMask,
+  <span class="hljs-attr">chainId</span>: ChainId.GOERLI,
+});
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;eddsakey:&quot;</span>, eddsakey.sk);
+
+<span class="hljs-comment">// step 3 get apikey</span>
+<span class="hljs-keyword">const</span> request: GetUserApiKeyRequest = {
+  <span class="hljs-attr">accountId</span>: accInfo.accountId,
+};
+
+<span class="hljs-keyword">let</span> {apiKey} = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getUserApiKey(
+  request,
+  eddsakey.sk
+);
+</code></pre>
 
                                 
                                 </section>
@@ -677,7 +834,7 @@ From sdk it will convert v3/wallet follow dex rule.</p>
             
                 
                 
-                <a href="unit_test.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Unit Test">
+                <a href="Deposit.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Deposit">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -688,7 +845,7 @@ From sdk it will convert v3/wallet follow dex rule.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Unit Test","level":"2.1.2","depth":2,"path":"js_sdk/unit_test.md","ref":"./js_sdk/unit_test.md","articles":[]},"previous":{"title":"GitHub","level":"1.3","depth":1,"url":"https://github.com/Loopring/loopring_sdk","ref":"https://github.com/Loopring/loopring_sdk","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/INTRO.md","mtime":"2022-01-27T08:56:05.616Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-03-18T03:33:27.471Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Deposit","level":"2.1.2","depth":2,"path":"js_sdk/Deposit.md","ref":"./js_sdk/Deposit.md","articles":[]},"previous":{"title":"GitHub","level":"1.3","depth":1,"url":"https://github.com/Loopring/loopring_sdk","ref":"https://github.com/Loopring/loopring_sdk","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/INTRO.md","mtime":"2022-03-31T13:11:34.864Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-03-31T14:40:54.215Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

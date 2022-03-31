@@ -17,14 +17,14 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:663](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L663)
+[defs/loopring_defs.ts:666](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L666)
 
 ___
 
 ### token
 
-• **token**: `string`
+• **token**: `string`[]
 
 #### Defined in
 
-[defs/loopring_defs.ts:664](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L664)
+[defs/loopring_defs.ts:667](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L667)

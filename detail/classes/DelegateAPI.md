@@ -42,7 +42,7 @@
 | Name | Type | Default value |
 | :------ | :------ | :------ |
 | `param` | `InitParam` | `undefined` |
-| `timeout` | `number` | `DEFAULT_TIMEOUT` |
+| `timeout` | `number` | `3000` |
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[api/base_api.ts:87](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L87)
+[api/base_api.ts:86](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L86)
 
 ## Properties
 
@@ -64,7 +64,7 @@ BaseAPI.baseUrl
 
 #### Defined in
 
-[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L39)
+[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L38)
 
 ___
 
@@ -78,7 +78,7 @@ BaseAPI.chainId
 
 #### Defined in
 
-[api/base_api.ts:40](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L40)
+[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L39)
 
 ___
 
@@ -92,7 +92,7 @@ BaseAPI.KEY\_MESSAGE
 
 #### Defined in
 
-[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L38)
+[api/base_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L37)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.genErr
 
 #### Defined in
 
-[api/base_api.ts:41](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L41)
+[api/base_api.ts:40](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L40)
 
 ___
 
@@ -134,7 +134,7 @@ BaseAPI.getAvailableBroker
 
 #### Defined in
 
-[api/base_api.ts:98](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L98)
+[api/base_api.ts:97](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L97)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/delegate_api.ts#L7)
+[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/delegate_api.ts#L7)
 
 ___
 
@@ -184,7 +184,7 @@ BaseAPI.getCounterFactualInfo
 
 #### Defined in
 
-[api/base_api.ts:109](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L109)
+[api/base_api.ts:108](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L108)
 
 ___
 
@@ -202,7 +202,7 @@ BaseAPI.makeReq
 
 #### Defined in
 
-[api/base_api.ts:152](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L152)
+[api/base_api.ts:151](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L151)
 
 ___
 
@@ -232,7 +232,7 @@ BaseAPI.returnTxHash
 
 #### Defined in
 
-[api/base_api.ts:67](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L67)
+[api/base_api.ts:66](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L66)
 
 ___
 
@@ -256,7 +256,7 @@ BaseAPI.setBaseUrl
 
 #### Defined in
 
-[api/base_api.ts:148](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L148)
+[api/base_api.ts:147](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L147)
 
 ___
 
@@ -280,4 +280,4 @@ BaseAPI.setChainId
 
 #### Defined in
 
-[api/base_api.ts:143](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/api/base_api.ts#L143)
+[api/base_api.ts:142](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L142)

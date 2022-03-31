@@ -8,6 +8,7 @@
 
 - [accountId](GetUserNFTBalancesRequest.md#accountid)
 - [limit](GetUserNFTBalancesRequest.md#limit)
+- [metadata](GetUserNFTBalancesRequest.md#metadata)
 - [nftDatas](GetUserNFTBalancesRequest.md#nftdatas)
 - [nonZero](GetUserNFTBalancesRequest.md#nonzero)
 - [offset](GetUserNFTBalancesRequest.md#offset)
@@ -22,7 +23,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2180](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2180)
+[defs/loopring_defs.ts:2217](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2217)
 
 ___
 
@@ -32,7 +33,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2185](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2185)
+[defs/loopring_defs.ts:2222](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2222)
+
+___
+
+### metadata
+
+• `Optional` **metadata**: `boolean`
+
+#### Defined in
+
+[defs/loopring_defs.ts:2224](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2224)
 
 ___
 
@@ -42,7 +53,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2181](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2181)
+[defs/loopring_defs.ts:2218](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2218)
 
 ___
 
@@ -52,7 +63,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2186](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2186)
+[defs/loopring_defs.ts:2223](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2223)
 
 ___
 
@@ -62,7 +73,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2184](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2184)
+[defs/loopring_defs.ts:2221](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2221)
 
 ___
 
@@ -72,7 +83,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2182](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2182)
+[defs/loopring_defs.ts:2219](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2219)
 
 ___
 
@@ -82,4 +93,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2183](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L2183)
+[defs/loopring_defs.ts:2220](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L2220)

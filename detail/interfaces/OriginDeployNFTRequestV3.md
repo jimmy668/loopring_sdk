@@ -2,7 +2,7 @@
 
 # Interface: OriginDeployNFTRequestV3
 
-Submit Deploy NFT params
+Submit Deploy NFTAction params
 
 **`export`**
 
@@ -25,7 +25,7 @@ Submit Deploy NFT params
 
 #### Defined in
 
-[defs/loopring_defs.ts:1456](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1456)
+[defs/loopring_defs.ts:1493](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1493)
 
 ___
 
@@ -39,7 +39,7 @@ nftData
 
 #### Defined in
 
-[defs/loopring_defs.ts:1449](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1449)
+[defs/loopring_defs.ts:1486](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1486)
 
 ___
 
@@ -47,13 +47,13 @@ ___
 
 • **tokenAddress**: `string`
 
-NFT address
+NFTAction address
 
 **`memberof`** OriginDeployNFTRequestV3
 
 #### Defined in
 
-[defs/loopring_defs.ts:1455](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1455)
+[defs/loopring_defs.ts:1492](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1492)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1436](https://github.com/Loopring/loopring_sdk/blob/fd60be9/src/defs/loopring_defs.ts#L1436)
+[defs/loopring_defs.ts:1473](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1473)
