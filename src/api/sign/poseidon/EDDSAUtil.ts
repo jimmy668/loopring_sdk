@@ -56,7 +56,11 @@ export class EDDSAUtil {
     console.log("secretKey", secretKey.toString())
 
     const copySecretKey = BigNumber.from(secretKey.toString())
+    console.log("copySecretKey", copySecretKey.toString())
+
     const B = SignatureScheme.B()
+    console.log("B", B.toString())
+
     const publicKey = B.mul(copySecretKey)
     console.log("publicKey", publicKey.x.n.toString(), publicKey.y.n.toString())
 

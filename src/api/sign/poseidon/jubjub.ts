@@ -46,15 +46,27 @@ export class Point {
   }
 
   mul(scaler: BigNumber) {
+    console.log("starting mul ....")
     let p = new Point(this.x, this.y)
     let a = Point.infinity()
     let i = 0
+
     while (!scaler.eq(BigNumber.from("0"))) {
+      console.log("starting mul .... scaler")
       const bitwiseAnd = scaler.and(BigNumber.from("1"))
+
+      console.log("bitwiseAnd", bitwiseAnd.toString())
       if (!bitwiseAnd.eq(BigNumber.from("0"))) {
+        console.log("bitwiseAnd before add", bitwiseAnd.toString())
         a = a.add(p)
       }
-      p = p.add(p)
+
+      console.log("bitwiseAnd after add", bitwiseAnd.toString())
+      console.log("before p", p.toString())
+      let copyP1 = new Point(p.x, p.y)
+      let copyP2 = new Point(p.x, p.y)
+      p = copyP1.add(copyP2)
+      console.log("after p", p.toString())
       scaler = scaler.div(BigNumber.from("2"))
       console.log(i + " scaler", scaler.toString())
       i = i + 1
@@ -71,17 +83,32 @@ export class Point {
     const u2 = other.x
     const v2 = other.y
 
+    console.log("add")
+
     const u3_tmp0 = (u1.mul(v2.n)).add(v1.mul(u2.n).n)
+
+    console.log("add")
     const u3_tmp1 = u1.mul(u2.n).mul(v1.n).mul(v2.n).mul(jubjub.JUBJUB_D)
 
+    console.log("add")
     const u3_tmp2 = FQ.one().add(u3_tmp1.n)
+
+    console.log("add")
     const u3 = u3_tmp0.div(u3_tmp2.n)
 
+    console.log("add")
     const v3_tmp0 = v1.mul(v2.n)
+
+    console.log("add")
     const v3_tmp1 = u1.mul(u2.n).mul(jubjub.JUBJUB_A)
+
+    console.log("add")
     const v3_tmp3 = v3_tmp0.sub(v3_tmp1.n)
   
+    console.log("add")
     const v3_tmp5 = FQ.one().sub(u3_tmp1.n)
+
+    console.log("add")
     const v3 = v3_tmp3.div(v3_tmp5.n)
 
     return new Point(u3, v3)

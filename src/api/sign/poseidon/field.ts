@@ -1,7 +1,5 @@
 import { BigNumber } from "ethers";
-
-// Use bigintModArith for power mod
-import * as bigintModArith from 'bigint-mod-arith'
+import { BigInteger } from "jsbn";
 
 export class field {
   // Fq is the base field of Jubjub
@@ -70,11 +68,12 @@ export class FQ {
 }
 
 export function modulo(n: BigNumber, p: BigNumber, m: BigNumber) {
-  const n_ = BigInt(n.toString())
-  const p_ = BigInt(p.toString())
-  const m_ = BigInt(m.toString())
+  const n_ = new BigInteger(n.toString())
+  const p_ = new BigInteger(p.toString())
+  const m_ = new BigInteger(m.toString())
 
-  const result = bigintModArith.modPow(n_, p_, m_)
-  // console.log(n_.toString(), p_.toString(), m_.toString(), result.toString())
+  console.log("modulo", n_.toString(), p_.toString(), m_.toString());
+  const result = n_.modPow(p_, m_)
+  console.log(n_.toString(), p_.toString(), m_.toString(), result.toString())
   return BigNumber.from(result.toString())
 }
