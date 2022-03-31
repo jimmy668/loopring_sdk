@@ -31,6 +31,10 @@ export const IsMobile = {
   },
 
   any: function () {
+    if (typeof navigator === "undefined") {
+      return false;
+    }
+
     return (
       IsMobile.Android() ||
       IsMobile.BlackBerry() ||
