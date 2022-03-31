@@ -86,15 +86,15 @@ export async function generateKeyPair({
   );
 
   if (!result.error) {
-    myLog("sig:", result.sig);
+    console.log("sig:", result.sig);
     const seedBuff = ethUtil.sha256(fm.toBuffer(result.sig))
-    myLog(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
+    console.log(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
     const seed = BigNumber.from("0x" + seedBuff.toString('hex'))
-    myLog(`seed ${seed.toString()}`)
+    console.log(`seed ${seed.toString()}`)
     const bitIntDataItems = bnToBuf(seed.toString());
-    myLog(`bigIntData ${bitIntDataItems}`)
+    console.log(`bigIntData ${bitIntDataItems}`)
     const keyPair = EDDSAUtil.generateKeyPair(bitIntDataItems)
-    myLog("keyPair", keyPair)
+    console.log("keyPair", keyPair)
 
     const formatedPx = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyX)));
     const formatedPy = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyY)));
@@ -108,6 +108,7 @@ export async function generateKeyPair({
       counterFactualInfo: result.counterFactualInfo,
     };
   } else {
+    console.log("personalSign failed")
     throw Error(result.error);
   }
 }
