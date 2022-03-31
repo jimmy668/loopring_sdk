@@ -72,8 +72,8 @@ export function modulo(n: BigNumber, p: BigNumber, m: BigNumber) {
   const p_ = new BigInteger(p.toString())
   const m_ = new BigInteger(m.toString())
 
-  console.log("modulo", n_.toString(), p_.toString(), m_.toString());
+  // console.log("modulo", n_.toString(), p_.toString(), m_.toString());
   const result = n_.modPow(p_, m_)
-  console.log(n_.toString(), p_.toString(), m_.toString(), result.toString())
+  // console.log(n_.toString(), p_.toString(), m_.toString(), result.toString())
   return BigNumber.from(result.toString())
 }

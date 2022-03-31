@@ -86,15 +86,15 @@ export async function generateKeyPair({
   );
 
   if (!result.error) {
-    console.log("sig:", result.sig);
+    // console.log("sig:", result.sig);
     const seedBuff = ethUtil.sha256(fm.toBuffer(result.sig))
-    console.log(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
+    // console.log(`seedBuff.toString('hex') ${seedBuff.toString('hex')}`)
     const seed = BigNumber.from("0x" + seedBuff.toString('hex'))
-    console.log(`seed ${seed.toString()}`)
+    // console.log(`seed ${seed.toString()}`)
     const bitIntDataItems = bnToBuf(seed.toString());
-    console.log(`bigIntData ${bitIntDataItems}`)
+    // console.log(`bigIntData ${bitIntDataItems}`)
     const keyPair = EDDSAUtil.generateKeyPair(bitIntDataItems)
-    console.log("keyPair", keyPair)
+    // console.log("keyPair", keyPair)
 
     const formatedPx = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyX)));
     const formatedPy = fm.formatEddsaKey(toHex(toBig(keyPair.publicKeyY)));
@@ -165,7 +165,7 @@ const genSigWithPadding = (PrivateKey: string | undefined, hash: any) => {
   }
 
   const result = "0x" + signatureRx_Hex + signatureRy_Hex + signatureS_Hex;
-  console.log("signature result", result)
+  // console.log("signature result", result)
   return result
 };
 
@@ -1023,9 +1023,6 @@ export function get_EddsaSig_Transfer(
   request: OriginTransferRequestV3,
   eddsaKey: string
 ) {
-
-  console.log('submitInternalTransfer.....')
-
   const inputs = [
     new BN(ethUtil.toBuffer(request.exchange)).toString(),
     request.payerId,

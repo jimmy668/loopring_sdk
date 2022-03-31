@@ -42,7 +42,6 @@ export class EDDSAUtil {
   }
 
   static generateKeyPair(seed: any) {
-    console.log("seed", seed)
     let bigInt = BigNumber.from(0)
     for (let i = 0; i < seed.length; i++) {
       const item = seed[i]
@@ -50,19 +49,18 @@ export class EDDSAUtil {
       const tmp = BigNumber.from("256").pow(BigNumber.from(i))
       bigInt = bigInt.add(itemBigInt.mul(tmp))
     }
-    console.log("sum", bigInt.toString())
-
+    // console.log("sum", bigInt.toString())
     const secretKey = bigInt.mod(jubjub.JUBJUB_L)
-    console.log("secretKey", secretKey.toString())
+    // console.log("secretKey", secretKey.toString())
 
     const copySecretKey = BigNumber.from(secretKey.toString())
-    console.log("copySecretKey", copySecretKey.toString())
+    // console.log("copySecretKey", copySecretKey.toString())
 
     const B = SignatureScheme.B()
-    console.log("B", B.toString())
+    // console.log("B", B.toString())
 
     const publicKey = B.mul(copySecretKey)
-    console.log("publicKey", publicKey.x.n.toString(), publicKey.y.n.toString())
+    // console.log("publicKey", publicKey.x.n.toString(), publicKey.y.n.toString())
 
     const keyPair = {
       "publicKeyX": publicKey.x.n.toString(),
