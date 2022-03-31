@@ -77,7 +77,7 @@ export class permunation {
     var i = 0
     for (var i = 0; i < items.length; i++) {
       const itemBigInt = BigNumber.from(items[i])
-      const tmp = itemBigInt.mul((BigNumber.from(256).pow(i)))
+      const tmp = itemBigInt.mul((BigNumber.from(256).pow(BigNumber.from(i))))
       sum = sum.add(tmp)
     }
     // console.log(`sum ${sum}`)
@@ -100,7 +100,7 @@ export class permunation {
     var i = 0
     for (var i = 0; i < items.length; i++) {
       const itemBigInt = BigNumber.from(items[i])
-      const tmp = itemBigInt.mul((BigNumber.from(256).pow(i)))
+      const tmp = itemBigInt.mul((BigNumber.from(256).pow(BigNumber.from(i))))
       sum = sum.add(tmp)
     }
     // console.log(`sum ${sum}`)

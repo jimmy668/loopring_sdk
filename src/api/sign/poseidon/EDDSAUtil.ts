@@ -42,15 +42,15 @@ export class EDDSAUtil {
   }
 
   static generateKeyPair(seed: any) {
-    // console.log("seed", seed)
+    console.log("seed", seed)
     let bigInt = BigNumber.from(0)
     for (let i = 0; i < seed.length; i++) {
       const item = seed[i]
       const itemBigInt = BigNumber.from(item)
-      const tmp = BigNumber.from("256").pow(i)
+      const tmp = BigNumber.from("256").pow(BigNumber.from(i))
       bigInt = bigInt.add(itemBigInt.mul(tmp))
     }
-    // console.log("sum", bigInt.toString())
+    console.log("sum", bigInt.toString())
 
     const secretKey = bigInt.mod(jubjub.JUBJUB_L)
     // console.log("secretKey", secretKey.toString())
