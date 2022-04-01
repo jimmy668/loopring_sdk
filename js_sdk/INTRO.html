@@ -568,8 +568,14 @@
                                 <h1 id="js-sdk-introduction">JS SDK Introduction</h1>
 <ul>
 <li><a href="#-quick-start">Quick Start</a>   </li>
-<li><a href="#1-initialize-the-apis">Initialize the APIs</a></li>
-<li><a href="#2-simple-demo-for-transfer">Simple Demo for Transfer</a></li>
+<li><a href="#1-initialize-apis">Initialize the APIs</a></li>
+<li><a href="#2-simple-demo-for-transfer">Simple Demo for Transfer</a><ul>
+<li><a href="#step1-getaccount----layer2-account-info">getAccount</a> </li>
+<li><a href="#step2-getuserbalance">getUserBalance</a></li>
+<li><a href="#step3-getstorageid">getStorageId</a></li>
+<li><a href="#step4-getfee">getFee</a></li>
+</ul>
+</li>
 <li><a href="#3-error-code">Error Code</a></li>
 <li><a href="#reference">Reference</a><ul>
 <li><a href="#mockdata">mockData</a></li>
@@ -645,7 +651,7 @@ LoopringAPI.InitApi(sdk.ChainId.GOERLI); <span class="hljs-comment">// LoopringA
 <p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/account/account.test.ts" target="_blank">account.test.ts</a></p>
 <p>Reference: <a href="#get-apikey">apiKey</a></p>
 <hr>
-<h4 id="step2-getstorageid">Step2: getStorageId</h4>
+<h4 id="step3-getstorageid">Step3: getStorageId</h4>
 <pre><code class="lang-ts"><span class="hljs-keyword">const</span> request2: GetNextStorageIdRequest = {
   <span class="hljs-attr">accountId</span>: accInfo.accountId,
   <span class="hljs-attr">sellTokenId</span>: <span class="hljs-number">1</span>,
@@ -658,7 +664,7 @@ LoopringAPI.InitApi(sdk.ChainId.GOERLI); <span class="hljs-comment">// LoopringA
 </code></pre>
 <p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/transfer/transferNFT.test.ts" target="_blank">transferNFT.test.ts</a></p>
 <hr>
-<h4 id="step3-getfee">Step3: getFee</h4>
+<h4 id="step4-getfee">Step4: getFee</h4>
 <pre><code class="lang-ts"><span class="hljs-keyword">const</span> requestFee: GetNFTOffchainFeeAmtRequest = {
   <span class="hljs-attr">accountId</span>: accInfo.accountId,
   <span class="hljs-comment">// tokenAddress: LOOPRING_EXPORTED_ACCOUNT.nftTokenAddress,</span>
@@ -672,7 +678,7 @@ LoopringAPI.InitApi(sdk.ChainId.GOERLI); <span class="hljs-comment">// LoopringA
 </code></pre>
 <p><a href="https://github.com/Loopring/loopring_sdk/tree/master/src/tests/transfer/transferNFT.test.ts" target="_blank">transferNFT.test.ts</a></p>
 <hr>
-<h4 id="step4-submittransfer">Step4: submitTransfer</h4>
+<h4 id="step5-submittransfer">Step5: submitTransfer</h4>
 <pre><code class="lang-ts"><span class="hljs-keyword">const</span> request3: OriginNFTTransferRequestV3 = {
   <span class="hljs-attr">exchange</span>: LOOPRING_EXPORTED_ACCOUNT.exchangeAddr,
   <span class="hljs-attr">fromAccountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
@@ -845,7 +851,7 @@ From sdk it will convert v3/wallet follow dex rule.<br>v3/wallet: <code>api will
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Deposit","level":"2.1.2","depth":2,"path":"js_sdk/Deposit.md","ref":"./js_sdk/Deposit.md","articles":[]},"previous":{"title":"GitHub","level":"1.3","depth":1,"url":"https://github.com/Loopring/loopring_sdk","ref":"https://github.com/Loopring/loopring_sdk","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/INTRO.md","mtime":"2022-03-31T13:11:34.864Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-03-31T14:40:54.215Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS SDK","level":"2.1","depth":1,"next":{"title":"Deposit","level":"2.1.2","depth":2,"path":"js_sdk/Deposit.md","ref":"./js_sdk/Deposit.md","articles":[]},"previous":{"title":"GitHub","level":"1.3","depth":1,"url":"https://github.com/Loopring/loopring_sdk","ref":"https://github.com/Loopring/loopring_sdk","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/INTRO.md","mtime":"2022-04-01T03:17:30.146Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-04-01T03:18:12.570Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
