@@ -32,6 +32,8 @@ import {
   UpdateAccountRequestV3,
   NFTOrderRequestV3,
   NFTTokenAmountInfo,
+  NFTTradeRequestV3,
+  SubmitOrderRequestV3
 } from "../../defs/loopring_defs";
 
 import Web3 from "web3";
@@ -536,6 +538,36 @@ export function get_EddsaSig_OffChainWithdraw(
   ];
 
   return getEdDSASigWithPoseidon(inputs, eddsaKey);
+}
+
+export function getOrderHash(
+  request: SubmitOrderRequestV3
+) {
+  const p = field.SNARK_SCALAR_FIELD
+  const poseidonParams = new PoseidonParams(p, 12, 6, 53, "poseidon", BigNumber.from(5), null, null, 128)
+
+  const inputs = [
+    new BN(ethUtil.toBuffer(request.exchange)).toString(),
+    request.storageId,
+    request.accountId,
+    request.sellToken.tokenId,
+    request.buyToken.tokenId,
+    request.sellToken.volume,
+    request.buyToken.volume,
+    request.validUntil,
+    request.maxFeeBips,
+    request.fillAmountBOrS ? 1 : 0,
+    new BN(ethUtil.toBuffer(request.taker)).toString()
+  ];
+  let bigIntInputs: any
+  bigIntInputs = []
+  for(let i = 0; i < inputs.length; i++) {
+    const input = inputs[i]
+    bigIntInputs.push(BigNumber.from(input))
+  }
+  const hash = permunation.poseidon(bigIntInputs, poseidonParams);
+  let hashInHex = hash.toHexString();
+  return hashInHex;
 }
 
 export function getWithdrawTypedData(
@@ -1175,6 +1207,31 @@ export function get_EddsaSig_NFT_Transfer(
     request.storageId,
   ];
   return getEdDSASigWithPoseidon(inputs, eddsaKey);
+}
+
+export function getNftTradeHash(
+  request: NFTTradeRequestV3
+) {
+  const p = field.SNARK_SCALAR_FIELD
+  const poseidonParams = new PoseidonParams(p, 7, 6, 52, "poseidon", BigNumber.from(5), null, null, 128)
+
+  const inputs = [
+    request.taker.accountId,
+    request.taker.sellToken.tokenId,
+    request.taker.storageId,
+    request.maker.accountId,
+    request.maker.sellToken.tokenId,
+    request.maker.storageId
+  ];
+  let bigIntInputs: any
+  bigIntInputs = []
+  for(let i = 0; i < inputs.length; i++) {
+    const input = inputs[i]
+    bigIntInputs.push(BigNumber.from(input))
+  }
+  const hash = permunation.poseidon(bigIntInputs, poseidonParams);
+  let hashInHex = hash.toHexString();
+  return hashInHex;
 }
 
 export function getNFTTransferTypedData(
