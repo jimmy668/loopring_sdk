@@ -27,7 +27,7 @@ maker order
 
 #### Defined in
 
-[defs/loopring_defs.ts:1921](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1921)
+[defs/loopring_defs.ts:1942](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1942)
 
 ___
 
@@ -41,7 +41,7 @@ maker fee bips
 
 #### Defined in
 
-[defs/loopring_defs.ts:1927](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1927)
+[defs/loopring_defs.ts:1948](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1948)
 
 ___
 
@@ -55,7 +55,7 @@ taker order
 
 #### Defined in
 
-[defs/loopring_defs.ts:1933](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1933)
+[defs/loopring_defs.ts:1954](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1954)
 
 ___
 
@@ -69,4 +69,4 @@ taker fee bips
 
 #### Defined in
 
-[defs/loopring_defs.ts:1939](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L1939)
+[defs/loopring_defs.ts:1960](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1960)

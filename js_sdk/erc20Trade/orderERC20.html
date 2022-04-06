@@ -1,0 +1,1090 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Order · Loopring SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="author" content="Loopring Dev Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../deposit/depositNFT.html" />
+    
+    
+    <link rel="prev" href="../withdraw/withdrawERC20.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://loopring.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ChangeLog.html">
+            
+                <a href="../../ChangeLog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://github.com/Loopring/loopring_sdk">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDKs demo</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JS SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../exchange/exchange.html">
+            
+                <a href="../exchange/exchange.html">
+            
+                    
+                    Exchange
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../exchange/webSocket.html">
+            
+                <a href="../exchange/webSocket.html">
+            
+                    
+                    Web Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../exchange/ammpool_api.html">
+            
+                <a href="../exchange/ammpool_api.html">
+            
+                    
+                    Amm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../">
+            
+                <a href="../#mock-account">
+            
+                    
+                    Account
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../account/activeAccount.html">
+            
+                <a href="../account/activeAccount.html">
+            
+                    
+                    Active Account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../account/fee.html">
+            
+                <a href="../account/fee.html">
+            
+                    
+                    Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../account/signature.html">
+            
+                <a href="../account/signature.html">
+            
+                    
+                    Signature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../account/historyRecord.html">
+            
+                <a href="../account/historyRecord.html">
+            
+                    
+                    Transaction Recorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../">
+            
+                <a href="../#mock-erc20-token-map">
+            
+                    
+                    ERC20
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../deposit/depositERC20.html">
+            
+                <a href="../deposit/depositERC20.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../transfer/transferERC20.html">
+            
+                <a href="../transfer/transferERC20.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../withdraw/withdrawERC20.html">
+            
+                <a href="../withdraw/withdrawERC20.html">
+            
+                    
+                    Withdraw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3.4" data-path="orderERC20.html">
+            
+                <a href="orderERC20.html">
+            
+                    
+                    Order
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../">
+            
+                <a href="../#mock-account">
+            
+                    
+                    NFT
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../deposit/depositNFT.html">
+            
+                <a href="../deposit/depositNFT.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../transfer/transferNFT.html">
+            
+                <a href="../transfer/transferNFT.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../withdraw/withdrawNFT.html">
+            
+                <a href="../withdraw/withdrawNFT.html">
+            
+                    
+                    Withdraw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../NFTAction/metaNFT.html">
+            
+                <a href="../NFTAction/metaNFT.html">
+            
+                    
+                    Mint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../NFTAction/deployNFT.html">
+            
+                <a href="../NFTAction/deployNFT.html">
+            
+                    
+                    Deploy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.6" data-path="../NFTAction/tradeNFT.html">
+            
+                <a href="../NFTAction/tradeNFT.html">
+            
+                    
+                    Trade
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.6.1" data-path="../NFTAction/validateNFTOrder.html">
+            
+                <a href="../NFTAction/validateNFTOrder.html">
+            
+                    
+                    Validate Order
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">more detail</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    class
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../detail/classes/AmmpoolAPI.html">
+            
+                <a href="../../detail/classes/AmmpoolAPI.html">
+            
+                    
+                    AmmpoolAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../detail/classes/ExchangeAPI.html">
+            
+                <a href="../../detail/classes/ExchangeAPI.html">
+            
+                    
+                    ExchangeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../detail/classes/NFTAPI.html">
+            
+                <a href="../../detail/classes/NFTAPI.html">
+            
+                    
+                    NFTAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../detail/classes/UserAPI.html">
+            
+                <a href="../../detail/classes/UserAPI.html">
+            
+                    
+                    UserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../detail/classes/WalletAPI.html">
+            
+                <a href="../../detail/classes/WalletAPI.html">
+            
+                    
+                    WalletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../detail/classes/WhitelistedUserAPI.html">
+            
+                <a href="../../detail/classes/WhitelistedUserAPI.html">
+            
+                    
+                    WhitelistedUserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../../detail/classes/WsAPI.html">
+            
+                <a href="../../detail/classes/WsAPI.html">
+            
+                    
+                    WsAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../detail/modules.html">
+            
+                <a href="../../detail/modules.html">
+            
+                    
+                    Read More
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Links</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/Loopring/hello_loopring">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://docs.loopring.io/en/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://loopring.org/#/">
+            
+                    
+                    About us
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <a target="_blank" href="https://loopring.io/#/newticket">
+            
+                    
+                    Submit a Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Order</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="order-erc20">Order ERC20</h1>
+<hr>
+<h2 id="lrc-eth--for--base-to-quote">LRC-ETH : for  Base to Quote</h2>
+<h3 id="mock-data">MOCK Data</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> buy = <span class="hljs-string">&quot;LRC&quot;</span>,
+  sell = <span class="hljs-string">&quot;ETH&quot;</span>,
+  MARKET = <span class="hljs-string">&quot;LRC-ETH&quot;</span>,
+  AMM_MARKET = <span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>,
+  isAtoB = <span class="hljs-literal">true</span>,
+  slippage = <span class="hljs-string">&quot;50&quot;</span>
+</code></pre>
+<h3 id="step-1-get-apikey--eddsakey">Step 1. get apikey &amp; eddsaKey</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> {accInfo} = <span class="hljs-keyword">await</span> LoopringAPI.exchangeAPI.getAccount({
+  <span class="hljs-attr">owner</span>: LOOPRING_EXPORTED_ACCOUNT.address,
+});
+<span class="hljs-keyword">const</span> eddsaKey = <span class="hljs-keyword">await</span> signatureKeyPairMock(accInfo);
+apiKey = (
+  <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getUserApiKey(
+    {
+      <span class="hljs-attr">accountId</span>: accInfo.accountId,
+    },
+    eddsaKey.sk
+  )
+).apiKey;
+</code></pre>
+<h3 id="step-step-2--storageid">Step Step 2 : storageId</h3>
+<pre><code class="lang-ts">
+<span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getNextStorageId(
+  {
+    <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+    <span class="hljs-attr">sellTokenId</span>: TOKEN_INFO.tokenMap[sell].tokenId,
+  },
+  apiKey
+);
+</code></pre>
+<h3 id="step-3-get-user-amountmap-which-decided-user-minimum-order">Step 3. get user AmountMap, which decided user minimum order</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> amountMap = {
+  [AMM_MARKET]: (
+    <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getMinimumTokenAmt(
+      {
+        <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+        <span class="hljs-attr">market</span>: AMM_MAP[AMM_MARKET].market,
+      },
+      apiKey
+    )
+  ).amountMap,
+  [MARKET]: (
+    <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getMinimumTokenAmt(
+      {
+        <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+        <span class="hljs-attr">market</span>: MARKET,
+      },
+      apiKey
+    )
+  ).amountMap,
+};
+</code></pre>
+<h3 id="step-4-depth-ammpoolsnapshot-tickmap">Step 4. depth, ammPoolSnapshot ,tickMap</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> [{depth}, {ammPoolSnapshot}] = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all([
+  LoopringAPI.exchangeAPI.getMixDepth({
+    <span class="hljs-attr">market</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].market,
+  }),
+  LoopringAPI.ammpoolAPI.getAmmPoolSnapshot({
+    <span class="hljs-attr">poolAddress</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].address,
+  }),
+]);
+</code></pre>
+<h3 id="step-5-check-minamt">Step 5. check MinAmt</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> buyMinAmtInfo = (amountMap[AMM_MARKET] ?? amountMap[MARKET])[buy];
+<span class="hljs-keyword">let</span> takerRate = buyMinAmtInfo
+  ? buyMinAmtInfo.userOrderInfo.takerRate
+  : <span class="hljs-number">0</span>;
+<span class="hljs-keyword">const</span> minAmountInput = buyMinAmtInfo.userOrderInfo.minAmount;
+</code></pre>
+<h3 id="step-6-calctradeparams">Step 6. calcTradeParams</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> calcTradeParams = sdk.getOutputAmount({
+  <span class="hljs-attr">input</span>: LOOPRING_EXPORTED_ACCOUNT.tradeLRCValue.toString(),
+  sell,
+  buy,
+  isAtoB,
+  <span class="hljs-attr">marketArr</span>: [<span class="hljs-string">&quot;LRC-ETH&quot;</span>, <span class="hljs-string">&quot;ETH-USDT&quot;</span>, <span class="hljs-string">&quot;DAI-USDT&quot;</span>, <span class="hljs-string">&quot;USDC-ETH&quot;</span>],
+  <span class="hljs-attr">tokenMap</span>: TOKEN_INFO.tokenMap,
+  <span class="hljs-attr">marketMap</span>: TOKEN_INFO.marketMap,
+  depth,
+  <span class="hljs-attr">ammPoolSnapshot</span>: ammPoolSnapshot,
+  <span class="hljs-attr">feeBips</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].feeBips.toString(),
+  <span class="hljs-attr">takerRate</span>: takerRate ? takerRate.toString() : <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">slipBips</span>: slippage,
+});
+<span class="hljs-built_in">console</span>.log(
+  <span class="hljs-string">&quot;Buy&quot;</span>,
+  <span class="hljs-string">&quot;,LRC:&quot;</span>,
+  LOOPRING_EXPORTED_ACCOUNT.tradeLRCValue.toString(),
+  <span class="hljs-string">&quot;,minAmountInput LRC:&quot;</span>,
+  minAmountInput,
+  <span class="hljs-string">&quot;,ETH:&quot;</span>,
+  calcTradeParams?.amountBOutSlip?.minReceivedVal
+);
+
+<span class="hljs-keyword">const</span> response: { <span class="hljs-attr">hash</span>: <span class="hljs-built_in">string</span> } | <span class="hljs-built_in">any</span> =
+  <span class="hljs-keyword">await</span> LoopringAPI.userAPI.submitOrder(
+    {
+      <span class="hljs-attr">exchange</span>: LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
+      <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+      <span class="hljs-attr">storageId</span>: storageId.orderId,
+      <span class="hljs-attr">sellToken</span>: {
+        <span class="hljs-attr">tokenId</span>: TOKEN_INFO.tokenMap[sell].tokenId,
+        <span class="hljs-attr">volume</span>: calcTradeParams?.amountS <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>,
+      },
+      <span class="hljs-attr">buyToken</span>: {
+        <span class="hljs-attr">tokenId</span>: TOKEN_INFO.tokenMap[buy].tokenId,
+        <span class="hljs-attr">volume</span>: calcTradeParams?.amountBOutSlip.minReceived <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>,
+      },
+      <span class="hljs-attr">allOrNone</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">validUntil</span>: LOOPRING_EXPORTED_ACCOUNT.validUntil,
+      <span class="hljs-attr">maxFeeBips</span>: <span class="hljs-number">63</span>,
+      <span class="hljs-attr">fillAmountBOrS</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// amm only false</span>
+      <span class="hljs-attr">tradeChannel</span>: calcTradeParams?.exceedDepth
+        ? sdk.TradeChannel.BLANK
+        : sdk.TradeChannel.MIXED,
+      <span class="hljs-attr">orderType</span>: calcTradeParams?.exceedDepth
+        ? sdk.OrderType.ClassAmm
+        : sdk.OrderType.TakerOnly,
+      <span class="hljs-attr">eddsaSignature</span>: <span class="hljs-string">&quot;&quot;</span>,
+    },
+    eddsaKey.sk,
+    apiKey
+  );
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;submitOrder&quot;</span>, response);
+</code></pre>
+<hr>
+<h2 id="eth-lrc--for-quote-to-base">ETH-LRC : for Quote to Base</h2>
+<h3 id="mock-data">MOCK Data</h3>
+<blockquote>
+<p>user should had apikey, please check get apikey</p>
+</blockquote>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> buy = <span class="hljs-string">&quot;ETH&quot;</span>,
+  sell = <span class="hljs-string">&quot;LRC&quot;</span>,
+  MARKET = <span class="hljs-string">&quot;LRC-ETH&quot;</span>,
+  AMM_MARKET = <span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>,
+  slippage = <span class="hljs-string">&quot;50&quot;</span>;
+<span class="hljs-keyword">const</span> isAtoB = <span class="hljs-literal">false</span>;
+</code></pre>
+<h3 id="step-1-get-apikey--eddsakey">Step 1. get apikey &amp; eddsaKey</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> {accInfo} = <span class="hljs-keyword">await</span> LoopringAPI.exchangeAPI.getAccount({
+  <span class="hljs-attr">owner</span>: LOOPRING_EXPORTED_ACCOUNT.address,
+});
+<span class="hljs-keyword">const</span> eddsaKey = <span class="hljs-keyword">await</span> signatureKeyPairMock(accInfo);
+apiKey = (
+  <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getUserApiKey(
+    {
+      <span class="hljs-attr">accountId</span>: accInfo.accountId,
+    },
+    eddsaKey.sk
+  )
+).apiKey;
+</code></pre>
+<h3 id="step--2-storageid">Step  2. storageId</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> storageId = <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getNextStorageId(
+  {
+    <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+    <span class="hljs-attr">sellTokenId</span>: TOKEN_INFO.tokenMap[sell].tokenId,
+  },
+  apiKey
+);
+</code></pre>
+<h3 id="step-3-get-user-amountmap-which-decided-user-minimum-order">Step 3. get user AmountMap, which decided user minimum order</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> amountMap = {
+  [AMM_MARKET]: (
+    <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getMinimumTokenAmt(
+      {
+        <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+        <span class="hljs-attr">market</span>: AMM_MAP[AMM_MARKET].market,
+      },
+      apiKey
+    )
+  ).amountMap,
+  [MARKET]: (
+    <span class="hljs-keyword">await</span> LoopringAPI.userAPI.getMinimumTokenAmt(
+      {
+        <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+        <span class="hljs-attr">market</span>: MARKET,
+      },
+      apiKey
+    )
+  ).amountMap,
+};
+</code></pre>
+<h3 id="step-4-depth-ammpoolsnapshot-tickmap">Step 4. depth, ammPoolSnapshot ,tickMap</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> [{depth}, {ammPoolSnapshot}] = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all([
+  LoopringAPI.exchangeAPI.getMixDepth({
+    <span class="hljs-attr">market</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].market,
+  }),
+  LoopringAPI.ammpoolAPI.getAmmPoolSnapshot({
+    <span class="hljs-attr">poolAddress</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].address,
+  }),
+]);
+</code></pre>
+<h3 id="step-5-check--minamt">Step 5. check  MinAmt</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> amount: sdk.LoopringMap&lt;sdk.TokenAmount&gt; =
+  amountMap[AMM_MARKET] ?? amountMap[MARKET];
+
+<span class="hljs-keyword">let</span> buyMinAmtInfo = amount[buy];
+<span class="hljs-comment">// let sellMinAmtInfo = amount[sell];</span>
+
+<span class="hljs-keyword">let</span> takerRate = buyMinAmtInfo
+  ? buyMinAmtInfo.userOrderInfo.takerRate
+  : <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">const</span> minAmountInput = buyMinAmtInfo.userOrderInfo.minAmount;
+</code></pre>
+<h3 id="step-6-calctradeparams">Step 6. calcTradeParams</h3>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> calcTradeParams = sdk.getOutputAmount({
+  <span class="hljs-attr">input</span>: LOOPRING_EXPORTED_ACCOUNT.tradeETHValue.toString(),
+  sell,
+  buy,
+  isAtoB,
+  <span class="hljs-attr">marketArr</span>: [<span class="hljs-string">&quot;LRC-ETH&quot;</span>, <span class="hljs-string">&quot;ETH-USDT&quot;</span>, <span class="hljs-string">&quot;DAI-USDT&quot;</span>, <span class="hljs-string">&quot;USDC-ETH&quot;</span>],
+  <span class="hljs-attr">tokenMap</span>: TOKEN_INFO.tokenMap,
+  <span class="hljs-attr">marketMap</span>: TOKEN_INFO.marketMap,
+  depth,
+  <span class="hljs-attr">ammPoolSnapshot</span>: ammPoolSnapshot,
+  <span class="hljs-attr">feeBips</span>: AMM_MAP[<span class="hljs-string">&quot;AMM-LRC-ETH&quot;</span>].feeBips.toString(),
+  <span class="hljs-attr">takerRate</span>: takerRate ? takerRate.toString() : <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">slipBips</span>: slippage,
+});
+<span class="hljs-built_in">console</span>.log(
+  <span class="hljs-string">&quot;Buy&quot;</span>,
+  <span class="hljs-string">&quot;,ETH:&quot;</span>,
+  LOOPRING_EXPORTED_ACCOUNT.tradeLRCValue.toString(),
+  <span class="hljs-string">&quot;,minAmountInput ETH:&quot;</span>,
+  minAmountInput,
+  <span class="hljs-string">&quot;,LRC:&quot;</span>,
+  calcTradeParams?.amountBOutSlip?.minReceivedVal
+);
+
+<span class="hljs-keyword">const</span> response: { <span class="hljs-attr">hash</span>: <span class="hljs-built_in">string</span> } | <span class="hljs-built_in">any</span> =
+  <span class="hljs-keyword">await</span> LoopringAPI.userAPI.submitOrder(
+    {
+      <span class="hljs-attr">exchange</span>: LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
+      <span class="hljs-attr">accountId</span>: LOOPRING_EXPORTED_ACCOUNT.accountId,
+      <span class="hljs-attr">storageId</span>: storageId.orderId,
+      <span class="hljs-attr">sellToken</span>: {
+        <span class="hljs-attr">tokenId</span>: TOKEN_INFO.tokenMap[sell].tokenId,
+        <span class="hljs-attr">volume</span>: calcTradeParams?.amountS <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>,
+      },
+      <span class="hljs-attr">buyToken</span>: {
+        <span class="hljs-attr">tokenId</span>: TOKEN_INFO.tokenMap[buy].tokenId,
+        <span class="hljs-attr">volume</span>: calcTradeParams?.amountBOutSlip.minReceived <span class="hljs-keyword">as</span> <span class="hljs-built_in">string</span>,
+      },
+      <span class="hljs-attr">allOrNone</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">validUntil</span>: LOOPRING_EXPORTED_ACCOUNT.validUntil,
+      <span class="hljs-attr">maxFeeBips</span>: <span class="hljs-number">63</span>,
+      <span class="hljs-attr">fillAmountBOrS</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// amm only false</span>
+      <span class="hljs-attr">tradeChannel</span>: calcTradeParams?.exceedDepth
+        ? sdk.TradeChannel.BLANK
+        : sdk.TradeChannel.MIXED,
+      <span class="hljs-attr">orderType</span>: calcTradeParams?.exceedDepth
+        ? sdk.OrderType.ClassAmm
+        : sdk.OrderType.TakerOnly,
+      <span class="hljs-attr">eddsaSignature</span>: <span class="hljs-string">&quot;&quot;</span>,
+    },
+    eddsaKey.sk,
+    apiKey
+  );
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;submitOrder&quot;</span>, response);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../withdraw/withdrawERC20.html" class="navigation navigation-prev " aria-label="Previous page: Withdraw">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../deposit/depositNFT.html" class="navigation navigation-next " aria-label="Next page: Deposit">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Order","level":"2.1.3.4","depth":3,"next":{"title":"Deposit","level":"2.1.4.1","depth":3,"path":"js_sdk/deposit/depositNFT.md","ref":"./js_sdk/deposit/depositNFT.md","articles":[]},"previous":{"title":"Withdraw","level":"2.1.3.3","depth":3,"path":"js_sdk/withdraw/withdrawERC20.md","ref":"./js_sdk/withdraw/withdrawERC20.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/erc20Trade/orderERC20.md","mtime":"2022-04-06T10:07:47.824Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-04-06T10:41:02.865Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

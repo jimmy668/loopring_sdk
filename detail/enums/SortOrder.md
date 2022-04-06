@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[defs/loopring_enums.ts:161](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_enums.ts#L161)
+[defs/loopring_enums.ts:161](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L161)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:162](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_enums.ts#L162)
+[defs/loopring_enums.ts:162](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L162)

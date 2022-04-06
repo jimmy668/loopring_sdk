@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `BaseAPI`
+- [`BaseAPI`](BaseAPI.md)
 
   ↳ **`DelegateAPI`**
 
@@ -41,16 +41,16 @@
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `param` | `InitParam` | `undefined` |
+| `param` | [`InitParam`](../interfaces/InitParam.md) | `undefined` |
 | `timeout` | `number` | `3000` |
 
 #### Inherited from
 
-BaseAPI.constructor
+[BaseAPI](BaseAPI.md).[constructor](BaseAPI.md#constructor)
 
 #### Defined in
 
-[api/base_api.ts:86](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L86)
+[api/base_api.ts:85](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L85)
 
 ## Properties
 
@@ -60,11 +60,11 @@ BaseAPI.constructor
 
 #### Inherited from
 
-BaseAPI.baseUrl
+[BaseAPI](BaseAPI.md).[baseUrl](BaseAPI.md#baseurl)
 
 #### Defined in
 
-[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L38)
+[api/base_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L37)
 
 ___
 
@@ -74,11 +74,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.chainId
+[BaseAPI](BaseAPI.md).[chainId](BaseAPI.md#chainid)
 
 #### Defined in
 
-[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L39)
+[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L38)
 
 ___
 
@@ -88,11 +88,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.KEY\_MESSAGE
+[BaseAPI](BaseAPI.md).[KEY_MESSAGE](BaseAPI.md#key_message)
 
 #### Defined in
 
-[api/base_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L37)
+[api/base_api.ts:36](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L36)
 
 ## Methods
 
@@ -112,11 +112,11 @@ BaseAPI.KEY\_MESSAGE
 
 #### Inherited from
 
-BaseAPI.genErr
+[BaseAPI](BaseAPI.md).[genErr](BaseAPI.md#generr)
 
 #### Defined in
 
-[api/base_api.ts:40](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L40)
+[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L39)
 
 ___
 
@@ -130,11 +130,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.getAvailableBroker
+[BaseAPI](BaseAPI.md).[getAvailableBroker](BaseAPI.md#getavailablebroker)
 
 #### Defined in
 
-[api/base_api.ts:97](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L97)
+[api/base_api.ts:96](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L96)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/delegate_api.ts#L7)
+[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/delegate_api.ts#L7)
 
 ___
 
@@ -180,11 +180,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.getCounterFactualInfo
+[BaseAPI](BaseAPI.md).[getCounterFactualInfo](BaseAPI.md#getcounterfactualinfo)
 
 #### Defined in
 
-[api/base_api.ts:108](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L108)
+[api/base_api.ts:107](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L107)
 
 ___
 
@@ -198,11 +198,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.makeReq
+[BaseAPI](BaseAPI.md).[makeReq](BaseAPI.md#makereq)
 
 #### Defined in
 
-[api/base_api.ts:151](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L151)
+[api/base_api.ts:150](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L150)
 
 ___
 
@@ -228,11 +228,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.returnTxHash
+[BaseAPI](BaseAPI.md).[returnTxHash](BaseAPI.md#returntxhash)
 
 #### Defined in
 
-[api/base_api.ts:66](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L66)
+[api/base_api.ts:65](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L65)
 
 ___
 
@@ -252,11 +252,11 @@ ___
 
 #### Inherited from
 
-BaseAPI.setBaseUrl
+[BaseAPI](BaseAPI.md).[setBaseUrl](BaseAPI.md#setbaseurl)
 
 #### Defined in
 
-[api/base_api.ts:147](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L147)
+[api/base_api.ts:146](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L146)
 
 ___
 
@@ -276,8 +276,8 @@ ___
 
 #### Inherited from
 
-BaseAPI.setChainId
+[BaseAPI](BaseAPI.md).[setChainId](BaseAPI.md#setchainid)
 
 #### Defined in
 
-[api/base_api.ts:142](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/api/base_api.ts#L142)
+[api/base_api.ts:141](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L141)

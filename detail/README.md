@@ -10,8 +10,6 @@
 ```shell
 # Using npm
 npm i @loopring-web/loopring-sdk --save
-```
-```shell
 # Using yarn
 yarn add @loopring-web/loopring-sdk
 ```

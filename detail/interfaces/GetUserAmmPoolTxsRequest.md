@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:570](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L570)
+[defs/loopring_defs.ts:574](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L574)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:577](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L577)
+[defs/loopring_defs.ts:581](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L581)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:572](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L572)
+[defs/loopring_defs.ts:576](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L576)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:573](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L573)
+[defs/loopring_defs.ts:577](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L577)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:574](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L574)
+[defs/loopring_defs.ts:578](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L578)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:571](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L571)
+[defs/loopring_defs.ts:575](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L575)
 
 ___
 
@@ -83,14 +83,14 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:576](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L576)
+[defs/loopring_defs.ts:580](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L580)
 
 ___
 
 ### txTypes
 
-• `Optional` **txTypes**: `string`
+• `Optional` **txTypes**: [`AMMtxTypes`](../enums/AMMtxTypes.md)
 
 #### Defined in
 
-[defs/loopring_defs.ts:575](https://github.com/Loopring/loopring_sdk/blob/2ea32ee/src/defs/loopring_defs.ts#L575)
+[defs/loopring_defs.ts:579](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L579)
