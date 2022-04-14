@@ -6,7 +6,7 @@
         <title>Web Socket · Loopring SDK</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="Loopring Dev Team">
         
         
@@ -702,41 +702,34 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="websocket-command">WebSocket Command</h1>
-<p>Definition: Loopring L2 websocket </p>
+<p>Definition: Loopring L2 websocket</p>
 <h3 id="loopring-l2-websocket-topic-type">Loopring L2 websocket topic type:</h3>
 <p>WsTopicType</p>
 <ul>
 <li><code>account</code></li>
 <li><code>orderbook</code></li>
 <li><code>mixorder</code></li>
-<li><code>trade</code></li>
+<li><code>mixtrade</code></li>
 <li><code>ticker</code></li>
 <li><code>candlestick</code></li>
 <li><code>ammpool</code></li>
 </ul>
-<pre><code>&quot;getWsKey&quot;,
-async () =&gt; {
-  const response = await LoopringAPI.wsAPI.getWsKey();
-  console.log(response);
-},
-DEFAULT_TIMEOUT
-</code></pre><p>  );</p>
-<p>  it(
-    &quot;getOrderBookArg&quot;,
-    async () =&gt; {
-      const arg1 = sdk.getMixOrderArg({ market: &quot;LRC-ETH&quot;, level: 50 });
-      console.log(arg1);</p>
-<pre><code>  const arg2 = sdk.getOrderBookArg({
-    market: &quot;LRC-ETH&quot;,
-    level: 50,
-    count: 40,
-    snapshot: false,
-  });
-  console.log(arg2);
-},
-DEFAULT_TIMEOUT
-</code></pre><p>  );
-});</p>
+<h2 id="getwskey-required-by-account-related-socket">getWsKey (required by account related socket)</h2>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> LoopringAPI.wsAPI.getWsKey();
+<span class="hljs-built_in">console</span>.log(response);
+</code></pre>
+<h2 id="getorderbookarg">getOrderBookArg</h2>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> arg1 = sdk.getMixOrderArg({ <span class="hljs-attr">market</span>: <span class="hljs-string">&quot;LRC-ETH&quot;</span>, <span class="hljs-attr">level</span>: <span class="hljs-number">50</span> });
+<span class="hljs-built_in">console</span>.log(arg1);
+
+<span class="hljs-keyword">const</span> arg2 = sdk.getOrderBookArg({
+  <span class="hljs-attr">market</span>: <span class="hljs-string">&quot;LRC-ETH&quot;</span>,
+  <span class="hljs-attr">level</span>: <span class="hljs-number">50</span>,
+  <span class="hljs-attr">count</span>: <span class="hljs-number">40</span>,
+  <span class="hljs-attr">snapshot</span>: <span class="hljs-literal">false</span>,
+});
+<span class="hljs-built_in">console</span>.log(arg2);
+</code></pre>
 
                                 
                                 </section>
@@ -780,7 +773,7 @@ DEFAULT_TIMEOUT
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Web Socket","level":"2.1.1.1","depth":3,"next":{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.1","depth":2,"path":"js_sdk/exchange/exchange.md","ref":"./js_sdk/exchange/exchange.md","articles":[{"title":"Web Socket","level":"2.1.1.1","depth":3,"path":"js_sdk/exchange/webSocket.md","ref":"./js_sdk/exchange/webSocket.md","articles":[]},{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/exchange/webSocket.md","mtime":"2022-04-06T05:38:45.404Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-04-06T10:41:02.865Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Web Socket","level":"2.1.1.1","depth":3,"next":{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]},"previous":{"title":"Exchange","level":"2.1.1","depth":2,"path":"js_sdk/exchange/exchange.md","ref":"./js_sdk/exchange/exchange.md","articles":[{"title":"Web Socket","level":"2.1.1.1","depth":3,"path":"js_sdk/exchange/webSocket.md","ref":"./js_sdk/exchange/webSocket.md","articles":[]},{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/exchange/webSocket.md","mtime":"2022-04-06T11:04:14.719Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2022-04-14T18:37:17.008Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

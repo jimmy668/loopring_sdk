@@ -6,7 +6,7 @@
         <title>Active Account · Loopring SDK</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="generator" content="HonKit 3.7.1">
         <meta name="author" content="Loopring Dev Team">
         
         
@@ -711,10 +711,7 @@
 </code></pre>
 <hr>
 <h2 id="step-2-use-keyseed-or-customerkeyseed-generatekeypair">Step 2. use keySeed or CUSTOMER_KEY_SEED generateKeyPair</h2>
-<pre><code class="lang-ts"><span class="hljs-keyword">const</span> keySeed =
-  accInfo.keySeed &amp;&amp; accInfo.keySeed !== <span class="hljs-string">&quot;&quot;</span>
-    ? accInfo.keySeed
-    : sdk.BaseAPI.KEY_MESSAGE.replace(
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> keySeed = sdk.BaseAPI.KEY_MESSAGE.replace(
       <span class="hljs-string">&quot;${exchangeAddress}&quot;</span>,
       LOOPRING_EXPORTED_ACCOUNT.exchangeAddress
     ).replace(<span class="hljs-string">&quot;${nonce}&quot;</span>, accInfo.nonce.toString());
@@ -824,7 +821,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Active Account","level":"2.1.2.1","depth":3,"next":{"title":"Fees","level":"2.1.2.2","depth":3,"path":"js_sdk/account/fee.md","ref":"./js_sdk/account/fee.md","articles":[]},"previous":{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/account/activeAccount.md","mtime":"2022-04-04T14:31:42.473Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-04-06T10:41:02.865Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Active Account","level":"2.1.2.1","depth":3,"next":{"title":"Fees","level":"2.1.2.2","depth":3,"path":"js_sdk/account/fee.md","ref":"./js_sdk/account/fee.md","articles":[]},"previous":{"title":"Amm","level":"2.1.1.2","depth":3,"path":"js_sdk/exchange/ammpool_api.md","ref":"./js_sdk/exchange/ammpool_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"js_sdk/account/activeAccount.md","mtime":"2022-04-06T14:06:30.113Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2022-04-14T18:37:17.008Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
