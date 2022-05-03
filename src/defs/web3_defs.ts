@@ -23,5 +23,5 @@ export enum SigSuffix {
 
 export const NFTFactory = {
   [ChainId.MAINNET]: "0xc852aC7aAe4b0f0a0Deb9e8A391ebA2047d80026",
-  [ChainId.GOERLI]: "0x25315F9878BA07221db684b7ad3676502E914894",
+  [ChainId.GOERLI]: "0xAE9826cc753a1B3eb81Ec64Ac1Ff007Ef8f3841C",
 };

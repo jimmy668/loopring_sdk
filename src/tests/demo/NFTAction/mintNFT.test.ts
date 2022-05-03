@@ -30,17 +30,7 @@ describe("mintNFT", function () {
       );
       console.log("apiKey:", apiKey);
 
-      // Step 4. fee
-      const fee = await LoopringAPI.userAPI.getNFTOffchainFeeAmt(
-        {
-          accountId: accInfo.accountId,
-          tokenAddress: LOOPRING_EXPORTED_ACCOUNT.nftTokenAddress,
-          requestType: sdk.OffchainNFTFeeReqType.NFT_MINT,
-        },
-        apiKey
-      );
-
-      // Step 5. storageId
+      // Step 4. storageId
       const storageId = await LoopringAPI.userAPI.getNextStorageId(
         {
           accountId: accInfo.accountId,
@@ -49,16 +39,26 @@ describe("mintNFT", function () {
         apiKey
       );
 
-      // Step 6. nftTokenAddress
+      // Step 5. nftTokenAddress
       const counterFactualNftInfo = {
         nftOwner: accInfo.owner,
         nftFactory: sdk.NFTFactory[sdk.ChainId.GOERLI],
-        nftBaseUri: "",
+        nftBaseUri: "ipfs://test",
       };
       const nftTokenAddress =
         LoopringAPI.nftAPI.computeNFTAddress(counterFactualNftInfo)
           .tokenAddress || "";
       console.log("nftTokenAddress", nftTokenAddress);
+
+      // Step 6. fee
+      const fee = await LoopringAPI.userAPI.getNFTOffchainFeeAmt(
+        {
+          accountId: accInfo.accountId,
+          tokenAddress: nftTokenAddress,
+          requestType: sdk.OffchainNFTFeeReqType.NFT_MINT,
+        },
+        apiKey
+      );
 
       // Step 7. Mint
       const response = await LoopringAPI.userAPI.submitNFTMint({
@@ -80,6 +80,7 @@ describe("mintNFT", function () {
           },
           royaltyPercentage: 5,
           forceToMint: true, // suggest use as false, for here is just for run test
+          counterFactualNftInfo: counterFactualNftInfo
         },
         web3,
         chainId: sdk.ChainId.GOERLI,
