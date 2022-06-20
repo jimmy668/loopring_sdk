@@ -8,9 +8,11 @@
 
 - [Authereum](ConnectorNames.md#authereum)
 - [Coinbase](ConnectorNames.md#coinbase)
+- [Gamestop](ConnectorNames.md#gamestop)
 - [Ledger](ConnectorNames.md#ledger)
 - [MetaMask](ConnectorNames.md#metamask)
 - [Network](ConnectorNames.md#network)
+- [OtherExtension](ConnectorNames.md#otherextension)
 - [Trezor](ConnectorNames.md#trezor)
 - [Unknown](ConnectorNames.md#unknown)
 - [WalletConnect](ConnectorNames.md#walletconnect)
@@ -23,7 +25,7 @@
 
 #### Defined in
 
-[defs/web3_defs.ts:16](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L16)
+[defs/web3_defs.ts:18](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L18)
 
 ___
 
@@ -33,7 +35,17 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:13](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L13)
+[defs/web3_defs.ts:15](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L15)
+
+___
+
+### Gamestop
+
+• **Gamestop** = `"Gamestop"`
+
+#### Defined in
+
+[defs/web3_defs.ts:13](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L13)
 
 ___
 
@@ -43,7 +55,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:14](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L14)
+[defs/web3_defs.ts:16](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L16)
 
 ___
 
@@ -53,7 +65,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:10](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L10)
+[defs/web3_defs.ts:10](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L10)
 
 ___
 
@@ -63,7 +75,17 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:11](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L11)
+[defs/web3_defs.ts:11](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L11)
+
+___
+
+### OtherExtension
+
+• **OtherExtension** = `"OtherExtension"`
+
+#### Defined in
+
+[defs/web3_defs.ts:14](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L14)
 
 ___
 
@@ -73,7 +95,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:15](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L15)
+[defs/web3_defs.ts:17](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L17)
 
 ___
 
@@ -83,7 +105,7 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:9](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L9)
+[defs/web3_defs.ts:9](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L9)
 
 ___
 
@@ -93,4 +115,4 @@ ___
 
 #### Defined in
 
-[defs/web3_defs.ts:12](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/web3_defs.ts#L12)
+[defs/web3_defs.ts:12](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/web3_defs.ts#L12)

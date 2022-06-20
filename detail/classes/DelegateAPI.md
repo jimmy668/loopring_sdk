@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[api/base_api.ts:85](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L85)
+[api/base_api.ts:86](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L86)
 
 ## Properties
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[api/base_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L37)
+[api/base_api.ts:37](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L37)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L38)
+[api/base_api.ts:38](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L38)
 
 ___
 
@@ -92,13 +92,13 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:36](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L36)
+[api/base_api.ts:36](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L36)
 
 ## Methods
 
 ### genErr
 
-▸ `Protected` **genErr**(`err`): [`RESULT_INFO`](../interfaces/RESULT_INFO.md)
+▸ **genErr**(`err`): [`RESULT_INFO`](../interfaces/RESULT_INFO.md)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L39)
+[api/base_api.ts:39](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L39)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:96](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L96)
+[api/base_api.ts:97](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L97)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/delegate_api.ts#L7)
+[api/delegate_api.ts:7](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/delegate_api.ts#L7)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:107](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L107)
+[api/base_api.ts:108](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L108)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:150](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L150)
+[api/base_api.ts:151](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L151)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:65](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L65)
+[api/base_api.ts:66](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L66)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:146](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L146)
+[api/base_api.ts:147](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L147)
 
 ___
 
@@ -280,4 +280,4 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:141](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L141)
+[api/base_api.ts:142](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L142)

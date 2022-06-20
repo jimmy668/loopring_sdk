@@ -12,6 +12,7 @@
 - [CONTRACTNFT\_URI](ConnectorError.md#contractnft_uri)
 - [NOT\_SUPPORT\_ERROR](ConnectorError.md#not_support_error)
 - [USER\_DENIED](ConnectorError.md#user_denied)
+- [USER\_DENIED\_2](ConnectorError.md#user_denied_2)
 
 ## Enumeration members
 
@@ -21,7 +22,7 @@
 
 #### Defined in
 
-[defs/error_codes.ts:56](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L56)
+[defs/error_codes.ts:59](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L59)
 
 ___
 
@@ -31,7 +32,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:57](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L57)
+[defs/error_codes.ts:60](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L60)
 
 ___
 
@@ -41,7 +42,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:58](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L58)
+[defs/error_codes.ts:61](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L61)
 
 ___
 
@@ -51,7 +52,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:55](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L55)
+[defs/error_codes.ts:58](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L58)
 
 ___
 
@@ -61,7 +62,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:53](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L53)
+[defs/error_codes.ts:55](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L55)
 
 ___
 
@@ -71,4 +72,14 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:54](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L54)
+[defs/error_codes.ts:56](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L56)
+
+___
+
+### USER\_DENIED\_2
+
+• **USER\_DENIED\_2** = `"personalSign err before Validate"`
+
+#### Defined in
+
+[defs/error_codes.ts:57](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L57)

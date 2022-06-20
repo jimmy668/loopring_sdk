@@ -27,6 +27,7 @@
 - [Invalid\_Transfer\_Sender](LoopringErrorCode.md#invalid_transfer_sender)
 - [Invalid\_User\_Balance](LoopringErrorCode.md#invalid_user_balance)
 - [Market\_Not\_Supported](LoopringErrorCode.md#market_not_supported)
+- [NOT\_SUPPORT\_ERROR](LoopringErrorCode.md#not_support_error)
 - [No\_Order\_To\_Cancel](LoopringErrorCode.md#no_order_to_cancel)
 - [No\_Sig\_Provided](LoopringErrorCode.md#no_sig_provided)
 - [Order\_Already\_Existed](LoopringErrorCode.md#order_already_existed)
@@ -39,6 +40,8 @@
 - [SKD\_UNKNOW](LoopringErrorCode.md#skd_unknow)
 - [Sumbit\_Order\_Failed](LoopringErrorCode.md#sumbit_order_failed)
 - [Transfer\_Token\_Is\_Not\_Consistent\_With\_Fee\_Token](LoopringErrorCode.md#transfer_token_is_not_consistent_with_fee_token)
+- [USER\_DENIED](LoopringErrorCode.md#user_denied)
+- [USER\_DENIED\_2](LoopringErrorCode.md#user_denied_2)
 - [Unknown\_Error](LoopringErrorCode.md#unknown_error)
 - [Unsuported\_Fee\_Token](LoopringErrorCode.md#unsuported_fee_token)
 - [Unsupported\_Depth\_Level](LoopringErrorCode.md#unsupported_depth_level)
@@ -56,7 +59,7 @@
 
 #### Defined in
 
-[defs/error_codes.ts:5](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L5)
+[defs/error_codes.ts:5](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L5)
 
 ___
 
@@ -66,7 +69,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:47](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L47)
+[defs/error_codes.ts:46](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L46)
 
 ___
 
@@ -76,7 +79,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:48](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L48)
+[defs/error_codes.ts:47](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L47)
 
 ___
 
@@ -86,7 +89,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:49](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L49)
+[defs/error_codes.ts:48](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L48)
 
 ___
 
@@ -96,7 +99,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:46](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L46)
+[defs/error_codes.ts:45](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L45)
 
 ___
 
@@ -106,7 +109,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:32](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L32)
+[defs/error_codes.ts:32](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L32)
 
 ___
 
@@ -116,7 +119,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:20](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L20)
+[defs/error_codes.ts:20](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L20)
 
 ___
 
@@ -126,7 +129,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:8](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L8)
+[defs/error_codes.ts:8](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L8)
 
 ___
 
@@ -136,7 +139,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:29](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L29)
+[defs/error_codes.ts:29](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L29)
 
 ___
 
@@ -146,7 +149,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:19](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L19)
+[defs/error_codes.ts:19](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L19)
 
 ___
 
@@ -156,7 +159,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:13](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L13)
+[defs/error_codes.ts:13](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L13)
 
 ___
 
@@ -166,7 +169,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:34](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L34)
+[defs/error_codes.ts:34](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L34)
 
 ___
 
@@ -176,7 +179,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:10](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L10)
+[defs/error_codes.ts:10](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L10)
 
 ___
 
@@ -186,7 +189,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:33](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L33)
+[defs/error_codes.ts:33](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L33)
 
 ___
 
@@ -196,7 +199,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:3](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L3)
+[defs/error_codes.ts:3](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L3)
 
 ___
 
@@ -206,7 +209,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:21](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L21)
+[defs/error_codes.ts:21](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L21)
 
 ___
 
@@ -216,7 +219,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:11](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L11)
+[defs/error_codes.ts:11](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L11)
 
 ___
 
@@ -226,7 +229,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:23](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L23)
+[defs/error_codes.ts:23](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L23)
 
 ___
 
@@ -236,7 +239,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:22](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L22)
+[defs/error_codes.ts:22](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L22)
 
 ___
 
@@ -246,7 +249,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:17](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L17)
+[defs/error_codes.ts:17](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L17)
 
 ___
 
@@ -256,7 +259,17 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:12](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L12)
+[defs/error_codes.ts:12](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L12)
+
+___
+
+### NOT\_SUPPORT\_ERROR
+
+• **NOT\_SUPPORT\_ERROR** = `500005`
+
+#### Defined in
+
+[defs/error_codes.ts:49](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L49)
 
 ___
 
@@ -266,7 +279,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:28](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L28)
+[defs/error_codes.ts:28](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L28)
 
 ___
 
@@ -276,7 +289,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:35](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L35)
+[defs/error_codes.ts:35](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L35)
 
 ___
 
@@ -286,7 +299,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:14](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L14)
+[defs/error_codes.ts:14](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L14)
 
 ___
 
@@ -296,7 +309,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:15](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L15)
+[defs/error_codes.ts:15](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L15)
 
 ___
 
@@ -306,7 +319,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:18](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L18)
+[defs/error_codes.ts:18](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L18)
 
 ___
 
@@ -316,7 +329,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:30](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L30)
+[defs/error_codes.ts:30](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L30)
 
 ___
 
@@ -326,7 +339,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:16](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L16)
+[defs/error_codes.ts:16](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L16)
 
 ___
 
@@ -336,7 +349,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:40](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L40)
+[defs/error_codes.ts:40](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L40)
 
 ___
 
@@ -346,7 +359,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:39](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L39)
+[defs/error_codes.ts:39](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L39)
 
 ___
 
@@ -356,7 +369,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:45](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L45)
+[defs/error_codes.ts:44](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L44)
 
 ___
 
@@ -366,7 +379,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:27](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L27)
+[defs/error_codes.ts:27](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L27)
 
 ___
 
@@ -376,7 +389,27 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:25](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L25)
+[defs/error_codes.ts:25](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L25)
+
+___
+
+### USER\_DENIED
+
+• **USER\_DENIED** = `500006`
+
+#### Defined in
+
+[defs/error_codes.ts:50](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L50)
+
+___
+
+### USER\_DENIED\_2
+
+• **USER\_DENIED\_2** = `500007`
+
+#### Defined in
+
+[defs/error_codes.ts:51](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L51)
 
 ___
 
@@ -386,7 +419,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:2](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L2)
+[defs/error_codes.ts:2](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L2)
 
 ___
 
@@ -396,7 +429,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:24](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L24)
+[defs/error_codes.ts:24](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L24)
 
 ___
 
@@ -406,7 +439,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:43](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L43)
+[defs/error_codes.ts:43](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L43)
 
 ___
 
@@ -416,7 +449,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:42](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L42)
+[defs/error_codes.ts:42](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L42)
 
 ___
 
@@ -426,7 +459,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:9](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L9)
+[defs/error_codes.ts:9](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L9)
 
 ___
 
@@ -436,7 +469,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:38](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L38)
+[defs/error_codes.ts:38](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L38)
 
 ___
 
@@ -446,7 +479,7 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:6](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L6)
+[defs/error_codes.ts:6](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L6)
 
 ___
 
@@ -456,4 +489,4 @@ ___
 
 #### Defined in
 
-[defs/error_codes.ts:36](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/error_codes.ts#L36)
+[defs/error_codes.ts:36](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/error_codes.ts#L36)

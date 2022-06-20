@@ -9,6 +9,7 @@
 - [baseOrderInfo](TokenAmount.md#baseorderinfo)
 - [discount](TokenAmount.md#discount)
 - [tokenSymbol](TokenAmount.md#tokensymbol)
+- [tradeCost](TokenAmount.md#tradecost)
 - [userOrderInfo](TokenAmount.md#userorderinfo)
 
 ## Properties
@@ -19,7 +20,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:782](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L782)
+[defs/loopring_defs.ts:786](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L786)
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:781](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L781)
+[defs/loopring_defs.ts:785](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L785)
 
 ___
 
@@ -39,7 +40,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:780](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L780)
+[defs/loopring_defs.ts:784](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L784)
+
+___
+
+### tradeCost
+
+• **tradeCost**: `string`
+
+#### Defined in
+
+[defs/loopring_defs.ts:788](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L788)
 
 ___
 
@@ -49,4 +60,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:783](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L783)
+[defs/loopring_defs.ts:787](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L787)

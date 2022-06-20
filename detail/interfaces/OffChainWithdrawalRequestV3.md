@@ -38,7 +38,7 @@ account ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:882](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L882)
+[defs/loopring_defs.ts:887](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L887)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:959](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L959)
+[defs/loopring_defs.ts:964](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L964)
 
 ___
 
@@ -62,7 +62,7 @@ ecdsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:952](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L952)
+[defs/loopring_defs.ts:957](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L957)
 
 ___
 
@@ -76,7 +76,7 @@ eddsa signature
 
 #### Defined in
 
-[defs/loopring_defs.ts:946](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L946)
+[defs/loopring_defs.ts:951](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L951)
 
 ___
 
@@ -90,7 +90,7 @@ exchange address
 
 #### Defined in
 
-[defs/loopring_defs.ts:876](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L876)
+[defs/loopring_defs.ts:881](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L881)
 
 ___
 
@@ -104,7 +104,7 @@ extra data for complex withdraw mode, normally none
 
 #### Defined in
 
-[defs/loopring_defs.ts:934](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L934)
+[defs/loopring_defs.ts:939](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L939)
 
 ___
 
@@ -118,7 +118,7 @@ is fast withdraw mode
 
 #### Defined in
 
-[defs/loopring_defs.ts:940](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L940)
+[defs/loopring_defs.ts:945](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L945)
 
 ___
 
@@ -132,7 +132,7 @@ An approved hash string which was already submitted on eth mainnet
 
 #### Defined in
 
-[defs/loopring_defs.ts:958](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L958)
+[defs/loopring_defs.ts:963](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L963)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:900](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L900)
+[defs/loopring_defs.ts:905](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L905)
 
 ___
 
@@ -162,7 +162,7 @@ Normally no need to take care of this value,
 
 #### Defined in
 
-[defs/loopring_defs.ts:922](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L922)
+[defs/loopring_defs.ts:927](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L927)
 
 ___
 
@@ -176,7 +176,7 @@ account owner address
 
 #### Defined in
 
-[defs/loopring_defs.ts:888](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L888)
+[defs/loopring_defs.ts:893](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L893)
 
 ___
 
@@ -190,7 +190,7 @@ offchain ID
 
 #### Defined in
 
-[defs/loopring_defs.ts:906](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L906)
+[defs/loopring_defs.ts:911](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L911)
 
 ___
 
@@ -204,7 +204,7 @@ withdraw to address
 
 #### Defined in
 
-[defs/loopring_defs.ts:928](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L928)
+[defs/loopring_defs.ts:933](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L933)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:894](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L894)
+[defs/loopring_defs.ts:899](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L899)
 
 ___
 
@@ -230,4 +230,4 @@ Timestamp for order to become invalid
 
 #### Defined in
 
-[defs/loopring_defs.ts:912](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L912)
+[defs/loopring_defs.ts:917](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L917)

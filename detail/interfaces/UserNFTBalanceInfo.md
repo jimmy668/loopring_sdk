@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[defs/loopring_defs.ts:2261](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2261)
+[defs/loopring_defs.ts:2317](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2317)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2297](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2297)
+[defs/loopring_defs.ts:2329](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2329)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2298](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2298)
+[defs/loopring_defs.ts:2330](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2330)
 
 ___
 
@@ -62,46 +62,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2267](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2267)
+[defs/loopring_defs.ts:2323](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2323)
 
 ___
 
 ### metadata
 
-• `Optional` **metadata**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `base` | `Object` |
-| `base.decimals` | `number` |
-| `base.description` | `string` |
-| `base.image` | `string` |
-| `base.localization` | `string` |
-| `base.name` | `string` |
-| `base.properties` | `string` |
-| `extra` | `Object` |
-| `extra.animationUrl` | `string` |
-| `extra.attributes` | `string` |
-| `extra.backgroundColor` | `string` |
-| `extra.externalUrl` | `string` |
-| `extra.imageData` | `string` |
-| `extra.minter` | `string` |
-| `extra.youtubeUrl` | `string` |
-| `imageSize` | `Object` |
-| `imageSize.240-240` | `undefined` \| `string` |
-| `imageSize.332-332` | `undefined` \| `string` |
-| `imageSize.original` | `undefined` \| `string` |
-| `network` | ``0`` |
-| `nftType` | [`NFTType`](../enums/NFTType.md) |
-| `tokenAddress` | `string` |
-| `tokenId` | `string` |
-| `uri` | `string` |
+• `Optional` **metadata**: [`IPFS_METADATA`](../modules.md#ipfs_metadata)
 
 #### Defined in
 
-[defs/loopring_defs.ts:2272](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2272)
+[defs/loopring_defs.ts:2328](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2328)
 
 ___
 
@@ -111,7 +82,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2263](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2263)
+[defs/loopring_defs.ts:2319](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2319)
 
 ___
 
@@ -121,7 +92,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2265](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2265)
+[defs/loopring_defs.ts:2321](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2321)
 
 ___
 
@@ -138,7 +109,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2268](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2268)
+[defs/loopring_defs.ts:2324](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2324)
 
 ___
 
@@ -148,7 +119,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2264](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2264)
+[defs/loopring_defs.ts:2320](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2320)
 
 ___
 
@@ -158,7 +129,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2262](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2262)
+[defs/loopring_defs.ts:2318](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2318)
 
 ___
 
@@ -168,4 +139,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:2266](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L2266)
+[defs/loopring_defs.ts:2322](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L2322)

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[api/base_api.ts:322](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L322)
+[api/base_api.ts:325](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L325)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[api/base_api.ts:321](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L321)
+[api/base_api.ts:324](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/api/base_api.ts#L324)

@@ -14,6 +14,7 @@
 - [OPEN\_ACCOUNT](OffchainFeeReqType.md#open_account)
 - [ORDER](OffchainFeeReqType.md#order)
 - [TRANSFER](OffchainFeeReqType.md#transfer)
+- [TRANSFER\_AND\_UPDATE\_ACCOUNT](OffchainFeeReqType.md#transfer_and_update_account)
 - [UPDATE\_ACCOUNT](OffchainFeeReqType.md#update_account)
 
 ## Enumeration members
@@ -24,7 +25,7 @@
 
 #### Defined in
 
-[defs/loopring_enums.ts:57](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L57)
+[defs/loopring_enums.ts:57](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L57)
 
 ___
 
@@ -34,7 +35,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:59](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L59)
+[defs/loopring_enums.ts:59](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L59)
 
 ___
 
@@ -44,7 +45,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:58](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L58)
+[defs/loopring_enums.ts:58](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L58)
 
 ___
 
@@ -54,7 +55,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:55](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L55)
+[defs/loopring_enums.ts:55](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L55)
 
 ___
 
@@ -64,7 +65,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:52](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L52)
+[defs/loopring_enums.ts:52](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L52)
 
 ___
 
@@ -74,7 +75,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:56](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L56)
+[defs/loopring_enums.ts:56](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L56)
 
 ___
 
@@ -84,7 +85,7 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:51](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L51)
+[defs/loopring_enums.ts:51](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L51)
 
 ___
 
@@ -94,7 +95,17 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:54](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L54)
+[defs/loopring_enums.ts:54](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L54)
+
+___
+
+### TRANSFER\_AND\_UPDATE\_ACCOUNT
+
+• **TRANSFER\_AND\_UPDATE\_ACCOUNT** = `15`
+
+#### Defined in
+
+[defs/loopring_enums.ts:60](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L60)
 
 ___
 
@@ -104,4 +115,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_enums.ts:53](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_enums.ts#L53)
+[defs/loopring_enums.ts:53](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_enums.ts#L53)

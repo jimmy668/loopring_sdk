@@ -22,7 +22,7 @@ The amount of the token
 
 #### Defined in
 
-[defs/loopring_defs.ts:384](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L384)
+[defs/loopring_defs.ts:384](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L384)
 
 ___
 
@@ -36,7 +36,7 @@ The Loopring's NFTAction token data identifier which is a hash string of NFTActi
 
 #### Defined in
 
-[defs/loopring_defs.ts:390](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L390)
+[defs/loopring_defs.ts:390](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L390)
 
 ___
 
@@ -50,4 +50,4 @@ The Loopring\'s token identifier.
 
 #### Defined in
 
-[defs/loopring_defs.ts:378](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L378)
+[defs/loopring_defs.ts:378](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L378)

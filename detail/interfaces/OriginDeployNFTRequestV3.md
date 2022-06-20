@@ -25,7 +25,7 @@ Submit Deploy NFTAction params
 
 #### Defined in
 
-[defs/loopring_defs.ts:1514](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1514)
+[defs/loopring_defs.ts:1531](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L1531)
 
 ___
 
@@ -39,7 +39,7 @@ nftData
 
 #### Defined in
 
-[defs/loopring_defs.ts:1507](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1507)
+[defs/loopring_defs.ts:1524](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L1524)
 
 ___
 
@@ -53,7 +53,7 @@ NFTAction address
 
 #### Defined in
 
-[defs/loopring_defs.ts:1513](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1513)
+[defs/loopring_defs.ts:1530](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L1530)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[defs/loopring_defs.ts:1494](https://github.com/Loopring/loopring_sdk/blob/edf273a/src/defs/loopring_defs.ts#L1494)
+[defs/loopring_defs.ts:1511](https://github.com/Loopring/loopring_sdk/blob/1b21a8d/src/defs/loopring_defs.ts#L1511)
