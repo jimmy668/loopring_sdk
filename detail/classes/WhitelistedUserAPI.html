@@ -1,0 +1,1132 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>WhitelistedUserAPI · Loopring SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.1">
+        <meta name="author" content="Loopring Dev Team">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="WsAPI.html" />
+    
+    
+    <link rel="prev" href="WalletAPI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://loopring.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../ChangeLog.html">
+            
+                <a href="../../ChangeLog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://github.com/Loopring/loopring_sdk">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDKs demo</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../js_sdk/">
+            
+                <a href="../../js_sdk/">
+            
+                    
+                    JS SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../js_sdk/exchange/exchange.html">
+            
+                <a href="../../js_sdk/exchange/exchange.html">
+            
+                    
+                    Exchange
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../js_sdk/exchange/webSocket.html">
+            
+                <a href="../../js_sdk/exchange/webSocket.html">
+            
+                    
+                    Web Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../js_sdk/exchange/ammpool_api.html">
+            
+                <a href="../../js_sdk/exchange/ammpool_api.html">
+            
+                    
+                    Amm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../js_sdk/">
+            
+                <a href="../../js_sdk/#mock-account">
+            
+                    
+                    Account
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../js_sdk/account/activeAccount.html">
+            
+                <a href="../../js_sdk/account/activeAccount.html">
+            
+                    
+                    Active Account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../js_sdk/account/fee.html">
+            
+                <a href="../../js_sdk/account/fee.html">
+            
+                    
+                    Fees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../js_sdk/account/signature.html">
+            
+                <a href="../../js_sdk/account/signature.html">
+            
+                    
+                    Signature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../js_sdk/account/historyRecord.html">
+            
+                <a href="../../js_sdk/account/historyRecord.html">
+            
+                    
+                    Transaction Recorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../js_sdk/">
+            
+                <a href="../../js_sdk/#mock-erc20-token-map">
+            
+                    
+                    ERC20
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../js_sdk/deposit/depositERC20.html">
+            
+                <a href="../../js_sdk/deposit/depositERC20.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../js_sdk/transfer/transferERC20.html">
+            
+                <a href="../../js_sdk/transfer/transferERC20.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../js_sdk/withdraw/withdrawERC20.html">
+            
+                <a href="../../js_sdk/withdraw/withdrawERC20.html">
+            
+                    
+                    Withdraw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../js_sdk/erc20Trade/orderERC20.html">
+            
+                <a href="../../js_sdk/erc20Trade/orderERC20.html">
+            
+                    
+                    Order
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../js_sdk/">
+            
+                <a href="../../js_sdk/#mock-account">
+            
+                    
+                    NFT
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../js_sdk/deposit/depositNFT.html">
+            
+                <a href="../../js_sdk/deposit/depositNFT.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../js_sdk/transfer/transferNFT.html">
+            
+                <a href="../../js_sdk/transfer/transferNFT.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../js_sdk/withdraw/withdrawNFT.html">
+            
+                <a href="../../js_sdk/withdraw/withdrawNFT.html">
+            
+                    
+                    Withdraw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../js_sdk/NFTAction/metaNFT.html">
+            
+                <a href="../../js_sdk/NFTAction/metaNFT.html">
+            
+                    
+                    Mint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../../js_sdk/NFTAction/deployNFT.html">
+            
+                <a href="../../js_sdk/NFTAction/deployNFT.html">
+            
+                    
+                    Deploy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.6" data-path="../../js_sdk/NFTAction/tradeNFT.html">
+            
+                <a href="../../js_sdk/NFTAction/tradeNFT.html">
+            
+                    
+                    Trade
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.6.1" data-path="../../js_sdk/NFTAction/validateNFTOrder.html">
+            
+                <a href="../../js_sdk/NFTAction/validateNFTOrder.html">
+            
+                    
+                    Validate Order
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">more detail</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    class
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="AmmpoolAPI.html">
+            
+                <a href="AmmpoolAPI.html">
+            
+                    
+                    AmmpoolAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="ExchangeAPI.html">
+            
+                <a href="ExchangeAPI.html">
+            
+                    
+                    ExchangeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="NFTAPI.html">
+            
+                <a href="NFTAPI.html">
+            
+                    
+                    NFTAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="UserAPI.html">
+            
+                <a href="UserAPI.html">
+            
+                    
+                    UserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="WalletAPI.html">
+            
+                <a href="WalletAPI.html">
+            
+                    
+                    WalletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.6" data-path="WhitelistedUserAPI.html">
+            
+                <a href="WhitelistedUserAPI.html">
+            
+                    
+                    WhitelistedUserAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="WsAPI.html">
+            
+                <a href="WsAPI.html">
+            
+                    
+                    WsAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    Read More
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Links</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://github.com/Loopring/hello_loopring">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <a target="_blank" href="https://docs.loopring.io/en/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <a target="_blank" href="https://loopring.org/#/">
+            
+                    
+                    About us
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <a target="_blank" href="https://loopring.io/#/newticket">
+            
+                    
+                    Submit a Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >WhitelistedUserAPI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="../README.md">@loopring-web/loopring-sdk</a> / <a href="../modules.html">Exports</a> / WhitelistedUserAPI</p>
+<h1 id="class-whitelisteduserapi">Class: WhitelistedUserAPI</h1>
+<h2 id="hierarchy">Hierarchy</h2>
+<ul>
+<li><p><a href="BaseAPI.md"><code>BaseAPI</code></a></p>
+<p>↳ <strong><code>WhitelistedUserAPI</code></strong></p>
+</li>
+</ul>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="WhitelistedUserAPI.html#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="WhitelistedUserAPI.html#baseurl">baseUrl</a></li>
+<li><a href="WhitelistedUserAPI.html#chainid">chainId</a></li>
+<li><a href="WhitelistedUserAPI.html#key_message">KEY_MESSAGE</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="WhitelistedUserAPI.html#generr">genErr</a></li>
+<li><a href="WhitelistedUserAPI.html#getavailablebroker">getAvailableBroker</a></li>
+<li><a href="WhitelistedUserAPI.html#getcounterfactualinfo">getCounterFactualInfo</a></li>
+<li><a href="WhitelistedUserAPI.html#makereq">makeReq</a></li>
+<li><a href="WhitelistedUserAPI.html#returntxhash">returnTxHash</a></li>
+<li><a href="WhitelistedUserAPI.html#setbaseurl">setBaseUrl</a></li>
+<li><a href="WhitelistedUserAPI.html#setchainid">setChainId</a></li>
+<li><a href="WhitelistedUserAPI.html#submitinternaltransfer">submitInternalTransfer</a></li>
+<li><a href="WhitelistedUserAPI.html#submitoffchainwithdraw">submitOffchainWithdraw</a></li>
+</ul>
+<h2 id="constructors">Constructors</h2>
+<h3 id="constructor">constructor</h3>
+<p>• <strong>new WhitelistedUserAPI</strong>(<code>param</code>, <code>timeout?</code>)</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>param</code></td>
+<td style="text-align:left"><a href="../interfaces/InitParam.md"><code>InitParam</code></a></td>
+<td style="text-align:left"><code>undefined</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>timeout</code></td>
+<td style="text-align:left"><code>number</code></td>
+<td style="text-align:left"><code>3000</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#constructor">constructor</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L85" target="_blank">api/base_api.ts:85</a></p>
+<h2 id="properties">Properties</h2>
+<h3 id="baseurl">baseUrl</h3>
+<p>• <code>Protected</code> <strong>baseUrl</strong>: <code>string</code> = <code>&quot;&quot;</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#baseurl">baseUrl</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L37" target="_blank">api/base_api.ts:37</a></p>
+<hr>
+<h3 id="chainid">chainId</h3>
+<p>• <code>Protected</code> <strong>chainId</strong>: <a href="../enums/ChainId.md"><code>ChainId</code></a> = <code>ChainId.MAINNET</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#chainid">chainId</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L38" target="_blank">api/base_api.ts:38</a></p>
+<hr>
+<h3 id="keymessage">KEY_MESSAGE</h3>
+<p>▪ <code>Static</code> <strong>KEY_MESSAGE</strong>: <code>string</code> = <code>KEY_MESSAGE</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#key_message">KEY_MESSAGE</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L36" target="_blank">api/base_api.ts:36</a></p>
+<h2 id="methods">Methods</h2>
+<h3 id="generr">genErr</h3>
+<p>▸ <code>Protected</code> <strong>genErr</strong>(<code>err</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>err</code></td>
+<td style="text-align:left"><code>Error</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#generr">genErr</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L39" target="_blank">api/base_api.ts:39</a></p>
+<hr>
+<h3 id="getavailablebroker">getAvailableBroker</h3>
+<p>▸ <strong>getAvailableBroker</strong>(): <code>Promise</code>&lt;{ <code>broker</code>: <code>string</code>  }&gt;</p>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>broker</code>: <code>string</code>  }&gt;</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#getavailablebroker">getAvailableBroker</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L96" target="_blank">api/base_api.ts:96</a></p>
+<hr>
+<h3 id="getcounterfactualinfo">getCounterFactualInfo</h3>
+<p>▸ <strong>getCounterFactualInfo</strong>&lt;<code>T</code>&gt;(<code>request</code>): <code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <code>unknown</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/GetCounterFactualInfoRequest.md"><code>GetCounterFactualInfoRequest</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;{ <code>counterFactualInfo</code>: <code>undefined</code> | <a href="../interfaces/CounterFactualInfo.md"><code>CounterFactualInfo</code></a> ; <code>error?</code>: <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> ; <code>raw_data</code>: <code>T</code>  }&gt;</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#getcounterfactualinfo">getCounterFactualInfo</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L107" target="_blank">api/base_api.ts:107</a></p>
+<hr>
+<h3 id="makereq">makeReq</h3>
+<p>▸ <code>Protected</code> <strong>makeReq</strong>(): <code>Request</code></p>
+<h4 id="returns">Returns</h4>
+<p><code>Request</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#makereq">makeReq</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L150" target="_blank">api/base_api.ts:150</a></p>
+<hr>
+<h3 id="returntxhash">returnTxHash</h3>
+<p>▸ <code>Protected</code> <strong>returnTxHash</strong>&lt;<code>T</code>&gt;(<code>raw_data</code>): <a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt;  }</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>T</code></td>
+<td style="text-align:left">extends <a href="../modules.html#tx_hash_api"><code>TX_HASH_API</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>raw_data</code></td>
+<td style="text-align:left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><a href="../interfaces/RESULT_INFO.md"><code>RESULT_INFO</code></a> | <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt; &amp; { <code>raw_data</code>: <code>Omit</code>&lt;<code>T</code>, <code>&quot;resultInfo&quot;</code>&gt;  }</p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#returntxhash">returnTxHash</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L65" target="_blank">api/base_api.ts:65</a></p>
+<hr>
+<h3 id="setbaseurl">setBaseUrl</h3>
+<p>▸ <strong>setBaseUrl</strong>(<code>baseUrl</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>baseUrl</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#setbaseurl">setBaseUrl</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L146" target="_blank">api/base_api.ts:146</a></p>
+<hr>
+<h3 id="setchainid">setChainId</h3>
+<p>▸ <strong>setChainId</strong>(<code>chainId</code>): <code>void</code></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>chainId</code></td>
+<td style="text-align:left"><a href="../enums/ChainId.md"><code>ChainId</code></a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>void</code></p>
+<h4 id="inherited-from">Inherited from</h4>
+<p><a href="BaseAPI.md">BaseAPI</a>.<a href="BaseAPI.md#setchainid">setChainId</a></p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/base_api.ts#L141" target="_blank">api/base_api.ts:141</a></p>
+<hr>
+<h3 id="submitinternaltransfer">submitInternalTransfer</h3>
+<p>▸ <strong>submitInternalTransfer</strong>(<code>request</code>, <code>eddsaKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/OriginTransferRequestV3.md"><code>OriginTransferRequestV3</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/whitelisted_user_api.ts#L50" target="_blank">api/whitelisted_user_api.ts:50</a></p>
+<hr>
+<h3 id="submitoffchainwithdraw">submitOffchainWithdraw</h3>
+<p>▸ <code>Private</code> <strong>submitOffchainWithdraw</strong>(<code>request</code>, <code>eddsaKey</code>, <code>apiKey</code>): <code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>request</code></td>
+<td style="text-align:left"><a href="../interfaces/OffChainWithdrawalRequestV3.md"><code>OffChainWithdrawalRequestV3</code></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>eddsaKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>apiKey</code></td>
+<td style="text-align:left"><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>Promise</code>&lt;<code>any</code>&gt;</p>
+<h4 id="defined-in">Defined in</h4>
+<p><a href="https://github.com/Loopring/loopring_sdk/blob/edf273a/src/api/whitelisted_user_api.ts#L18" target="_blank">api/whitelisted_user_api.ts:18</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="WalletAPI.html" class="navigation navigation-prev " aria-label="Previous page: WalletAPI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="WsAPI.html" class="navigation navigation-next " aria-label="Next page: WsAPI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WhitelistedUserAPI","level":"3.1.6","depth":2,"next":{"title":"WsAPI","level":"3.1.7","depth":2,"path":"detail/classes/WsAPI.md","ref":"./detail/classes/WsAPI.md","articles":[]},"previous":{"title":"WalletAPI","level":"3.1.5","depth":2,"path":"detail/classes/WalletAPI.md","ref":"./detail/classes/WalletAPI.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Loopring Dev Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring SDK","links":{"sidebar":{"Home":"https://loopring.io"}},"gitbook":">=3.0.0","description":"loopring sdk"},"file":{"path":"detail/classes/WhitelistedUserAPI.md","mtime":"2022-04-06T10:41:00.766Z","type":"markdown"},"gitbook":{"version":"3.7.1","time":"2022-06-20T16:58:50.301Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
