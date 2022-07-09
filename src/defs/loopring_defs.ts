@@ -32,6 +32,7 @@ import { RESULT_INFO } from "./error_codes";
 import { HEBAO_LOCK_STATUS, HEBAO_META_TYPE } from "./loopring_constants";
 import { CounterFactualInfo, NFTCounterFactualInfo } from "./account_defs";
 import { NFTType } from "../api";
+import * as buffer from "buffer";
 export type Without<T, U> = { [P in Exclude<keyof T, keyof U>]?: never };
 export type XOR<T, U> = T | U extends { [key: string]: any }
   ? (Without<T, U> & U) | (Without<U, T> & T)
@@ -325,6 +326,36 @@ export interface MarketInfo {
   status?: MarketStatus;
   isSwapEnabled?: boolean;
   createdAt?: number;
+}
+export enum DefiMarketStatus {
+  hide = 0,
+  show = 1,
+  depositOnly = 3,
+  depositAll = 7,
+  withdrawOnly = 9,
+  depositAllAndWithdraw = 15,
+  withdrawAll = 25,
+  WithdrawAllAndDeposit = 27,
+  depositAndWithdraw = 11,
+  all = 31,
+}
+
+export interface DefiMarketInfo {
+  type: string;
+  market: string;
+  apy: string;
+  baseTokenId: number;
+  quoteTokenId: number;
+  precisionForPrice: number;
+  orderbookAggLevels: number;
+  enabled: boolean;
+  status: DefiMarketStatus;
+  accountId: number;
+  address: string;
+  depositFeeBips: number;
+  withdrawFeeBips: number;
+  depositPrice: string;
+  withdrawPrice: string;
 }
 
 export interface MarketsResponse {
@@ -749,6 +780,10 @@ export type GetOffchainFeeAmtRequest =
         | OffchainFeeReqType.AMM_EXIT
         | OffchainFeeReqType.ORDER;
       tokenSymbol: string;
+    }
+  | {
+      requestType: OffchainFeeReqType.DEFI_EXIT | OffchainFeeReqType.DEFI_JOIN;
+      market: string;
     }
   | {
       requestType: OffchainFeeReqType.FAST_OFFCHAIN_WITHDRAWAL;
@@ -2692,3 +2727,84 @@ export interface WalletType {
   isContract: boolean;
   loopringWalletContractVersion: string;
 }
+
+/**
+ * DefiOrderRequest
+ */
+export interface DefiOrderRequest {
+  /**
+   * exchange address
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  exchange: string;
+  /**
+   * storageId
+   * @type {number}
+   * @memberof DefiOrderRequest
+   */
+  storageId: number;
+  /**
+   * accountId
+   * @type {number}
+   * @memberof DefiOrderRequest
+   */
+  accountId: number;
+  /**
+   * sellToken
+   * @type {{tokenId:TokenID,volume:string}}
+   * @memberof DefiOrderRequest
+   */
+  sellToken: {
+    tokenId: number;
+    volume: string;
+  };
+  /**
+   * buyToken
+   * @type {{tokenId:TokenID,volume:string}}
+   * @memberof DefiOrderRequest
+   */
+  buyToken: {
+    tokenId: number;
+    volume: string;
+  };
+  /**
+   * Timestamp for order become invalid
+   * @type {number}
+   * @memberof DefiOrderRequest
+   */
+  validUntil: number;
+  /**
+   * Maximum order fee that the user can accept, value range (in ten thousandths) 1 ~ 63
+   * @type {number}
+   * @memberof DefiOrderRequest
+   */
+  maxFeeBips: number;
+  /**
+   * fillAmountBOrS
+   * @type {0|1}
+   * @memberof DefiOrderRequest
+   */
+  fillAmountBOrS: 1 | 0;
+  /**
+   * taker address
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  taker: string;
+  /**
+   * The orders EdDSA signature. The signature is a hexadecimal string obtained by signing the order itself and concatenating the resulting signature parts (Rx, Ry, and S). Used to authenticate and authorize the operation.
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  eddsaSignature: string;
+}
+
+export interface DefiResult {
+  hash: string;
+  clientOrderId: string;
+  status: TxStatus;
+  isIdempotent: boolean;
+}
+
+export const SEP = ",";

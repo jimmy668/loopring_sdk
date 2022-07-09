@@ -36,6 +36,7 @@ import {
   NFTTokenAmountInfo,
   NFTTradeRequestV3,
   SubmitOrderRequestV3,
+  DefiOrderRequest,
 } from "../../defs/loopring_defs";
 
 import Web3 from "web3";
@@ -1529,4 +1530,71 @@ export function get_EddsaSig_ExitAmmPool(
 ) {
   const typedData = getAmmExitEcdsaTypedData(data, patch);
   return eddsaSign(typedData, patch.eddsaKey);
+}
+
+// export function getDefiEcdsaTypedData(
+//   data: DefiOrderRequest,
+//   patch: DefiRequestPatch
+// ) {
+//   const message: any = {
+//     owner: data.owner,
+//     burnAmount: data.exitTokens.burned.volume,
+//     burnStorageID: data.storageId,
+//     exitMinAmounts: [
+//       data.exitTokens.unPooled[0].volume,
+//       data.exitTokens.unPooled[1].volume,
+//     ],
+//     fee: data.maxFee,
+//     validUntil: data.validUntil,
+//   };
+//
+//   const typedData: EIP712TypedData = {
+//     types: {
+//       EIP712Domain: [
+//         { name: "name", type: "string" },
+//         { name: "version", type: "string" },
+//         { name: "chainId", type: "uint256" },
+//         { name: "verifyingContract", type: "address" },
+//       ],
+//       DefiOrder: [
+//         { name: "exchange", type: "address" },
+//         { name: "storageId", type: "uint96" },
+//         { name: "accountId", type: "uint32" },
+//         { name: "sellToken.tokenId", type: "uint16" },
+//         { name: "buyToken.tokenId", type: "uint16" },
+//         { name: "sellToken.volume", type: "uint96" },
+//         { name: "buyToken.volume", type: "uint96" },
+//         { name: "validUntil", type: "uint32" },
+//         { name: "maxFeeBips", type: "uint32" },
+//         { name: "fillAmountBOrS", type: "uint32" },
+//         { nane: "taker", type: "uint32" },
+//       ],
+//     },
+//     primaryType: "DefiOrder",
+//     domain: {
+//       name: patch.ammName,
+//       version: "1.0.0",
+//       chainId: patch.chainId,
+//       verifyingContract: patch.poolAddress,
+//     },
+//     message: message,
+//   };
+//   return typedData;
+// }
+export function get_EddsaSig_Defi(request: DefiOrderRequest, eddsaKey: string) {
+  const inputs = [
+    new BN(ethUtil.toBuffer(request.exchange)).toString(),
+    request.storageId,
+    request.accountId,
+    request.sellToken?.tokenId ? request.sellToken.tokenId : "",
+    request.buyToken?.tokenId ? request.buyToken.tokenId : "",
+    request.sellToken?.volume ? request.sellToken.volume : 0,
+    request.buyToken?.volume ? request.buyToken.volume : 0,
+    request.validUntil,
+    request.maxFeeBips,
+    request.fillAmountBOrS,
+    new BN(ethUtil.toBuffer(request.taker)).toString(),
+  ];
+  return getEdDSASigWithPoseidon(inputs, eddsaKey);
+  // return eddsaSign(typedData, patch.eddsaKey);
 }

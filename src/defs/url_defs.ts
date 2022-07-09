@@ -70,6 +70,12 @@ export enum LOOPRING_URLs {
   GET_PROTOCOL_PORTRAIT = "/api/v3/sidecar/ProtocolPortrait",
   GET_AMM_ASSET_HISTORY = "/api/v3/amm/assets",
 
+  GET_DEFI_TOKENS = "/api/v3/defi/tokens",
+  GET_DEFI_MARKETS = "/api/v3/defi/markets",
+  GET_DEFI_ORDER = "/api/v3/defi/order",
+  GET_DEFI_REWARDS = "/api/v3/defi/rewards",
+  GET_DEFI_TRANSACTIONS = "/api/v3/defi/transactions",
+
   SET_REFERRER = "/api/v3/refer",
 
   GET_WS_KEY = "/v3/ws/key",

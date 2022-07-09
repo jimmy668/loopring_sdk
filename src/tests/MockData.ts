@@ -11,7 +11,6 @@ import {
 } from "../api";
 import Web3 from "web3";
 import * as sdk from "../index";
-import * as ContractAPI from "../api/contract_api";
 import { EIP712TypedData } from "eth-sig-util";
 const PrivateKeyProvider = require("truffle-privatekey-provider");
 /***
