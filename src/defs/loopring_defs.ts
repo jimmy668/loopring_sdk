@@ -356,6 +356,8 @@ export interface DefiMarketInfo {
   withdrawFeeBips: number;
   depositPrice: string;
   withdrawPrice: string;
+  baseVolume: string;
+  quoteVolume: string;
 }
 
 export interface MarketsResponse {
