@@ -105,21 +105,24 @@ export class DefiAPI extends BaseAPI {
     if (raw_data?.markets instanceof Array) {
       raw_data.markets.forEach((item: any) => {
         const marketInfo: DefiMarketInfo = {
-          type: item.type,
-          market: item.market,
-          apy: item.apy,
-          baseTokenId: item.baseTokenId,
-          quoteTokenId: item.quoteTokenId,
-          precisionForPrice: item.precisionForPrice,
-          orderbookAggLevels: item.orderbookAggLevels,
-          enabled: item.enabled,
-          status: item.status,
-          accountId: item.accountId,
-          address: item.address,
-          depositFeeBips: item.depositFeeBips,
-          withdrawFeeBips: item.withdrawFeeBips,
-          depositPrice: item.depositPrice,
-          withdrawPrice: item.withdrawPrice,
+          ...item,
+          // type: item.type,
+          // market: item.market,
+          // apy: item.apy,
+          // baseTokenId: item.baseTokenId,
+          // quoteTokenId: item.quoteTokenId,
+          // precisionForPrice: item.precisionForPrice,
+          // orderbookAggLevels: item.orderbookAggLevels,
+          // enabled: item.enabled,
+          // status: item.status,
+          // accountId: item.accountId,
+          // address: item.address,
+          // depositFeeBips: item.depositFeeBips,
+          // withdrawFeeBips: item.withdrawFeeBips,
+          // depositPrice: item.depositPrice,
+          // withdrawPrice: item.withdrawPrice,
+          // baseVolume: item.baseVolume,
+          // quoteVolume:item.quoteVolume
         };
         markets[item.market] = marketInfo;
 

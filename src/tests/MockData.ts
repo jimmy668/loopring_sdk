@@ -8,6 +8,7 @@ import {
   DelegateAPI,
   GlobalAPI,
   WhitelistedUserAPI,
+  DefiAPI,
 } from "../api";
 import Web3 from "web3";
 import * as sdk from "../index";
@@ -58,6 +59,7 @@ export const LoopringAPI = {
   wsAPI: new WsAPI({ chainId }),
   whitelistedUserAPI: new WhitelistedUserAPI({ chainId }),
   nftAPI: new NFTAPI({ chainId }),
+  defiAPI: new DefiAPI({ chainId }),
   delegate: new DelegateAPI({ chainId }),
   __chainId__: chainId,
 };

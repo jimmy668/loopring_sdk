@@ -1071,9 +1071,9 @@ export function calcDefi({
   isInputSell: boolean;
 } {
   /** isDeposit calc sellPrice & buyPrice */
-  const [buyPrice, sellPrice] = isJoin
-    ? [marketInfo.withdrawPrice, marketInfo.depositPrice]
-    : [marketInfo.depositPrice, marketInfo.withdrawPrice];
+  const [sellPrice] = isJoin
+    ? [marketInfo.depositPrice]
+    : [marketInfo.withdrawPrice];
 
   /** calc MiniSellVol & MaxSellVol**/
   const dustToken = tokenBuy;
@@ -1083,10 +1083,10 @@ export function calcDefi({
     dustToken.orderAmounts.dust
   );
 
-  const miniSellVol = minVolBuy.times(buyPrice);
-  const maxSellVol = fm.toBig(buyTokenBalanceVol).times(buyPrice);
+  const miniSellVol = minVolBuy.div(sellPrice);
+  const maxSellVol = fm.toBig(buyTokenBalanceVol).div(sellPrice);
   /** calc MiniSellVol & MaxSellVol END**/
-
+  // debugger;
   /** View input calc sellVol & buyVol */
   let sellVol, buyVol;
   if (isInputSell) {
@@ -1098,7 +1098,7 @@ export function calcDefi({
     buyVol = fm
       .toBig(buyAmount ? buyAmount : 0)
       .times("1e" + tokenBuy.decimals);
-    sellVol = buyVol.times(buyPrice);
+    sellVol = buyVol.div(sellPrice);
   }
   /** View input calc sellVol & buyVol END */
 

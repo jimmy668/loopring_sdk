@@ -2793,13 +2793,13 @@ export interface DefiOrderRequest {
    * @type {string}
    * @memberof DefiOrderRequest
    */
-  taker: string;
+  taker?: string;
   /**
    * The orders EdDSA signature. The signature is a hexadecimal string obtained by signing the order itself and concatenating the resulting signature parts (Rx, Ry, and S). Used to authenticate and authorize the operation.
    * @type {string}
    * @memberof DefiOrderRequest
    */
-  eddsaSignature: string;
+  eddsaSignature?: string;
 }
 
 export interface DefiResult {
