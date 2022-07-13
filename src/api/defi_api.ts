@@ -173,7 +173,7 @@ export class DefiAPI extends BaseAPI {
     | (Omit<any, "resultInfo"> & { raw_data: Omit<any, "resultInfo"> })
     | RESULT_INFO
   > {
-    if (!request?.validUntil) request.validUntil = Date.now();
+    // if (!request?.validUntil) request.validUntil = Date.now();
 
     const dataToSig = [
       request.exchange,
@@ -192,6 +192,7 @@ export class DefiAPI extends BaseAPI {
     const reqParams: ReqParams = {
       url: LOOPRING_URLs.GET_DEFI_ORDER,
       bodyParams: request,
+      apiKey,
       method: ReqMethod.POST,
       sigFlag: SIG_FLAG.EDDSA_SIG_POSEIDON,
       sigObj: {
@@ -199,7 +200,6 @@ export class DefiAPI extends BaseAPI {
         sigPatch: SigPatchField.EddsaSignature,
         PrivateKey: privateKey,
       },
-      apiKey,
     };
 
     const raw_data = (await this.makeReq().request(reqParams)).data;
