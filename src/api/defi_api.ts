@@ -173,8 +173,6 @@ export class DefiAPI extends BaseAPI {
     | (Omit<any, "resultInfo"> & { raw_data: Omit<any, "resultInfo"> })
     | RESULT_INFO
   > {
-    // if (!request?.validUntil) request.validUntil = Date.now();
-
     const dataToSig = [
       request.exchange,
       request.storageId,

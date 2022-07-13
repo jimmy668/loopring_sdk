@@ -61,7 +61,7 @@ describe("DefiAPI test", function () {
 
       const sellSymbol = "ETH",
         buySymbol = "WSTETH",
-        sellValue = "0.00001",
+        sellValue = "0.00005",
         isJoin = true,
         isInputSell = true;
       const testMarket = "WSTETH-ETH";
@@ -126,27 +126,6 @@ describe("DefiAPI test", function () {
         type: marketInfo.type,
         fillAmountBOrS: false,
       };
-
-      // const request = {
-      //   exchange: "0x2e76EBd1c7c0C8e7c2B875b6d505a260C525d25e", //LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
-      //   storageId: 30, //storageId.orderId,
-      //   accountId: 11265, //accInfo.accountId,
-      //   sellToken: {
-      //     tokenId: 0, //TOKEN_INFO.tokenMap[sellSymbol].tokenId,
-      //     volume: "1000000000000000", //calcVol.sellVol,
-      //   },
-      //   buyToken: {
-      //     tokenId: 12, //tokensMap[buySymbol].tokenId,
-      //     volume: "1000000000000000", // calcVol.buyVol,
-      //   },
-      //   action: "deposit", // DefiAction.Deposit,
-      //   validUntil: 1662877766, //LOOPRING_EXPORTED_ACCOUNT.validUntil,
-      //   fee: "34600000000000", //fees[buySymbol].fee,
-      //   maxFeeBips: 5000, //calcVol.maxFeeBips,
-      //   type: "lido", // marketInfo.type,
-      //   fillAmountBOrS: false,
-      // };
-
       // @output calcVol UI use to validation data
 
       const response = await LoopringAPI.defiAPI.orderDefi(
@@ -159,29 +138,3 @@ describe("DefiAPI test", function () {
     DEFAULT_TIMEOUT
   );
 });
-// const responseOrder = await LoopringAPI.userAPI.submitOrder(
-//   {
-//     ...{
-//       exchange: "0x2e76EBd1c7c0C8e7c2B875b6d505a260C525d25e", //LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
-//       storageId: 1026, //storageId.orderId,
-//       accountId: 10010, //accInfo.accountId,
-//       sellToken: {
-//         tokenId: 1, //TOKEN_INFO.tokenMap[sellSymbol].tokenId,
-//         volume: "10000000000000000000", //calcVol.sellVol,
-//       },
-//       buyToken: {
-//         tokenId: 0, //tokensMap[buySymbol].tokenId,
-//         volume: "1958040000000000", // calcVol.buyVol,
-//       },
-//       // action: "deposit", // DefiAction.Deposit,
-//       validUntil: 1660286912, //LOOPRING_EXPORTED_ACCOUNT.validUntil,
-//       // fee: "34600000000000", //fees[buySymbol].fee,
-//       maxFeeBips: 50, //calcVol.maxFeeBips,
-//       // type: "lido", // marketInfo.type,
-//       fillAmountBOrS: false,
-//     },
-//     allOrNone: false,
-//   } as any,
-//   eddsaKey.sk,
-//   apiKey
-// );
