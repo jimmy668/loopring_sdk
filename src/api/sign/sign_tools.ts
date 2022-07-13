@@ -234,6 +234,7 @@ export const getEdDSASigWithPoseidon = (
     bigIntInputs.push(BigNumber.from(input));
   }
   const hash = permunation.poseidon(bigIntInputs, poseidonParams);
+  myLog("getEdDSASigWithPoseidon", hash.toHexString(), bigIntInputs);
   return {
     hash,
     result: genSigWithPadding(PrivateKey, hash),
