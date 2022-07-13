@@ -15,11 +15,8 @@ import {
   SIG_FLAG,
   LOOPRING_URLs,
   SigPatchField,
+  RESULT_INFO,
 } from "../defs";
-
-import * as sign_tools from "./sign/sign_tools";
-import BN from "bn.js";
-import * as ethUtil from "ethereumjs-util";
 
 export class DefiAPI extends BaseAPI {
   /*
@@ -172,10 +169,10 @@ export class DefiAPI extends BaseAPI {
     request: DefiOrderRequest,
     privateKey: string,
     apiKey: string
-  ): Promise<{
-    raw_data: R;
-    result: DefiResult;
-  }> {
+  ): Promise<
+    | (Omit<any, "resultInfo"> & { raw_data: Omit<any, "resultInfo"> })
+    | RESULT_INFO
+  > {
     if (!request?.validUntil) request.validUntil = Date.now();
 
     const dataToSig = [
@@ -195,8 +192,6 @@ export class DefiAPI extends BaseAPI {
     const reqParams: ReqParams = {
       url: LOOPRING_URLs.GET_DEFI_ORDER,
       bodyParams: request,
-      apiKey,
-
       method: ReqMethod.POST,
       sigFlag: SIG_FLAG.EDDSA_SIG_POSEIDON,
       sigObj: {
@@ -204,17 +199,10 @@ export class DefiAPI extends BaseAPI {
         sigPatch: SigPatchField.EddsaSignature,
         PrivateKey: privateKey,
       },
+      apiKey,
     };
 
     const raw_data = (await this.makeReq().request(reqParams)).data;
-    if (raw_data?.resultInfo) {
-      return {
-        ...raw_data?.resultInfo,
-      };
-    }
-    return {
-      result: raw_data,
-      raw_data,
-    };
+    return this.returnTxHash(raw_data);
   }
 }
