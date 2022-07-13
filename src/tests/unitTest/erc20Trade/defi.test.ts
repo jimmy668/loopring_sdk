@@ -107,30 +107,40 @@ describe("DefiAPI test", function () {
         },
         apiKey
       );
+      const request = {
+        exchange: LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
+        storageId: storageId.orderId,
+        accountId: accInfo.accountId,
+        sellToken: {
+          tokenId: TOKEN_INFO.tokenMap[sellSymbol].tokenId,
+          volume: calcVol.sellVol,
+        },
+        buyToken: {
+          tokenId: tokensMap[buySymbol].tokenId,
+          volume: calcVol.buyVol,
+        },
+        action: DefiAction.Deposit,
+        validUntil: LOOPRING_EXPORTED_ACCOUNT.validUntil,
+        fee: fees[buySymbol].fee,
+        maxFeeBips: calcVol.maxFeeBips,
+        type: marketInfo.type,
+        fillAmountBOrS: true,
+      };
       // @output calcVol UI use to validation data
       const response = await LoopringAPI.defiAPI.orderDefi(
-        {
-          exchange: LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
-          storageId: storageId.orderId,
-          accountId: accInfo.accountId,
-          sellToken: {
-            tokenId: TOKEN_INFO.tokenMap[sellSymbol].tokenId,
-            volume: calcVol.sellVol,
-          },
-          buyToken: {
-            tokenId: tokensMap[buySymbol].tokenId,
-            volume: calcVol.buyVol,
-          },
-          action:DefiAction.Deposit,
-          validUntil: LOOPRING_EXPORTED_ACCOUNT.validUntil,
-          fee:fees[buySymbol].fee,
-          maxFeeBips: calcVol.maxFeeBips,
-          type: marketInfo.type,
-          fillAmountBOrS: true,
-        },
+        request,
         eddsaKey.sk,
         apiKey
       );
+      const responseOrder = await LoopringAPI.userAPI.submitOrder(
+        {
+          ...request,
+          allOrNone: false,
+        } as any,
+        eddsaKey.sk,
+        apiKey
+      );
+
       console.log("orderDefi:", response);
     },
     DEFAULT_TIMEOUT
