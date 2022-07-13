@@ -14,9 +14,12 @@ import {
   ReqMethod,
   SIG_FLAG,
   LOOPRING_URLs,
+  SigPatchField,
 } from "../defs";
 
 import * as sign_tools from "./sign/sign_tools";
+import BN from "bn.js";
+import * as ethUtil from "ethereumjs-util";
 
 export class DefiAPI extends BaseAPI {
   /*
@@ -141,14 +144,14 @@ export class DefiAPI extends BaseAPI {
             pairs[base].tokenList = [...pairs[base].tokenList, quote];
           }
 
-          if (!pairs[quote]) {
-            pairs[quote] = {
-              tokenId: item.quoteTokenId,
-              tokenList: [base],
-            };
-          } else {
-            pairs[quote].tokenList = [...pairs[quote].tokenList, base];
-          }
+          // if (!pairs[quote]) {
+          //   pairs[quote] = {
+          //     tokenId: item.quoteTokenId,
+          //     tokenList: [base],
+          //   };
+          // } else {
+          //   pairs[quote].tokenList = [...pairs[quote].tokenList, base];
+          // }
         }
       });
     }
@@ -167,7 +170,7 @@ export class DefiAPI extends BaseAPI {
 
   public async orderDefi<R>(
     request: DefiOrderRequest,
-    eddsaKey: string,
+    privateKey: string,
     apiKey: string
   ): Promise<{
     raw_data: R;
@@ -175,17 +178,36 @@ export class DefiAPI extends BaseAPI {
   }> {
     if (!request?.validUntil) request.validUntil = Date.now();
 
-    request.eddsaSignature = sign_tools.get_EddsaSig_Defi(
-      request,
-      eddsaKey
-    ).result;
+    const dataToSig = [
+      request.exchange,
+      request.storageId,
+      request.accountId,
+      request.sellToken?.tokenId !== undefined ? request.sellToken.tokenId : "",
+      request.buyToken?.tokenId !== undefined ? request.buyToken.tokenId : "",
+      request.sellToken?.volume ? request.sellToken.volume : 0,
+      request.buyToken?.volume ? request.buyToken.volume : 0,
+      request.validUntil,
+      request.maxFeeBips,
+      request.fillAmountBOrS ? 1 : 0,
+      0,
+    ];
+    // request.eddsaSignature = sign_tools.get_EddsaSig_Defi(
+    //   request,
+    //   eddsaKey
+    // ).result;
 
     const reqParams: ReqParams = {
+      url: LOOPRING_URLs.GET_DEFI_ORDER,
       bodyParams: request,
       apiKey,
-      url: LOOPRING_URLs.GET_DEFI_ORDER,
+
       method: ReqMethod.POST,
-      sigFlag: SIG_FLAG.NO_SIG,
+      sigFlag: SIG_FLAG.EDDSA_SIG_POSEIDON,
+      sigObj: {
+        dataToSig,
+        sigPatch: SigPatchField.EddsaSignature,
+        PrivateKey: privateKey,
+      },
     };
 
     const raw_data = (await this.makeReq().request(reqParams)).data;
