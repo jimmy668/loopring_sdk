@@ -61,7 +61,7 @@ describe("DefiAPI test", function () {
 
       const sellSymbol = "ETH",
         buySymbol = "WSTETH",
-        sellValue = "0.0001",
+        sellValue = "0.00001",
         isJoin = true,
         isInputSell = true;
       const testMarket = "WSTETH-ETH";
