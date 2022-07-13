@@ -7,7 +7,7 @@ import {
   signatureKeyPairMock,
 } from "../../MockData";
 import * as sdk from "../../../index";
-import { calcDefi, DefiOrderRequest } from "../../../index";
+import { calcDefi, DefiAction, DefiOrderRequest } from "../../../index";
 
 describe("DefiAPI test", function () {
   it(
@@ -121,16 +121,12 @@ describe("DefiAPI test", function () {
             tokenId: tokensMap[buySymbol].tokenId,
             volume: calcVol.buyVol,
           },
-          /**
-           * Timestamp for order become invalid
-           * @type {number}
-           * @memberof DefiOrderRequest
-           */
+          action:DefiAction.Deposit,
           validUntil: LOOPRING_EXPORTED_ACCOUNT.validUntil,
-
+          fee:fees[buySymbol].fee,
           maxFeeBips: calcVol.maxFeeBips,
-
-          fillAmountBOrS: 1,
+          type: marketInfo.type,
+          fillAmountBOrS: true,
         },
         eddsaKey.sk,
         apiKey
