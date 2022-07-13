@@ -191,10 +191,6 @@ export class DefiAPI extends BaseAPI {
       request.fillAmountBOrS ? 1 : 0,
       0,
     ];
-    // request.eddsaSignature = sign_tools.get_EddsaSig_Defi(
-    //   request,
-    //   eddsaKey
-    // ).result;
 
     const reqParams: ReqParams = {
       url: LOOPRING_URLs.GET_DEFI_ORDER,
