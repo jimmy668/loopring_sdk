@@ -1586,15 +1586,16 @@ export function get_EddsaSig_Defi(request: DefiOrderRequest, eddsaKey: string) {
     new BN(ethUtil.toBuffer(request.exchange)).toString(),
     request.storageId,
     request.accountId,
-    request.sellToken?.tokenId ? request.sellToken.tokenId : "",
-    request.buyToken?.tokenId ? request.buyToken.tokenId : "",
+    request.sellToken?.tokenId!== undefined ? request.sellToken.tokenId : "",
+    request.buyToken?.tokenId!== undefined  ? request.buyToken.tokenId : "",
     request.sellToken?.volume ? request.sellToken.volume : 0,
     request.buyToken?.volume ? request.buyToken.volume : 0,
     request.validUntil,
     request.maxFeeBips,
-    request.fillAmountBOrS,
+    request.fillAmountBOrS?1:0,
     new BN(ethUtil.toBuffer(request.taker)).toString(),
   ];
+  myLog('get_EddsaSig_Defi input',inputs)
   return getEdDSASigWithPoseidon(inputs, eddsaKey);
   // return eddsaSign(typedData, patch.eddsaKey);
 }

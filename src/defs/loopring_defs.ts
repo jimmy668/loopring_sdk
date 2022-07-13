@@ -2777,6 +2777,12 @@ export interface DefiOrderRequest {
    */
   validUntil: number;
   /**
+   * fee 
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  fee:string;
+  /**
    * Maximum order fee that the user can accept, value range (in ten thousandths) 1 ~ 63
    * @type {number}
    * @memberof DefiOrderRequest
@@ -2784,10 +2790,10 @@ export interface DefiOrderRequest {
   maxFeeBips: number;
   /**
    * fillAmountBOrS
-   * @type {0|1}
+   * @type boolean
    * @memberof DefiOrderRequest
    */
-  fillAmountBOrS: 1 | 0;
+  fillAmountBOrS: boolean;
   /**
    * taker address
    * @type {string}
@@ -2800,6 +2806,18 @@ export interface DefiOrderRequest {
    * @memberof DefiOrderRequest
    */
   eddsaSignature?: string;
+   /**
+   * type
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  type:string;
+  /**
+   * action
+   * @type {string}
+   * @memberof DefiOrderRequest
+   */
+  action:string;
 }
 
 export interface DefiResult {
@@ -2810,3 +2828,8 @@ export interface DefiResult {
 }
 
 export const SEP = ",";
+
+export enum DefiAction {
+  Deposit="deposit",
+  Withdraw="withdraw"
+};
