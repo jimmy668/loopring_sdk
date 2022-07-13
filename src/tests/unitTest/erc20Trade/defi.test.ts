@@ -133,14 +133,32 @@ describe("DefiAPI test", function () {
         eddsaKey.sk,
         apiKey
       );
-      // const responseOrder = await LoopringAPI.userAPI.submitOrder(
-      //   {
-      //     ...request,
-      //     allOrNone: false,
-      //   } as any,
-      //   eddsaKey.sk,
-      //   apiKey
-      // );
+      const responseOrder = await LoopringAPI.userAPI.submitOrder(
+        {
+          ...{
+            exchange: "0x2e76EBd1c7c0C8e7c2B875b6d505a260C525d25e", //LOOPRING_EXPORTED_ACCOUNT.exchangeAddress,
+            storageId: 1026, //storageId.orderId,
+            accountId: 10010, //accInfo.accountId,
+            sellToken: {
+              tokenId: 1, //TOKEN_INFO.tokenMap[sellSymbol].tokenId,
+              volume: "10000000000000000000", //calcVol.sellVol,
+            },
+            buyToken: {
+              tokenId: 0, //tokensMap[buySymbol].tokenId,
+              volume: "1958040000000000", // calcVol.buyVol,
+            },
+            // action: "deposit", // DefiAction.Deposit,
+            validUntil: 1660286912, //LOOPRING_EXPORTED_ACCOUNT.validUntil,
+            // fee: "34600000000000", //fees[buySymbol].fee,
+            maxFeeBips: 50, //calcVol.maxFeeBips,
+            // type: "lido", // marketInfo.type,
+            fillAmountBOrS: false,
+          },
+          allOrNone: false,
+        } as any,
+        eddsaKey.sk,
+        apiKey
+      );
 
       console.log("orderDefi:", response);
     },

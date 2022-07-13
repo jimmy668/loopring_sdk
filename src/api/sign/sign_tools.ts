@@ -36,7 +36,6 @@ import {
   NFTTokenAmountInfo,
   NFTTradeRequestV3,
   SubmitOrderRequestV3,
-  DefiOrderRequest,
 } from "../../defs/loopring_defs";
 
 import Web3 from "web3";
