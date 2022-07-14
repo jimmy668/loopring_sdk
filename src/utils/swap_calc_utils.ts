@@ -1026,7 +1026,7 @@ export function makeExitAmmPoolRequest2(
 }
 
 /**
- *
+ * calcDefi
  * @param isJoin {boolean} true is join, false is exit
  * @param isInputSell {boolean} user input sell of buy
  * @param XOR<sellAmount,buyAmount> user input sell amount number (without decimals)
