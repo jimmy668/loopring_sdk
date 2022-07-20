@@ -15,7 +15,7 @@ let mockData: any = {
   makerOrder: undefined,
   makerOrderEddsaSignature: undefined,
   makerFeeBips: 1000,
-  maxFeeBips: 100,
+  maxFeeBips: 10000,
 };
 let accInfoC: any = undefined;
 let eddsaKeyC: any = undefined;
@@ -89,7 +89,7 @@ describe("tradeNFT", function () {
       allOrNone: false,
       fillAmountBOrS: false,
       validUntil: LOOPRING_EXPORTED_ACCOUNT.validUntil,
-      maxFeeBips: 1000,
+      maxFeeBips: 10000,
     };
     const makerOrderEddsaSignature = sdk.get_EddsaSig_NFT_Order(
       makerOrder,
@@ -112,7 +112,7 @@ describe("tradeNFT", function () {
       allOrNone: false,
       fillAmountBOrS: true,
       validUntil: LOOPRING_EXPORTED_ACCOUNT.validUntil,
-      maxFeeBips: 100,
+      maxFeeBips: 10000,
     };
     const takerOrderEddsaSignature = sdk.get_EddsaSig_NFT_Order(
       takerOrder,
@@ -125,7 +125,7 @@ describe("tradeNFT", function () {
       makerOrder,
       makerOrderEddsaSignature,
       makerFeeBips: 1000,
-      maxFeeBips: 100,
+      maxFeeBips: 10000,
     };
   }, DEFAULT_TIMEOUT * 3);
   it(
@@ -166,6 +166,7 @@ describe("tradeNFT", function () {
           "mockData.takerOrder",
           mockData.takerOrder
         );
+
         //  NFT Trade
         const response = await LoopringAPI.userAPI.submitNFTTrade({
           request: {
@@ -174,12 +175,12 @@ describe("tradeNFT", function () {
               eddsaSignature: mockData.makerOrderEddsaSignature,
             },
             makerFeeBips: 1000,
-            matchByTaker: false,
+            matchByTaker: true,
             taker: {
               ...mockData.takerOrder,
               eddsaSignature: mockData.takerOrderEddsaSignature,
             },
-            takerFeeBips: 100,
+            takerFeeBips: 10000,
           },
           web3,
           chainId: sdk.ChainId.GOERLI,
