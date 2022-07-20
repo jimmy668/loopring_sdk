@@ -116,4 +116,6 @@ export enum LOOPRING_URLs {
   GET_DEPLOY_TOKEN_ADDRESS = "/api/v3/nft/deployTokenAddress",
 
   IPFS_META_URL = "https://infura-ipfs.io/ipfs/",
+  
+  POST_LOCK_ASSETS = '/api/v3/lockAssets'
 }

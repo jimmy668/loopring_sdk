@@ -2023,6 +2023,12 @@ export interface NFTTradeRequestV3 {
    */
   makerFeeBips: number;
   /**
+   * match by Taker
+   * @type {boolean}
+   * @memberof NFTOrderRequestV3
+   */
+   matchByTaker: boolean;
+  /**
    * taker order
    * @type {NFTOrderRequestV3}
    * @memberof NFTTradeRequestV3
@@ -2691,4 +2697,14 @@ export interface WalletType {
   isInCounterFactualStatus: boolean;
   isContract: boolean;
   loopringWalletContractVersion: string;
+}
+
+export type LockAssetsRequest = {
+  accountId: number
+  eddsaSignature: string
+  exchange: string
+  lockedUntil: number
+  tag?: string
+  timestamp: number
+  token: TokenVolumeV3
 }

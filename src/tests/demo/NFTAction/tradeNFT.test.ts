@@ -174,6 +174,7 @@ describe("tradeNFT", function () {
               eddsaSignature: mockData.makerOrderEddsaSignature,
             },
             makerFeeBips: 1000,
+            matchByTaker: false,
             taker: {
               ...mockData.takerOrder,
               eddsaSignature: mockData.takerOrderEddsaSignature,

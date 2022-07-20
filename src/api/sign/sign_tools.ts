@@ -212,7 +212,7 @@ export function verifyEdDSASig(
 }
 export const getEdDSASigWithPoseidon = (
   inputs: any,
-  PrivateKey: string | undefined
+  PrivateKey: string | undefined = undefined
 ) => {
   const p = field.SNARK_SCALAR_FIELD;
   const poseidonParams = new PoseidonParams(
@@ -233,10 +233,13 @@ export const getEdDSASigWithPoseidon = (
     bigIntInputs.push(BigNumber.from(input));
   }
   const hash = permunation.poseidon(bigIntInputs, poseidonParams);
-  return {
-    hash,
-    result: genSigWithPadding(PrivateKey, hash),
-  };
+  if(PrivateKey) {
+    return {
+      hash,
+      result: genSigWithPadding(PrivateKey, hash),
+    };
+  }
+  return hash;
 };
 
 /**
@@ -1529,4 +1532,33 @@ export function get_EddsaSig_ExitAmmPool(
 ) {
   const typedData = getAmmExitEcdsaTypedData(data, patch);
   return eddsaSign(typedData, patch.eddsaKey);
+}
+
+
+export const getEdDSASigWithPoseidonAndHash = (inputs: any, PrivateKey: string | undefined) => {
+
+  const hash = getEdDSASigWithPoseidon(inputs);
+  return {
+    sig:genSigWithPadding(PrivateKey, hash),
+    hash:hash.toHexString()
+  }
+
+}
+
+
+export function get_EddsaSig_Lock_Hash(
+  request: any,
+  eddsaKey: string
+) {
+
+  const inputs = [
+    new BN(ethUtil.toBuffer(request.exchange)).toString(),
+    request.accountId,
+    request.token.tokenId,
+    request.token.volume,
+    request.timestamp
+  ];
+
+  return getEdDSASigWithPoseidonAndHash(inputs, eddsaKey);
+
 }

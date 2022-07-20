@@ -1731,6 +1731,7 @@ export class UserAPI extends BaseAPI {
     const dataToSig: Map<string, any> = new Map();
     dataToSig.set("maker", request.maker);
     dataToSig.set("makerFeeBips", request.makerFeeBips);
+    dataToSig.set("matchByTaker", request.matchByTaker);
     dataToSig.set("taker", request.taker);
     dataToSig.set("takerFeeBips", request.takerFeeBips);
     // request.eddsaSignature = sign_tools.get_EddsaSig_Transfer(
